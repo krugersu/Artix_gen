@@ -1,0 +1,19 @@
+{
+	"color_scheme": "Packages/Guna/themes/Guna.sublime-color-scheme",
+	"gn_hide_tab_dropdown": true,
+	"gn_overlay_scroll_bars": true,
+	"gn_sidebar_box": true,
+	"gn_title_bar": true,
+	"gnc_001": false,
+	"gnc_002": true,
+	"gnc_h23": true,
+	"gnc_m00": true,
+	"gnc_w5m13": true,
+	"gnwidg1": true,
+	"gnwidgo": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "Guna.sublime-theme"
+}

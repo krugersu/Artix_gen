@@ -1,0 +1,24 @@
+{
+	"color_scheme": "Packages/Guna/themes/Guna.sublime-color-scheme",
+	"fallback_encoding": "Cyrillic (Windows 1251)",
+	"font_face": "Consolas",
+	"gn_hide_tab_dropdown": true,
+	"gn_overlay_scroll_bars": true,
+	"gn_sidebar_box": true,
+	"gn_title_bar": true,
+	"gnc_001": false,
+	"gnc_002": false,
+	"gnc_h14": true,
+	"gnc_m03": true,
+	"gnc_w5m12": true,
+	"gni_003": false,
+	"gnwidg1": true,
+	"gnwidgo": true,
+	"ignored_packages":
+	[
+		"RestructuredText",
+		"Vintage"
+	],
+	"show_encoding": true,
+	"theme": "Guna.sublime-theme"
+}
