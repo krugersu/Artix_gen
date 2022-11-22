@@ -22,7 +22,7 @@ def main():
    
    path = Path("config", "config.ini") 
    #path = './config/config.ini'
-   db.testdb()
+  # db.testdb()
 
    logger.info("Программа стартует")
    f = '*flg'
@@ -40,7 +40,7 @@ def main():
   # print(c_shop)
    
    
-   #db.saveDataDB(c_count)
+   db.testdb(c_count)
    #logging.info('Finished')
    logger.info("Программа завершила работу")
 

@@ -2,6 +2,7 @@
 import logging
 import requests
 import main
+import json
 
 
 def send_request(c_shop,server_ip,port):
@@ -13,6 +14,7 @@ def send_request(c_shop,server_ip,port):
           r.encoding = 'utf-8' 
           print(r.status_code)
           c_count = r.json()
+          #c_count = json.loads(r.text)
          # print(c_count)    
           return c_count
      except Exception as e:
