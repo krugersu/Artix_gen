@@ -29,17 +29,23 @@ def testdb(c_count):
     dict_json=json.loads(jtopy)
 
 
-''' def recursive_items(dictionary):
-    for key, value in dictionary:
+def recursive_itemsD(dictionary):
+    for key, value in dictionary.items():
         if isinstance(value, dict):
         
             yield (key, value)
             yield from recursive_items(value)
         else:
             yield (key, value)
- ''' 
+
  # ! Список словарей           
 def recursive_items(dictionary):            
     for i in range(len(dictionary)-1):
+       # print(i)
+       # print(type(dictionary[i]))
+        t = dictionary[i]
         print(dictionary[i])
+        for key, value in recursive_itemsD(t):
+            print(key, value)
+        #recursive_itemsD(t)
         
