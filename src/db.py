@@ -5,6 +5,10 @@ from datetime import datetime
 from types import SimpleNamespace
 from pathlib import Path  
 import diff_data
+import logging
+import main
+from datetime import datetime
+
 
 pathDB = Path("data", "myDB.sqlite") 
 pathSqript = Path("data", "createDB.sql") 
@@ -20,10 +24,12 @@ def saveDataDB(c_count):
 
 
 
-def recursive_items(dictionary):            
+def recursive_items(dictionary):
+    logging.info('Start add DB from 1C - ' + str(datetime.now()))
     for i in range(len(dictionary)-1):
         addRecord(dictionary[i])
         
+    logging.info('End add DB from 1C - ' + str(datetime.now()))    
         
         
 def addRecord(item_position):

@@ -6,7 +6,7 @@ BEGIN TRANSACTION;
 DROP TABLE IF EXISTS additionalprices;
 
 CREATE TABLE additionalprices (
-    additionalpricesid INTEGER      PRIMARY KEY AUTOINCREMENT,
+    additionalpricesid TEXT (20),
     pricecode          INTEGER (11),
     price              REAL (13, 2),
     name               TEXT (40) 
@@ -17,7 +17,7 @@ CREATE TABLE additionalprices (
 DROP TABLE IF EXISTS barcodes;
 
 CREATE TABLE barcodes (
-    barcodesid               INTEGER      PRIMARY KEY AUTOINCREMENT,
+    barcodesid               TEXT (20),
     additionalpricesid       INTEGER,
     aspectvaluesetcode       INTEGER (11),
     barcode                  TEXT (100),
@@ -45,12 +45,12 @@ CREATE TABLE invent (
     inventgroup             TEXT (100),
     name                    TEXT (200),
     barcode                 TEXT (100),
-    barcodesid              INTEGER,
+    barcodesid              TEXT (20),
     price                   REAL (13, 2),
     minprice                REAL (13, 2),
-    additionalpricesid      INTEGER,
-    options                 INTEGER,
-    sellrestrictperiodsid   INTEGER,
+    additionalpricesid      TEXT (20),
+    options                 TEXT (20),
+    sellrestrictperiodsid   TEXT (20),
     extendedoptions         TEXT,
     discautoscheme          INTEGER,
     deptcode                INTEGER,
@@ -86,7 +86,7 @@ CREATE TABLE invent (
 DROP TABLE IF EXISTS inventitemoptions;
 
 CREATE TABLE inventitemoptions (
-    inventitemoptionsid     INTEGER     PRIMARY KEY AUTOINCREMENT,
+    inventitemoptionsid     TEXT (20),
     disablebackinsale       INTEGER (1),
     disableinventshow       INTEGER (1),
     disableinventsale       INTEGER (1),
@@ -118,7 +118,7 @@ CREATE TABLE inventitemoptions (
 DROP TABLE IF EXISTS options;
 
 CREATE TABLE options (
-    optionsidid         INTEGER PRIMARY KEY AUTOINCREMENT,
+    optionsidid         TEXT (20),
     inventitemoptionsid INTEGER,
     priceoptionsid      INTEGER,
     quantityoptionsid   INTEGER,
@@ -130,7 +130,7 @@ CREATE TABLE options (
 DROP TABLE IF EXISTS priceoptions;
 
 CREATE TABLE priceoptions (
-    priceoptionsid        INTEGER     PRIMARY KEY AUTOINCREMENT,
+    priceoptionsid        TEXT (20),
     enablepricemanual     INTEGER (1),
     requirepricemanual    INTEGER (1),
     requireselectprice    INTEGER (1),
@@ -143,7 +143,7 @@ CREATE TABLE priceoptions (
 DROP TABLE IF EXISTS quantityoptions;
 
 CREATE TABLE quantityoptions (
-    quantityoptionsid           INTEGER      PRIMARY KEY AUTOINCREMENT,
+    quantityoptionsid           TEXT (20),
     enabledefaultquantity       INTEGER (1),
     enablequantitylimit         INTEGER (1),
     quantitylimit               REAL (13, 3),
@@ -163,7 +163,7 @@ CREATE TABLE quantityoptions (
 DROP TABLE IF EXISTS remainsoptions;
 
 CREATE TABLE remainsoptions (
-    remainsoptionsid INTEGER PRIMARY KEY AUTOINCREMENT
+    remainsoptionsid TEXT (20) 
 );
 
 
@@ -171,7 +171,7 @@ CREATE TABLE remainsoptions (
 DROP TABLE IF EXISTS sellrestrictperiods;
 
 CREATE TABLE sellrestrictperiods (
-    sellrestrictperiodsid INTEGER      PRIMARY KEY AUTOINCREMENT,
+    sellrestrictperiodsid TEXT (20),
     dateend               DATE,
     datestart             DATE,
     dayend                INTEGER (11),

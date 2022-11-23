@@ -11,7 +11,7 @@ qrAddinvent = 'INSERT INTO invent VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,
 def getListPriceoptions(item_position):
     
     curVal =[]
-    curVal.append(None) 
+    curVal.append(item_position['inventcode'])
     curVal.append(int(item_position['options']['priceoptions']['enablepricemanual'])) 
     curVal.append(int(item_position['options']['priceoptions']['requirepricemanual'])) 
     curVal.append(int(item_position['options']['priceoptions']['requireselectprice'])) 
@@ -25,7 +25,7 @@ def getListadditionalprices(item_position):
     
     curVal =[]
     
-    curVal.append(None) 
+    curVal.append(item_position['inventcode'])
     curVal.append(int(item_position['additionalprices']['pricecode'])) 
     curVal.append(int(item_position['additionalprices']['price'])) 
     curVal.append(int(item_position['additionalprices']['price'])) 
@@ -37,7 +37,7 @@ def getListquantityoptions(item_position):
     
     curVal =[]
     
-    curVal.append(None) 
+    curVal.append(item_position['inventcode'])
     curVal.append(int(item_position['options']['quantityoptions']['enabledefaultquantity'])) 
     curVal.append(int(item_position['options']['quantityoptions']['enablequantitylimit'])) 
     curVal.append(int(item_position['options']['quantityoptions']['quantitylimit'])) 
@@ -57,7 +57,7 @@ def getListinventitemoptions(item_position):
     
     curVal =[]
 
-    curVal.append(None) 
+    curVal.append(item_position['inventcode'])
     curVal.append(int(item_position['options']['inventitemoptions']['disablebackinsale'])) 
     curVal.append(int(item_position['options']['inventitemoptions']['disableinventshow'])) 
     curVal.append(int(item_position['options']['inventitemoptions']['disableinventsale'])) 
@@ -95,13 +95,12 @@ def getListinvent(item_position):
     curVal.append(item_position['inventgroup']) 
     curVal.append(item_position['name']) 
     curVal.append(item_position['barcode'])
-                   
-    curVal.append(item_position['barcodesid']) 
+    curVal.append(item_position['inventcode']) 
     curVal.append(item_position['price']) 
     curVal.append(item_position['minprice']) 
-    curVal.append(item_position['additionalpricesid']) 
-    curVal.append(item_position['options']) 
-    curVal.append(item_position['sellrestrictperiodsid']) 
+    curVal.append(item_position['inventcode']) 
+    curVal.append(item_position['inventcode']) 
+    curVal.append(item_position['inventcode']) 
     curVal.append(item_position['extendedoptions']) 
     curVal.append(item_position['discautoscheme']) 
     curVal.append(item_position['deptcode']) 
