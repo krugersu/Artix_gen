@@ -55,6 +55,9 @@ def addRecord(item_position):
         cur.execute(diff_data.qrAddinventitemoptions,curVal)    
         
     
+        curVal.clear()
+        curVal = diff_data.getListinvent(item_position)
+        cur.execute(diff_data.qrAddinvent,curVal)    
     
     
     all_db.commit() 

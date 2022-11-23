@@ -6,7 +6,7 @@ qrAddPriceoptions = 'INSERT INTO priceoptions VALUES (?, ?, ?, ?, ?,?);'
 qrAddinventitemoptions = 'INSERT INTO inventitemoptions VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);'
 qrAddquantityoptions = 'INSERT INTO quantityoptions VALUES (?, ?, ?, ?, ?,?, ?, ?, ?, ?, ?, ?, ?);'
 qrAddadditionalprices = 'INSERT INTO additionalprices VALUES (?, ?, ?, ?);'
-
+qrAddinvent = 'INSERT INTO invent VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);'
 
 def getListPriceoptions(item_position):
     
@@ -82,5 +82,53 @@ def getListinventitemoptions(item_position):
     curVal.append(int(item_position['options']['inventitemoptions']['fuzzyweight'])) 
     curVal.append(int(item_position['options']['inventitemoptions']['ignoremarking'])) 
     curVal.append(int(item_position['options']['inventitemoptions']['markdownverify'])) 
+    
+    return curVal
+
+
+def getListinvent(item_position):
+    
+    curVal =[]
+
+    curVal.append(None) 
+    curVal.append(item_position['inventcode']) 
+    curVal.append(item_position['inventgroup']) 
+    curVal.append(item_position['name']) 
+    curVal.append(item_position['barcode'])
+                   
+    curVal.append(item_position['barcodesid']) 
+    curVal.append(item_position['price']) 
+    curVal.append(item_position['minprice']) 
+    curVal.append(item_position['additionalpricesid']) 
+    curVal.append(item_position['options']) 
+    curVal.append(item_position['sellrestrictperiodsid']) 
+    curVal.append(item_position['extendedoptions']) 
+    curVal.append(item_position['discautoscheme']) 
+    curVal.append(item_position['deptcode']) 
+    curVal.append(item_position['taxgroupcode']) 
+    curVal.append(item_position['measurecode']) 
+    curVal.append(item_position['remain']) 
+    curVal.append(item_position['remaindate']) 
+    curVal.append(item_position['articul']) 
+    curVal.append(item_position['defaultquantity']) 
+    curVal.append(item_position['taramode']) 
+    curVal.append(item_position['taracapacity']) 
+    curVal.append(item_position['aspectschemecode']) 
+    curVal.append(item_position['aspectvaluesetcode']) 
+    curVal.append(item_position['aspectusecase']) 
+    curVal.append(item_position['aspectselectionrule']) 
+    curVal.append(item_position['age']) 
+    curVal.append(item_position['alcoholpercent']) 
+    curVal.append(item_position['cquant']) 
+    curVal.append(item_position['inn']) 
+    curVal.append(item_position['kpp']) 
+    curVal.append(item_position['alctypecode']) 
+    curVal.append(item_position['paymentobject'])                   
+    curVal.append(item_position['manufacturercountrycode']) 
+    curVal.append(item_position['opmode']) 
+    curVal.append(item_position['loyaltymode']) 
+    curVal.append(item_position['minretailprice']) 
+    curVal.append(item_position['Parent']) 
+    curVal.append(item_position['isParent'])                                                                                                                                                                                                                                           
     
     return curVal
