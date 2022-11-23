@@ -40,9 +40,9 @@ def main():
   # print(c_shop)
    
    
-   db.testdb(c_count)
+   db.saveDataDB(c_count)
    #logging.info('Finished')
-   logger.info("Программа завершила работу")
+   logger.info(u'Программа завершила работу')   
 
 
 
@@ -59,7 +59,7 @@ if __name__ == "__main__":
    if not rc == None:
       main()
    else:
-      logger.info("Программа завершила работу")   
+      logger.info(u'Программа завершила работу')   
       
    #while True:
    #    schedule.run_pending()

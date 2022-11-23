@@ -24,4 +24,4 @@ sphinxcontrib-serializinghtml
 systemd-python
 urllib3
 pathlib
-
+flatdict

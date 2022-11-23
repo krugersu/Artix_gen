@@ -144,3 +144,10 @@ def createFullDB(dictionary, indent=4):
 
 def saveDataDB(data):
     pass '''
+    
+    
+    
+'''     jtopy=json.dumps(data) #json.dumps take a dictionary as input and returns a string as output.
+    dict_json=json.loads(jtopy)
+ '''
+    
