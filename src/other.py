@@ -150,4 +150,15 @@ def saveDataDB(data):
 '''     jtopy=json.dumps(data) #json.dumps take a dictionary as input and returns a string as output.
     dict_json=json.loads(jtopy)
  '''
-    
+
+
+''' def recursive_itemsD(dictionary):
+    for key, value in dictionary.items():
+        if isinstance(value, dict):
+        
+            yield (key, value)
+            yield from recursive_items(value)
+        else:
+            yield (key, value)
+
+ '''    

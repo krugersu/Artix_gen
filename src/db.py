@@ -8,49 +8,26 @@ import query
 
 pathDB = Path("data", "myDB.sqlite") 
 pathSqript = Path("data", "createDB.sql") 
+
 all_db=sqlite3.connect(pathDB)
 baseTableName = 'invent'
 
 
 def saveDataDB(c_count):
 
-    data = c_count
-
     createDB()
-    recursive_items(data)
-'''     jtopy=json.dumps(data) #json.dumps take a dictionary as input and returns a string as output.
-    dict_json=json.loads(jtopy)
- '''
+    recursive_items(c_count)
 
-def recursive_itemsD(dictionary):
-    for key, value in dictionary.items():
-        if isinstance(value, dict):
-        
-            yield (key, value)
-            yield from recursive_items(value)
-        else:
-            yield (key, value)
 
- # ! Список словарей           
+
 def recursive_items(dictionary):            
     for i in range(len(dictionary)-1):
-       # print(i)
-       # print(type(dictionary[i]))
         addRecord(dictionary[i])
-        ''' t = dictionary[i]
-        print(dictionary[i])
-        for key, value in recursive_itemsD(t):
-            print(key, value) '''
-        #recursive_itemsD(t)
         
         
         
 def addRecord(item_position):
     
-    ''' for key, value in item_position.items():
-        if isinstance(value, dict):   
-            pass
-        else '''
     curVal =[]
     curVal.append(None) 
     curVal.append(int(item_position['options']['priceoptions']['enablepricemanual'])) 
@@ -62,7 +39,32 @@ def addRecord(item_position):
     
     cur = all_db.cursor()
     cur.execute(query.qrAddPriceoptions,curVal)
-    all_db.commit() 
+    #all_db.commit() 
+
+    curVal.clear()
+    curVal.append(None) 
+    curVal.append(int(item_position['options']['quantityoptions']['enabledefaultquantity'])) 
+    curVal.append(int(item_position['options']['quantityoptions']['enablequantitylimit'])) 
+    curVal.append(int(item_position['options']['quantityoptions']['quantitylimit'])) 
+    curVal.append(int(item_position['options']['quantityoptions']['enablequantityscales'])) 
+    curVal.append(int(item_position['options']['quantityoptions']['enablequantitybarcode']))     
+    curVal.append(int(item_position['options']['quantityoptions']['enablequantitymanual'])) 
+    curVal.append(int(item_position['options']['quantityoptions']['requirequantitymanual'])) 
+    curVal.append(int(item_position['options']['quantityoptions']['requirequantitybarcode'])) 
+    curVal.append(int(item_position['options']['quantityoptions']['requirequantityscales'])) 
+    curVal.append(int(item_position['options']['quantityoptions']['enabledocumentquantitylimit']))     
+    curVal.append(int(item_position['options']['quantityoptions']['autogetquantityfromscales'])) 
+    curVal.append((item_position['options']['quantityoptions']['documentquantlimit']))     
+
+    cur.execute(query.qrAddquantityoptions,curVal)
+    
+    if len (item_position['additionalprices']) > 0:
+        curVal.append(None) 
+        curVal.append(int(item_position['additionalprices']['pricecode'])) 
+        curVal.append(int(item_position['additionalprices']['price'])) 
+        curVal.append(int(item_position['additionalprices']['price'])) 
+    
+        cur.execute(query.qrAddadditionalprices,curVal)
 
     curVal.clear()
     curVal.append(None) 
@@ -91,11 +93,14 @@ def addRecord(item_position):
     curVal.append(int(item_position['options']['inventitemoptions']['ignoremarking'])) 
     curVal.append(int(item_position['options']['inventitemoptions']['markdownverify'])) 
     
-    
-    cur = all_db.cursor()
+    #cur = all_db.cursor()
     cur.execute(query.qrAddinventitemoptions,curVal)
     all_db.commit() 
 
+    
+    
+    
+    
 def createDB():
         
     with open(pathSqript, 'r') as sql_file:
