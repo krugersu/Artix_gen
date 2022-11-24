@@ -1,12 +1,7 @@
---
--- Файл сгенерирован с помощью SQLiteStudio v3.1.1 в Чт ноя 24 20:16:28 2022
---
--- Использованная кодировка текста: System
---
 PRAGMA foreign_keys = off;
 BEGIN TRANSACTION;
 
--- Таблица: additionalprices
+
 DROP TABLE IF EXISTS additionalprices;
 
 CREATE TABLE additionalprices (
@@ -17,7 +12,7 @@ CREATE TABLE additionalprices (
 );
 
 
--- Таблица: barcodes
+
 DROP TABLE IF EXISTS barcodes;
 
 CREATE TABLE barcodes (
@@ -40,7 +35,7 @@ CREATE TABLE barcodes (
 );
 
 
--- Таблица: invent
+
 DROP TABLE IF EXISTS invent;
 
 CREATE TABLE invent (
@@ -86,7 +81,7 @@ CREATE TABLE invent (
 );
 
 
--- Таблица: inventitemoptions
+
 DROP TABLE IF EXISTS inventitemoptions;
 
 CREATE TABLE inventitemoptions (
@@ -118,7 +113,7 @@ CREATE TABLE inventitemoptions (
 );
 
 
--- Таблица: options
+
 DROP TABLE IF EXISTS options;
 
 CREATE TABLE options (
@@ -130,7 +125,7 @@ CREATE TABLE options (
 );
 
 
--- Таблица: priceoptions
+
 DROP TABLE IF EXISTS priceoptions;
 
 CREATE TABLE priceoptions (
@@ -143,7 +138,7 @@ CREATE TABLE priceoptions (
 );
 
 
--- Таблица: quantityoptions
+
 DROP TABLE IF EXISTS quantityoptions;
 
 CREATE TABLE quantityoptions (
@@ -163,7 +158,7 @@ CREATE TABLE quantityoptions (
 );
 
 
--- Таблица: remainsoptions
+
 DROP TABLE IF EXISTS remainsoptions;
 
 CREATE TABLE remainsoptions (
@@ -171,7 +166,7 @@ CREATE TABLE remainsoptions (
 );
 
 
--- Таблица: sellrestrictperiods
+
 DROP TABLE IF EXISTS sellrestrictperiods;
 
 CREATE TABLE sellrestrictperiods (
@@ -185,7 +180,7 @@ CREATE TABLE sellrestrictperiods (
 );
 
 
--- Представление: SummIsParent
+
 DROP VIEW IF EXISTS SummIsParent;
 CREATE VIEW SummIsParent AS
     SELECT isParent,

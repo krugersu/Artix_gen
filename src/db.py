@@ -23,16 +23,19 @@ def saveDataDB(c_count):
 
     createDB()
     recursive_items(c_count)
+    CalculatingTheAmount()
 
 
 
 def recursive_items(dictionary):
     logging.info('Start add DB from 1C - ' + str(datetime.now()))
+    count = 0
     for i in range(len(dictionary)-1):
         addRecord(dictionary[i])
+        count = i
         
     logging.info('End add DB from 1C - ' + str(datetime.now()))    
-    logging.info('added - ' + str(i) + ' reords')    
+    logging.info('added - ' + str(count) + ' reords')    
         
         
 def addRecord(item_position):
@@ -86,3 +89,14 @@ def createDB():
     cursor.executescript(sql_script)
     all_db.commit()
     #all_db.close()
+    
+    
+def CalculatingTheAmount():
+    
+    pathSqript = Path("data", "upd.sql") 
+    with open(pathSqript, 'r') as sql_file:
+        sql_script = sql_file.read()
+    cur = all_db.cursor()
+    #cur.execute(diff_data.qrCalculatingTheAmount)
+    cur.executescript(sql_script)
+    logging.info('Summ analog calcalating')    

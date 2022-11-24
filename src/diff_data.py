@@ -8,6 +8,16 @@ qrAddquantityoptions = 'INSERT INTO quantityoptions VALUES (?, ?, ?, ?, ?,?, ?, 
 qrAddadditionalprices = 'INSERT INTO additionalprices VALUES (?, ?, ?, ?);'
 qrAddinvent = 'INSERT INTO invent VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);'
 
+qrCalculatingTheAmount = '''UPDATE invent 
+set remain  = sumItog.summItog 
+FROM (
+SELECT invent.inventcode, (SummIsParent.remain + invent.remain) as summItog FROM SummIsParent 
+INNER JOIN
+invent ON SummIsParent.isParent = invent.inventcode
+) as sumItog
+WHERE  invent.inventcode  = sumItog.inventcode'''
+
+
 def getListPriceoptions(item_position):
     
     curVal =[]
