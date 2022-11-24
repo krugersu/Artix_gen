@@ -30,6 +30,7 @@ def recursive_items(dictionary):
         addRecord(dictionary[i])
         
     logging.info('End add DB from 1C - ' + str(datetime.now()))    
+    logging.info('added - ' + str(i) + ' reords')    
         
         
 def addRecord(item_position):
