@@ -13,6 +13,7 @@ Welcome to Artix_gen's documentation!
    main	
    conf
    modules	
+   prim
 
 Indices and tables
 ==================

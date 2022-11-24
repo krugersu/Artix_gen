@@ -14,7 +14,7 @@ from pathlib import Path
 logger = app_logger.get_logger(__name__)
 # TODO Читать настройки в класс
 # TODO Чтение файла конфигурации в попытку
-
+# ! Посмотреть как работает sqlite с json https://habr.com/ru/post/528882/
 
 
 def main():
@@ -39,8 +39,8 @@ def main():
    c_count = request.send_request(c_shop,str(server_ip),str(port))
   # print(c_shop)
    
-   
-   db.saveDataDB(c_count)
+   if not c_count == None:  
+      db.saveDataDB(c_count)
    #logging.info('Finished')
    logger.info(u'Программа завершила работу')   
 

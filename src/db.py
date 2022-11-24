@@ -19,6 +19,8 @@ baseTableName = 'invent'
 
 def saveDataDB(c_count):
 
+    
+
     createDB()
     recursive_items(c_count)
 
@@ -36,6 +38,8 @@ def addRecord(item_position):
     
     curVal = [] 
     cur = all_db.cursor()
+    cur.execute('PRAGMA synchronous = OFF')
+    #LiteConnection1.ExecSQL
     
     if len (item_position['options']['priceoptions']) > 0:
         curVal = diff_data.getListPriceoptions(item_position)
