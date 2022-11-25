@@ -1,3 +1,29 @@
+#!/usr/bin/env python3
+"""Example Python program with Sphinx style comments.
+Description
+-----------
+Example Python program with Sphinx style (reStructuredText) comments.
+Libraries/Modules
+-----------------
+- time standard library (https://docs.python.org/3/library/time.html)
+    - Access to sleep function.
+- sensors module (local)
+    - Access to Sensor and TempSensor classes.
+Notes
+-----
+- Comments are Sphinx (reStructuredText) compatible.
+TODO
+----
+- None.
+Author(s)
+---------
+- Created by John Woolsey on 05/27/2020.
+- Modified by John Woolsey on 07/02/2020.
+Copyright (c) 2020 Woolsey Workshop.  All rights reserved.
+Members
+-------
+"""
+# Imports
 import os
 import sys
 import configparser
@@ -10,15 +36,19 @@ import db
 import pathlib
 from pathlib import Path  
 
-
+#: Global Constants
 logger = app_logger.get_logger(__name__)
+"""Для логирования событий"""
+
+
 # TODO Читать настройки в класс
 # TODO Чтение файла конфигурации в попытку
 # ! Посмотреть как работает sqlite с json https://habr.com/ru/post/528882/
 
 
+# Functions
 def main():
-
+   """ Main program entry. """
    
    path = Path("config", "config.ini") 
    #path = './config/config.ini'

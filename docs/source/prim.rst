@@ -15,3 +15,27 @@ synchronous может принимать три значения:
 Как можно менять значения PRAGMA при использовании LiteDAC? Собственно, как и при использовании любых других компонентов для работы с SQLite. Например, так:
 
 LiteConnection1.ExecSQL('PRAGMA synchronous = OFF';
+
+
+После установки всё заработало (sqlite3)
+****************************************
+
+Option 1: Use the binary version of pysqlite3 from here 
+(which already comes with a newer version of sqlite3 lib precompiled and linked): https://github.com/coleifer/pysqlite3. Basically install with
+
+::
+
+    pip install pysqlite3-binary
+::
+
+and in python code, use pysqlite3 instead of sqlite3 like:
+
+::
+
+    import
+        pysqlite3
+        (...) conn = pysqlite3.connect(r"filename")
+
+::
+
+Alternative: Reinstall python, when installing python, a built in python's module sqlite3 (for working with sqlite) is compiling and uses (compiles) its own version of sqlite3 lib regardless of what you currently have in your system (this is the case at least on windows and mac systems, may be also the case for unix based systems).
