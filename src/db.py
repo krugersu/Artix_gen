@@ -1,7 +1,7 @@
 
 import json
-#import sqlite3 
-import pysqlite3
+import sqlite3 
+#import pysqlite3
 from datetime import datetime
 from types import SimpleNamespace
 from pathlib import Path  
@@ -15,7 +15,8 @@ from datetime import datetime
 pathDB = Path("data", "myDB.sqlite") 
 pathScript = Path("data", "createDB.sql") 
 
-all_db=pysqlite3.connect(pathDB)
+all_db=sqlite3.connect(pathDB)
+#all_db=pysqlite3.connect(pathDB)
 baseTableName = 'invent'
 
 
@@ -34,13 +35,13 @@ def recursive_items(dictionary):
         dictionary ([type]): [description]
     """
     
-    logging.info('Start add DB from 1C - ' + str(datetime.now()))
+    logging.info('Start add DB from 1C ')
     count = 0
     for i in range(len(dictionary)-1):
         addRecord(dictionary[i])
         count = i
         
-    logging.info('End add DB from 1C - ' + str(datetime.now()))    
+    logging.info('End add DB from 1C - ')    
     logging.info('added - ' + str(count) + ' records')    
         
         
