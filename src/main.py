@@ -53,15 +53,11 @@ def main():
    """ Main program entry. """
    
    path = Path("config", "config.ini") 
-   #path = './config/config.ini'
-  # db.testdb()
-
+   
    logger.info("Программа стартует")
    f = '*flg'
-   #print(rc._sections.one_C.cat_skl)
    
    catalog = rc._sections.one_C.cat_skl
-   
    
    # Анализ в каких магазинах изменения
    c_shop = file_wr.find_change(catalog, f)
