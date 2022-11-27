@@ -22,11 +22,6 @@ class m_Config:
         pass
 
     def loadConfig(self):
-        """_summary_
-
-        :return: _description_
-        :rtype: _type_
-        """        ''''''
         
         conf = configparser.ConfigParser(dict_type=AttrDict)
         conf.sections()

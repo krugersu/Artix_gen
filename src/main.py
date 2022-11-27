@@ -34,11 +34,13 @@ import file_wr, request
 import app_logger
 import db
 import pathlib
-from pathlib import Path  
+from pathlib import Path 
+import workDB
 
 #: Global Constants
 logger = app_logger.get_logger(__name__)
 """Для логирования событий"""
+
 
 
 # TODO Читать настройки в класс
@@ -59,18 +61,23 @@ def main():
    #print(rc._sections.one_C.cat_skl)
    
    catalog = rc._sections.one_C.cat_skl
-   server_ip = rc._sections.one_C.server_ip
-   port = rc._sections.one_C.port
+   
    
    # Анализ в каких магазинах изменения
    c_shop = file_wr.find_change(catalog, f)
    # Запрос по магазинам с изменениями
    
-   c_count = request.send_request(c_shop,str(server_ip),str(port))
-  # print(c_shop)
+   mCount = request.req1C(c_shop,rc)
+   c_count = mCount.exeQuery()
+   #c_count = request.send_request(c_shop,str(server_ip),str(port))
+   # print(c_shop)
+   
+   #pathDB = Path("data", "myDB.sqlite") 
+   #dbWork = workDB.Database(pathDB)
    
    if not c_count == None:  
       db.saveDataDB(c_count)
+      #dbWork.execute()
    #logging.info('Finished')
    logger.info(u'Программа завершила работу')   
 
@@ -84,7 +91,7 @@ def main():
 if __name__ == "__main__":
 
    # schedule.every(1).minutes.do(main)
-   m_conf = m_config.m_Config()
+   m_conf = m_config.m_Config()   
    rc =  m_conf.loadConfig()
    if not rc == None:
       main()
