@@ -81,6 +81,23 @@ release = '0.1'
 # Usually you set "language" from the command line for these cases.
 language = None
 
+# List of patterns, relative to source directory, that match files and
+# directories to ignore when looking for source files.
+# This pattern also affects html_static_path and html_extra_path.
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+# Turn off prepending module names
+add_module_names = False
+# Sort members by type
+autodoc_member_order = 'groupwise'
+# Document __init__, __repr__, and __str__ methods
+def skip(app, what, name, obj, would_skip, options):
+    if name in ("__init__", "__repr__", "__str__"):
+        return False
+    return would_skip
+def setup(app):
+    app.connect("autodoc-skip-member", skip)
+
+
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
 #

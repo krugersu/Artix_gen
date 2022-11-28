@@ -1,4 +1,13 @@
 {
     "python.defaultInterpreterPath": "C:\\Python311\\python",
-    "python.formatting.provider": "yapf"
+    "python.formatting.provider": "yapf",
+    "cSpell.words": [
+        "artix",
+        "devpath",
+        "executescript",
+        "lquery",
+        "mycursor",
+        "mydb",
+        "pymysql"
+    ]
 }

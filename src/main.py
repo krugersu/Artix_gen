@@ -1,3 +1,29 @@
+#!/usr/bin/env python3
+"""Example Python program with Sphinx style comments.
+Description
+-----------
+Example Python program with Sphinx style (reStructuredText) comments.
+Libraries/Modules
+-----------------
+- time standard library (https://docs.python.org/3/library/time.html)
+    - Access to sleep function.
+- sensors module (local)
+    - Access to Sensor and TempSensor classes.
+Notes
+-----
+- Comments are Sphinx (reStructuredText) compatible.
+TODO
+----
+- None.
+Author(s)
+---------
+- Created by John Woolsey on 05/27/2020.
+- Modified by John Woolsey on 07/02/2020.
+Copyright (c) 2020 Woolsey Workshop.  All rights reserved.
+Members
+-------
+"""
+# Imports
 import os
 import sys
 import configparser
@@ -8,39 +34,46 @@ import file_wr, request
 import app_logger
 import db
 import pathlib
-from pathlib import Path  
+from pathlib import Path 
+import workDB
 
-
+#: Global Constants
 logger = app_logger.get_logger(__name__)
+"""Для логирования событий"""
+
+
+
 # TODO Читать настройки в класс
 # TODO Чтение файла конфигурации в попытку
 # ! Посмотреть как работает sqlite с json https://habr.com/ru/post/528882/
 
 
+# Functions
 def main():
-
+   """ Main program entry. """
    
    path = Path("config", "config.ini") 
-   #path = './config/config.ini'
-  # db.testdb()
-
+   
    logger.info("Программа стартует")
    f = '*flg'
-   #print(rc._sections.one_C.cat_skl)
    
    catalog = rc._sections.one_C.cat_skl
-   server_ip = rc._sections.one_C.server_ip
-   port = rc._sections.one_C.port
    
    # Анализ в каких магазинах изменения
    c_shop = file_wr.find_change(catalog, f)
    # Запрос по магазинам с изменениями
    
-   c_count = request.send_request(c_shop,str(server_ip),str(port))
-  # print(c_shop)
+   mCount = request.req1C(c_shop,rc)
+   c_count = mCount.exeQuery()
+   #c_count = request.send_request(c_shop,str(server_ip),str(port))
+   # print(c_shop)
+   
+   #pathDB = Path("data", "myDB.sqlite") 
+   #dbWork = workDB.Database(pathDB)
    
    if not c_count == None:  
       db.saveDataDB(c_count)
+      #dbWork.execute()
    #logging.info('Finished')
    logger.info(u'Программа завершила работу')   
 
@@ -54,7 +87,7 @@ def main():
 if __name__ == "__main__":
 
    # schedule.every(1).minutes.do(main)
-   m_conf = m_config.m_Config()
+   m_conf = m_config.m_Config()   
    rc =  m_conf.loadConfig()
    if not rc == None:
       main()
