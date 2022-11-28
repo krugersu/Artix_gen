@@ -2,12 +2,22 @@
     "python.defaultInterpreterPath": "C:\\Python311\\python",
     "python.formatting.provider": "yapf",
     "cSpell.words": [
+        "Анализ",
+        "изменения",
+        "каких",
+        "магазинам",
+        "магазинах",
         "artix",
         "devpath",
         "executescript",
+        "inventcode",
+        "Itog",
+        "Listadditionalprices",
         "lquery",
         "mycursor",
         "mydb",
-        "pymysql"
+        "Priceoptions",
+        "pymysql",
+        "summ"
     ]
 }

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 """Example Python program with Sphinx style comments.
 Description
 -----------
@@ -54,14 +54,14 @@ def main():
    
    path = Path("config", "config.ini") 
    
-   logger.info("Программа стартует")
+   logger.info("Start programs")
    f = '*flg'
    
    catalog = rc._sections.one_C.cat_skl
    
    # Анализ в каких магазинах изменения
    c_shop = file_wr.find_change(catalog, f)
-   # Запрос по магазинам с изменениями
+   # Apoc по магазинам с изменения
    
    mCount = request.req1C(c_shop,rc)
    c_count = mCount.exeQuery()
@@ -72,10 +72,12 @@ def main():
    #dbWork = workDB.Database(pathDB)
    
    if not c_count == None:  
-      db.saveDataDB(c_count)
+      #db.saveDataDB(c_count)
+      tData = db.workDb(rc)
+      tData.uploadData(c_count)
       #dbWork.execute()
    #logging.info('Finished')
-   logger.info(u'Программа завершила работу')   
+   logger.info(u'End programs')   
 
 
 
