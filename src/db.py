@@ -52,6 +52,7 @@ class workDb:
             user=rc._sections.artix.user,
             passwd=rc._sections.artix.passwd)
         self.mycursor = mydb.cursor() #cursor created
+
         
     def __enter__(self):
         return self
