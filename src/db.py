@@ -1,7 +1,7 @@
 
 import json
-import sqlite3 
-#import pysqlite3
+#import sqlite3 
+import pysqlite3
 from datetime import datetime
 from types import SimpleNamespace
 from pathlib import Path  
@@ -39,19 +39,18 @@ class workDb:
         
         self.pathDB = Path("data", "myDB.sqlite") 
         self.pathScript = Path("data", "createDB.sql") 
-        self._all_db = sqlite3.connect(self.pathDB)
+        self._all_db = pysqlite3.connect(self.pathDB)
+ #       self._all_db = sqlite3.connect(self.pathDB)
         self._cursor = self._all_db.cursor()
         self.baseTableName = 'invent'
         
         self.c_count = c_count
         
-        m_conf = m_config.m_Config()   
-        rc =  m_conf.loadConfig()
         mydb = pymysql.connect(host=rc._sections.artix.server_ip,
             database=rc._sections.artix.database,
             user=rc._sections.artix.user,
             passwd=rc._sections.artix.passwd)
-        self.mycursor = mydb.cursor() #cursor created
+        self._mycursor = mydb.cursor() #cursor created
 
         
     def __enter__(self):
@@ -88,6 +87,24 @@ class workDb:
         self.cursor.execute(sql, params or ())
         return self.fetchall()
 
+    def querySales(self):
+        #work with the cursor
+        res = "Select * from kkm;"
+
+        #executing the query
+        self._mycursor.execute(diff_data.qrSimpleSelectSale)
+
+        rows = self._mycursor.fetchall()
+
+        #showing the rows
+        for row in rows:
+            print(row)
+
+        #closing the db
+        # mydb.commit()
+        #mydb.close()
+ 
+        
     def createDB(self):
         
         with open(self.pathScript, 'r') as sql_file:
@@ -99,9 +116,11 @@ class workDb:
     #all_db.close()
 
     def uploadData(self,c_count):
+        
         self.createDB()
         self.recursive_items(c_count)
         self.CalculatingTheAmount()
+        self.querySales()
         
     def recursive_items(self,dictionary):
         logging.info('Start add DB from 1C')

@@ -180,6 +180,14 @@ CREATE TABLE sellrestrictperiods (
 );
 
 
+DROP TABLE IF EXISTS sellrestrictperiods;
+
+CREATE TABLE sellrestrictperiods (
+	code            	TEXT (100),
+	opcode          	INTEGER,
+	cquant          	REAL (13, 3) 
+);
+
 
 DROP VIEW IF EXISTS SummIsParent;
 CREATE VIEW SummIsParent AS
@@ -192,6 +200,9 @@ CREATE VIEW SummIsParent AS
                 WHERE Parent = 1
            )
      GROUP BY isParent;
+
+
+
 
 
 COMMIT TRANSACTION;
