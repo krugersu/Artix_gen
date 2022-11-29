@@ -46,11 +46,11 @@ class workDb:
         
         self.c_count = c_count
         
-        mydb = pymysql.connect(host=rc._sections.artix.server_ip,
+        self.mydb = pymysql.connect(host=rc._sections.artix.server_ip,
             database=rc._sections.artix.database,
             user=rc._sections.artix.user,
             passwd=rc._sections.artix.passwd)
-        self._mycursor = mydb.cursor() #cursor created
+        self._mycursor = self.mydb.cursor() #cursor created
 
         
     def __enter__(self):
@@ -88,21 +88,26 @@ class workDb:
         return self.fetchall()
 
     def querySales(self):
-        #work with the cursor
-        res = "Select * from kkm;"
 
         #executing the query
         self._mycursor.execute(diff_data.qrSimpleSelectSale)
 
+        x = []
         rows = self._mycursor.fetchall()
-
+        #rows = self._mycursor.fetchmany(1)
+        
         #showing the rows
         for row in rows:
             print(row)
-
+            x.append(row)
+       # print(x)    
+            #c.executemany('INSERT INTO students VALUES(?,?,?);',records);
+        self._cursor.executemany('INSERT INTO goodsitem VALUES(?,?,?)',x)    
+        
         #closing the db
-        # mydb.commit()
-        #mydb.close()
+       #self.mydb.commit()
+        self._all_db.commit() 
+        self.mydb.close()
  
         
     def createDB(self):
@@ -114,7 +119,6 @@ class workDb:
         self.cursor.executescript(sql_script)
         self._all_db.commit()
     #all_db.close()
-
     def uploadData(self,c_count):
         
         self.createDB()

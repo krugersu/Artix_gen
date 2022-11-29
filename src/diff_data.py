@@ -9,7 +9,7 @@ qrAddadditionalprices = 'INSERT INTO additionalprices VALUES (?, ?, ?, ?);'
 qrAddinvent = 'INSERT INTO invent VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);'
 
 qrSelectSales = 'SELECT goodsitemid, documentid, ttime, opcode,  cquant, code From goodsitem'
-qrSimpleSelectSale =  'SELECT code, opcode,  cquant  From goodsitem'
+qrSimpleSelectSale =  'SELECT code, opcode,  CAST(cquant AS CHAR) AS cquant  From goodsitem'
 
 
 qrCalculatingTheAmount = '''UPDATE invent 
