@@ -180,13 +180,14 @@ CREATE TABLE sellrestrictperiods (
 );
 
 
-DROP TABLE IF EXISTS sellrestrictperiods;
+DROP TABLE IF EXISTS goodsitem;
 
-CREATE TABLE sellrestrictperiods (
+CREATE TABLE goodsitem (
 	code            	TEXT (100),
 	opcode          	INTEGER,
 	cquant          	REAL (13, 3) 
 );
+
 
 
 DROP VIEW IF EXISTS SummIsParent;
