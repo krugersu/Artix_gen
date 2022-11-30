@@ -36,6 +36,7 @@ import db
 import pathlib
 from pathlib import Path 
 import workDB
+import tlgrm
 
 #: Global Constants
 logger = app_logger.get_logger(__name__)
@@ -58,6 +59,7 @@ def main():
    
    logger.info("Start programs")
    f = '*flg'
+   tlgrm.send_telegram("Start programs")
    
    catalog = rc._sections.one_C.cat_skl
    

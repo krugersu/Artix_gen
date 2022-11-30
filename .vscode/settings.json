@@ -20,6 +20,7 @@
         "mydb",
         "Priceoptions",
         "pymysql",
-        "summ"
+        "summ",
+        "tlgrm"
     ]
 }

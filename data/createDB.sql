@@ -190,6 +190,13 @@ CREATE TABLE goodsitem (
 
 
 
+
+DROP VIEW IF EXISTS CountSummAnalog;
+CREATE VIEW CountSummAnalog AS
+SELECT * FROM invent WHERE isParent ='';
+
+
+
 DROP VIEW IF EXISTS SummIsParent;
 CREATE VIEW SummIsParent AS
     SELECT isParent,
