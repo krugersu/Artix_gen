@@ -98,9 +98,9 @@ class workDb:
         
         #showing the rows
         for row in rows:
-            print(row)
+        #    print(row)
             x.append(row)
-       # print(x)    
+        print(x)    
             #c.executemany('INSERT INTO students VALUES(?,?,?);',records);
         self._cursor.executemany('INSERT INTO goodsitem VALUES(?,?,?)',x)    
         

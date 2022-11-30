@@ -153,3 +153,4 @@ cython_debug/
 data/myDB.sqlite
 data/myDB.sqlite
 data/myDB.sqlite
+*.sqlite
