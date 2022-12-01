@@ -3,11 +3,21 @@ curVal = ''
 addinvent = ''
 
 qrAddPriceoptions = 'INSERT INTO priceoptions VALUES (?, ?, ?, ?, ?,?);'
-qrAddinventitemoptions = 'INSERT INTO inventitemoptions VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);'
+
+qrAddinventitemoptions = '''INSERT INTO inventitemoptions (inventitemoptionsid, disablebackinsale, disableinventshow, disableinventsale, disableinventback, requiredepartmentmanual,
+                                    enabledepartmentmanual, enablebarcodemanual, enablebarcodescanner, visualverify, ageverify, requiresalerestrict, egaisverify, 
+                                    prepackaged, nopdfegaisverify, alcoset, freesale, rfidverify, lowweight, weightcontrolbypass, tobacco, shoes, fuzzyweight, 
+                                    ignoremarking, markdownverify)
+                                    VALUES 
+                                    (:inventitemoptionsid,:disablebackinsale, :disableinventshow, :disableinventsale, :disableinventback, :requiredepartmentmanual, 
+                                    :enabledepartmentmanual, :enablebarcodemanual, :enablebarcodescanner, :visualverify, :ageverify, :requiresalerestrict, :egaisverify, 
+                                    :prepackaged, :nopdfegaisverify, :alcoset, :freesale, :rfidverify, :lowweight, :weightcontrolbypass, :tobacco, :shoes, :fuzzyweight, 
+                                    :ignoremarking, :markdownverify);'''
+                                    
 qrAddquantityoptions = 'INSERT INTO quantityoptions VALUES (?, ?, ?, ?, ?,?, ?, ?, ?, ?, ?, ?, ?);'
 qrAddadditionalprices = 'INSERT INTO additionalprices (additionalpricesid, pricecode, price, name) VALUES (:additionalpricesid, :pricecode, :price, :name);'
 
-qrBarcodes = '''INSERT INTO barcodes (barcodesid, additionalpricesid, aspectvaluesetcode, barcode, cquant, measurecode,
+qrAddBarcodes = '''INSERT INTO barcodes (barcodesid, additionalpricesid, aspectvaluesetcode, barcode, cquant, measurecode,
                             minprice, name, packingmeasure, packingprice, price, quantdefault, minretailprice, customsdeclarationnumber, tmctype, ntin)
                             VALUES
                             (:barcodesid, :additionalprices, :aspectvaluesetcode, :barcode, :cquant, :measurecode,
@@ -24,6 +34,8 @@ qrAddinvent = '''INSERT INTO invent (inventcode, inventgroup, name, barcode, bar
                                 :extendedoptions,:discautoscheme,:deptcode,:taxgroupcode,:measurecode,:remain,:remaindate,:articul,:defaultquantity,
                                 :taramode,:taracapacity,:aspectschemecode,:aspectvaluesetcode,:aspectusecase,:aspectselectionrule,:age,:alcoholpercent,
                                 :cquant,:inn,:kpp,:alctypecode,:paymentobject,:manufacturercountrycode,:opmode,:loyaltymode,:minretailprice,:isParent,:Parent);'''
+
+
 
 
 qrSelectSales = 'SELECT goodsitemid, documentid, ttime, opcode,  cquant, code From goodsitem'

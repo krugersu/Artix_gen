@@ -172,7 +172,12 @@ class workDb:
         elif key == 'additionalprices':
             self._cursor.executemany(diff_data.qrAddadditionalprices, item_position,)   
         elif key == 'barcodes':
-            self._cursor.executemany(diff_data.qrBarcodes, item_position,)   
+            self._cursor.executemany(diff_data.qrAddBarcodes, item_position,)   
+        elif key == 'inventitemoptions':
+            self._cursor.executemany(diff_data.qrAddinventitemoptions, item_position,)       
+            
+            
+            
         '''   
         if len (item_position['priceoptions']) > 0:
             curVal = diff_data.getListPriceoptions(item_position)

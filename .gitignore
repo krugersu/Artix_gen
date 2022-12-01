@@ -155,3 +155,5 @@ data/myDB.sqlite
 data/myDB.sqlite
 *.sqlite
 data/myDB.sqlite
+data/myDB.sqlite
+*.sqlite
