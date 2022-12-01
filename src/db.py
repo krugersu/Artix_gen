@@ -100,7 +100,7 @@ class workDb:
         for row in rows:
         #    print(row)
             x.append(row)
-        print(x)    
+        #print(x)    
             #c.executemany('INSERT INTO students VALUES(?,?,?);',records);
         self._cursor.executemany('INSERT INTO goodsitem VALUES(?,?,?)',x)    
         
@@ -123,22 +123,16 @@ class workDb:
         
         self.createDB()
         self.recursive_items(c_count)
-       # self.CalculatingTheAmount()
-       # self.querySales()
+        self.CalculatingTheAmount()
+        self.querySales()
         
     def recursive_items(self,dictionary):
         logging.info('Start add DB from 1C')
         count = 0
         for key  in dictionary:
             print(key)
-        
             self.addRecord(dictionary[key],key)
-            
-            ++ count 
-            x = []
-                
-
-#            self.addRecord(x)
+            count = count + len(dictionary[key])
         
         logging.info('End add DB from 1C')    
         logging.info('added - ' + str(count) + ' records')    
@@ -150,23 +144,14 @@ class workDb:
         with open(pathScript, 'r') as sql_file:
             sql_script = sql_file.read()
         
-        #cur.execute(diff_data.qrCalculatingTheAmount)
+
         self._cursor.executescript(sql_script)
         logging.info('Summ analog calcalating')  
 
     def addRecord(self,item_position,key):
-       
+
         self._cursor.execute('PRAGMA synchronous = OFF')
-       
-        curQuery = {
-                'invent': 10**-3,
-                'additionalprices': 'qrAddinvent',
-                'barcodes': 10**-1,
-                'inventitemoptions': 1,
-                'priceoptions': 10**3,
-                'quantityoptions': 1,
-                'sellrestrictperiods': 10**3
-            }
+
         if key == 'invent':
             self._cursor.executemany(diff_data.qrAddinvent, item_position,)
         elif key == 'additionalprices':
@@ -181,34 +166,5 @@ class workDb:
             self._cursor.executemany(diff_data.qrAddquantityoptions, item_position,)                               
         elif key == 'sellrestrictperiods':
             self._cursor.executemany(diff_data.qrAddSellrestrictperiods, item_position,)                                           
-        '''   
-        if len (item_position['priceoptions']) > 0:
-            curVal = diff_data.getListPriceoptions(item_position)
-            self._cursor.execute(diff_data.qrAddPriceoptions,curVal) '''
-    
-        ''' if len (item_position['options']['quantityoptions']) > 0:
-            curVal.clear()
-            curVal = diff_data.getListquantityoptions(item_position)
-            self._cursor.execute(diff_data.qrAddquantityoptions,curVal)
-    
-        if len (item_position['additionalprices']) > 0:
-            curVal.clear()
-            curVal = diff_data.getListadditionalprices(item_position)
-            self._cursor.execute(diff_data.qrAddadditionalprices,curVal)
-    
-        if len (item_position['options']['inventitemoptions']) > 0:
-            curVal.clear()
-            curVal = diff_data.getListinventitemoptions(item_position)
-            self._cursor.execute(diff_data.qrAddinventitemoptions,curVal)    
-    
-            curVal.clear()
-            curVal = diff_data.getListinvent(item_position)
-            self._cursor.execute(diff_data.qrAddinvent,curVal)     '''
-    
+
         self._all_db.commit() 
-
-
-
-
-
-
