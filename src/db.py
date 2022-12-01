@@ -175,7 +175,8 @@ class workDb:
             self._cursor.executemany(diff_data.qrAddBarcodes, item_position,)   
         elif key == 'inventitemoptions':
             self._cursor.executemany(diff_data.qrAddinventitemoptions, item_position,)       
-            
+        elif key == 'priceoptions':
+            self._cursor.executemany(diff_data.qrAddPriceoptions, item_position,)                   
             
             
         '''   

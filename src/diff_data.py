@@ -2,7 +2,9 @@
 curVal = ''
 addinvent = ''
 
-qrAddPriceoptions = 'INSERT INTO priceoptions VALUES (?, ?, ?, ?, ?,?);'
+qrAddPriceoptions = '''INSERT INTO priceoptions (priceoptionsid, enablepricemanual, requirepricemanual, requireselectprice, requiredeferredprice,enableexcisemarkprice)
+                    VALUES 
+                    (:priceoptionsid, :enablepricemanual, :requirepricemanual, :requireselectprice, :requiredeferredprice, :enableexcisemarkprice);'''
 
 qrAddinventitemoptions = '''INSERT INTO inventitemoptions (inventitemoptionsid, disablebackinsale, disableinventshow, disableinventsale, disableinventback, requiredepartmentmanual,
                                     enabledepartmentmanual, enablebarcodemanual, enablebarcodescanner, visualverify, ageverify, requiresalerestrict, egaisverify, 
