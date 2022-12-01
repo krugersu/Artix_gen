@@ -36,7 +36,7 @@ import pymysql
 
 class workDb:
     def __init__(self,rc, c_count = None):
-        
+        pysqlite3.paramstyle = 'named'        
         self.pathDB = Path("data", "myDB.sqlite") 
         self.pathScript = Path("data", "createDB.sql") 
         self._all_db = pysqlite3.connect(self.pathDB)
@@ -123,15 +123,22 @@ class workDb:
         
         self.createDB()
         self.recursive_items(c_count)
-        self.CalculatingTheAmount()
-        self.querySales()
+       # self.CalculatingTheAmount()
+       # self.querySales()
         
     def recursive_items(self,dictionary):
         logging.info('Start add DB from 1C')
         count = 0
-        for i in range(len(dictionary)-1):
-            self.addRecord(dictionary[i])
-            count = i
+        for key  in dictionary:
+            print(key)
+        
+            self.addRecord(dictionary[key],key)
+            
+            ++ count 
+            x = []
+                
+
+#            self.addRecord(x)
         
         logging.info('End add DB from 1C')    
         logging.info('added - ' + str(count) + ' records')    
@@ -147,18 +154,31 @@ class workDb:
         self._cursor.executescript(sql_script)
         logging.info('Summ analog calcalating')  
 
-    def addRecord(self,item_position):
-        
-        curVal = [] 
-        #cur = self._all_db.cursor()
+    def addRecord(self,item_position,key):
+       
         self._cursor.execute('PRAGMA synchronous = OFF')
-        #LiteConnection1.ExecSQL
-    
-        if len (item_position['options']['priceoptions']) > 0:
+       
+        curQuery = {
+                'invent': 10**-3,
+                'additionalprices': 'qrAddinvent',
+                'barcodes': 10**-1,
+                'inventitemoptions': 1,
+                'priceoptions': 10**3,
+                'quantityoptions': 1,
+                'sellrestrictperiods': 10**3
+            }
+        if key == 'invent':
+            self._cursor.executemany(diff_data.qrAddinvent, item_position,)
+        elif key == 'additionalprices':
+            self._cursor.executemany(diff_data.qrAddadditionalprices, item_position,)   
+        elif key == 'barcodes':
+            self._cursor.executemany(diff_data.qrBarcodes, item_position,)   
+        '''   
+        if len (item_position['priceoptions']) > 0:
             curVal = diff_data.getListPriceoptions(item_position)
-            self._cursor.execute(diff_data.qrAddPriceoptions,curVal)
+            self._cursor.execute(diff_data.qrAddPriceoptions,curVal) '''
     
-        if len (item_position['options']['quantityoptions']) > 0:
+        ''' if len (item_position['options']['quantityoptions']) > 0:
             curVal.clear()
             curVal = diff_data.getListquantityoptions(item_position)
             self._cursor.execute(diff_data.qrAddquantityoptions,curVal)
@@ -175,7 +195,7 @@ class workDb:
     
             curVal.clear()
             curVal = diff_data.getListinvent(item_position)
-            self._cursor.execute(diff_data.qrAddinvent,curVal)    
+            self._cursor.execute(diff_data.qrAddinvent,curVal)     '''
     
         self._all_db.commit() 
 

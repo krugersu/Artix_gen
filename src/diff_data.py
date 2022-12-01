@@ -5,8 +5,26 @@ addinvent = ''
 qrAddPriceoptions = 'INSERT INTO priceoptions VALUES (?, ?, ?, ?, ?,?);'
 qrAddinventitemoptions = 'INSERT INTO inventitemoptions VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);'
 qrAddquantityoptions = 'INSERT INTO quantityoptions VALUES (?, ?, ?, ?, ?,?, ?, ?, ?, ?, ?, ?, ?);'
-qrAddadditionalprices = 'INSERT INTO additionalprices VALUES (?, ?, ?, ?);'
-qrAddinvent = 'INSERT INTO invent VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);'
+qrAddadditionalprices = 'INSERT INTO additionalprices (additionalpricesid, pricecode, price, name) VALUES (:additionalpricesid, :pricecode, :price, :name);'
+
+qrBarcodes = '''INSERT INTO barcodes (barcodesid, additionalpricesid, aspectvaluesetcode, barcode, cquant, measurecode,
+                            minprice, name, packingmeasure, packingprice, price, quantdefault, minretailprice, customsdeclarationnumber, tmctype, ntin)
+                            VALUES
+                            (:barcodesid, :additionalprices, :aspectvaluesetcode, :barcode, :cquant, :measurecode,
+                            :minprice, :name, :packingmeasure, :packingprice, :price, :quantdefault, :minretailprice, :customsdeclarationnumber, :tmctype, :ntin );'''
+
+
+qrAddinvent = '''INSERT INTO invent (inventcode, inventgroup, name, barcode, barcodesid, price, minprice, additionalpricesid, options, 
+                                sellrestrictperiodsid, extendedoptions, discautoscheme, deptcode, taxgroupcode, measurecode, remain, remaindate, articul,
+                                defaultquantity, taramode, taracapacity, aspectschemecode, aspectvaluesetcode, aspectusecase, aspectselectionrule, age, 
+                                alcoholpercent, cquant, inn, kpp, alctypecode, paymentobject, manufacturercountrycode, opmode, loyaltymode, minretailprice, 
+                                isParent, Parent)
+                                VALUES
+                                (:inventcode,:inventgroup,:name,:barcode,:barcodes,:price,:minprice,:additionalprices,:options,:sellrestrictperiods,
+                                :extendedoptions,:discautoscheme,:deptcode,:taxgroupcode,:measurecode,:remain,:remaindate,:articul,:defaultquantity,
+                                :taramode,:taracapacity,:aspectschemecode,:aspectvaluesetcode,:aspectusecase,:aspectselectionrule,:age,:alcoholpercent,
+                                :cquant,:inn,:kpp,:alctypecode,:paymentobject,:manufacturercountrycode,:opmode,:loyaltymode,:minretailprice,:isParent,:Parent);'''
+
 
 qrSelectSales = 'SELECT goodsitemid, documentid, ttime, opcode,  cquant, code From goodsitem'
 qrSimpleSelectSale =  'SELECT code, opcode,  CAST(cquant AS CHAR) AS cquant  From goodsitem'
@@ -26,11 +44,11 @@ def getListPriceoptions(item_position):
     
     curVal =[]
     curVal.append(item_position['inventcode'].strip())
-    curVal.append(int(item_position['options']['priceoptions']['enablepricemanual'])) 
-    curVal.append(int(item_position['options']['priceoptions']['requirepricemanual'])) 
-    curVal.append(int(item_position['options']['priceoptions']['requireselectprice'])) 
-    curVal.append(int(item_position['options']['priceoptions']['requiredeferredprice'])) 
-    curVal.append(int(item_position['options']['priceoptions']['enableexcisemarkprice'])) 
+    curVal.append(int(item_position['enablepricemanual'])) 
+    curVal.append(int(item_position['requirepricemanual'])) 
+    curVal.append(int(item_position['requireselectprice'])) 
+    curVal.append(int(item_position['requiredeferredprice'])) 
+    curVal.append(int(item_position['enableexcisemarkprice'])) 
     
     return curVal
 

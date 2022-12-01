@@ -39,7 +39,6 @@ CREATE TABLE barcodes (
 DROP TABLE IF EXISTS invent;
 
 CREATE TABLE invent (
-    inventid                INT          PRIMARY KEY,
     inventcode              TEXT (20),
     inventgroup             TEXT (100),
     name                    TEXT (200),
@@ -66,7 +65,7 @@ CREATE TABLE invent (
     aspectusecase           INTEGER (11),
     aspectselectionrule     INTEGER (11),
     age                     INTEGER (11),
-    [alcoholpercent ]       REAL (4, 2),
+    alcoholpercent          REAL (4, 2),
     cquant                  REAL (13, 3),
     inn                     TEXT (20),
     kpp                     TEXT (20),
