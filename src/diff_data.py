@@ -16,7 +16,13 @@ qrAddinventitemoptions = '''INSERT INTO inventitemoptions (inventitemoptionsid, 
                                     :prepackaged, :nopdfegaisverify, :alcoset, :freesale, :rfidverify, :lowweight, :weightcontrolbypass, :tobacco, :shoes, :fuzzyweight, 
                                     :ignoremarking, :markdownverify);'''
                                     
-qrAddquantityoptions = 'INSERT INTO quantityoptions VALUES (?, ?, ?, ?, ?,?, ?, ?, ?, ?, ?, ?, ?);'
+qrAddquantityoptions = '''INSERT INTO quantityoptions (quantityoptionsid, enabledefaultquantity, enablequantitylimit, quantitylimit, enablequantityscales, enablequantitybarcode,
+                                    enablequantitymanual, requirequantitymanual, requirequantitybarcode, requirequantityscales, enabledocumentquantitylimit, autogetquantityfromscales,
+                                    documentquantlimit)
+                                    VALUES (:quantityoptionsid, :enabledefaultquantity, :enablequantitylimit, :quantitylimit, :enablequantityscales, :enablequantitybarcode, 
+                                    :enablequantitymanual, :requirequantitymanual, :requirequantitybarcode, :requirequantityscales, :enabledocumentquantitylimit, 
+                                    :autogetquantityfromscales, :documentquantlimit) ;'''
+
 qrAddadditionalprices = 'INSERT INTO additionalprices (additionalpricesid, pricecode, price, name) VALUES (:additionalpricesid, :pricecode, :price, :name);'
 
 qrAddBarcodes = '''INSERT INTO barcodes (barcodesid, additionalpricesid, aspectvaluesetcode, barcode, cquant, measurecode,
@@ -24,6 +30,19 @@ qrAddBarcodes = '''INSERT INTO barcodes (barcodesid, additionalpricesid, aspectv
                             VALUES
                             (:barcodesid, :additionalprices, :aspectvaluesetcode, :barcode, :cquant, :measurecode,
                             :minprice, :name, :packingmeasure, :packingprice, :price, :quantdefault, :minretailprice, :customsdeclarationnumber, :tmctype, :ntin );'''
+
+
+qrAddSellrestrictperiods = '''INSERT INTO sellrestrictperiods (sellrestrictperiodsid, dateend, datestart, dayend, daystart, timeend,
+                            timestart)
+                            VALUES
+                            (:sellrestrictperiodsid, :dateend, :datestart, :dayend, :daystart, :timeend,
+                            :timestart);'''
+
+qrAddPriceoptions = '''INSERT INTO priceoptions (priceoptionsid, enablepricemanual, requirepricemanual, requireselectprice, requiredeferredprice,enableexcisemarkprice)
+                    VALUES 
+                    (:priceoptionsid, :enablepricemanual, :requirepricemanual, :requireselectprice, :requiredeferredprice, :enableexcisemarkprice);'''
+
+
 
 
 qrAddinvent = '''INSERT INTO invent (inventcode, inventgroup, name, barcode, barcodesid, price, minprice, additionalpricesid, options, 

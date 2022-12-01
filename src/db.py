@@ -177,8 +177,10 @@ class workDb:
             self._cursor.executemany(diff_data.qrAddinventitemoptions, item_position,)       
         elif key == 'priceoptions':
             self._cursor.executemany(diff_data.qrAddPriceoptions, item_position,)                   
-            
-            
+        elif key == 'quantityoptions':
+            self._cursor.executemany(diff_data.qrAddquantityoptions, item_position,)                               
+        elif key == 'sellrestrictperiods':
+            self._cursor.executemany(diff_data.qrAddSellrestrictperiods, item_position,)                                           
         '''   
         if len (item_position['priceoptions']) > 0:
             curVal = diff_data.getListPriceoptions(item_position)
