@@ -59,7 +59,7 @@ def main():
    
    logger.info("Start programs")
    f = '*flg'
-   tlgrm.send_telegram("Start programs")
+   #tlgrm.send_telegram("Start programs")
    
    catalog = rc._sections.one_C.cat_skl
    
