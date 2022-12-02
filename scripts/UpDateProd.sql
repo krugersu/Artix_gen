@@ -12,7 +12,10 @@ FROM
 	(
 	SELECT
 		* ,
-		(REMAIN - "SUM(CQUANT)" ) AS ITOG
+        CASE WHEN opcode = '50'
+       THEN (REMAIN - "SUM(CQUANT)" )
+       ELSE (REMAIN + "SUM(CQUANT)" )
+       END AS ITOG
 	FROM
 		SUMMPROD
 ) AS SUMITOG
