@@ -1,0 +1,20 @@
+-- НОВЫЙ СКРИПТ В MYDB.SQLITE.
+-- ДАТА: 2 ДЕК. 2022 Г.
+-- ВРЕМЯ: 10:58:43
+ 
+ 
+
+UPDATE
+	INVENT
+SET
+	REMAIN = SUMITOG.ITOG
+FROM
+	(
+	SELECT
+		* ,
+		(REMAIN - "SUM(CQUANT)" ) AS ITOG
+	FROM
+		SUMMPROD
+) AS SUMITOG
+WHERE
+	INVENT.INVENTCODE = SUMITOG.CODE

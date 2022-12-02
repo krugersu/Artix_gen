@@ -313,3 +313,24 @@ def getListinvent(item_position):
     curVal.append(item_position['isParent'].strip())                                                                                                                                                                                                                                           
     
     return curVal '''
+    
+    
+    
+    
+    #pathDB = Path("data", "myDB.sqlite") 
+#pathScript = Path("data", "createDB.sql") 
+
+#all_db=sqlite3.connect(pathDB)
+#all_db=pysqlite3.connect(pathDB)
+#baseTableName = 'invent'
+
+
+#server connection
+''' mydb = pymysql.connect(
+  host="localhost",
+  user="root",
+  passwd=""
+)
+
+  '''
+

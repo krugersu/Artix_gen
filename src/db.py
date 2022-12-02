@@ -13,25 +13,6 @@ from datetime import datetime
 #import MySQLdb
 import pymysql
 #import m_config
- 
-
-
-#pathDB = Path("data", "myDB.sqlite") 
-#pathScript = Path("data", "createDB.sql") 
-
-#all_db=sqlite3.connect(pathDB)
-#all_db=pysqlite3.connect(pathDB)
-#baseTableName = 'invent'
-
-
-#server connection
-''' mydb = pymysql.connect(
-  host="localhost",
-  user="root",
-  passwd=""
-)
-
-  '''
 
 
 class workDb:
@@ -103,30 +84,31 @@ class workDb:
         #print(x)    
             #c.executemany('INSERT INTO students VALUES(?,?,?);',records);
         self._cursor.executemany('INSERT INTO goodsitem VALUES(?,?,?)',x)    
-        
-        #closing the db
-       #self.mydb.commit()
         self._all_db.commit() 
         self.mydb.close()
  
         
     def createDB(self):
-        
+        """AI is creating summary for createDB
+        """        
         with open(self.pathScript, 'r') as sql_file:
             sql_script = sql_file.read()
-        
-        #self.cursor = self._all_db.cursor()
+
         self.cursor.executescript(sql_script)
         self._all_db.commit()
     #all_db.close()
+    
+    
     def uploadData(self,c_count):
-        
+                
         self.createDB()
         self.recursive_items(c_count)
         self.CalculatingTheAmount()
         self.querySales()
+        self.calculateSales()
         
     def recursive_items(self,dictionary):
+        
         logging.info('Start add DB from 1C')
         count = 0
         for key  in dictionary:
@@ -139,12 +121,10 @@ class workDb:
 
 
     def CalculatingTheAmount(self):
-    
+        """Запускает SQL скрипт, который переносит количество с аналагов пива на головную номенклатуру"""        
         pathScript = Path("data", "upd.sql") 
         with open(pathScript, 'r') as sql_file:
             sql_script = sql_file.read()
-        
-
         self._cursor.executescript(sql_script)
         logging.info('Summ analog calcalating')  
 
@@ -168,3 +148,12 @@ class workDb:
             self._cursor.executemany(diff_data.qrAddSellrestrictperiods, item_position,)                                           
 
         self._all_db.commit() 
+        
+        
+    def calculateSales(self):
+        """Запускает SQL скрипт, который отнимает проданное от пришедшего товара"""        
+        pathScript = Path("data", "updateprod.sql") 
+        with open(pathScript, 'r') as sql_file:
+            sql_script = sql_file.read()
+        self._cursor.executescript(sql_script)
+        logging.info('Sales calcalating')              
