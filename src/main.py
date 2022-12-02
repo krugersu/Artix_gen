@@ -37,6 +37,7 @@ import pathlib
 from pathlib import Path 
 import workDB
 import tlgrm
+import create_aif
 
 #: Global Constants
 logger = app_logger.get_logger(__name__)
@@ -44,7 +45,7 @@ logger = app_logger.get_logger(__name__)
 
 
 
-# TODO Читать настройки в класс
+
 # TODO Чтение файла конфигурации в попытку
 # ! Посмотреть как работает sqlite с json https://habr.com/ru/post/528882/
 # ! Подумать о хранении таблиц БД в памяти
@@ -69,6 +70,7 @@ def main():
    
    mCount = request.req1C(c_shop,rc)
    c_count = mCount.exeQuery()
+   create_aif.saveTestFile()
    #c_count = request.send_request(c_shop,str(server_ip),str(port))
    # print(c_shop)
    

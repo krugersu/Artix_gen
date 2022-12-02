@@ -210,6 +210,15 @@ CREATE VIEW SummIsParent AS
 
 
 
+DROP VIEW IF EXISTS SummProd;
+CREATE VIEW SummProd AS
+
+SELECT * FROM CountSummAnalog 
+inner JOIN (SELECT code , opcode ,  SUM(cquant)   FROM goodsitem  
+Group by code) as st
+ON st.code  = CountSummAnalog.inventcode;
+
+
 
 
 COMMIT TRANSACTION;

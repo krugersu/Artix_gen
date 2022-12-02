@@ -1,0 +1,6 @@
+### data begin ###
+{'command': 'clearInventory'}
+---
+{'command': 'addInventItem'}
+---
+### data end ###
