@@ -101,11 +101,12 @@ class workDb:
     
     def uploadData(self,c_count):
                 
-        self.createDB()
+       # self.createDB()
         self.recursive_items(c_count)
         self.CalculatingTheAmount()
         self.querySales()
         self.calculateSales()
+        self.testDB()
         
     def recursive_items(self,dictionary):
         
@@ -157,3 +158,37 @@ class workDb:
             sql_script = sql_file.read()
         self._cursor.executescript(sql_script)
         logging.info('Sales calcalating')              
+        
+        
+    def testDB(self):
+    
+        self._cursor.execute("select * from invent")
+        #sql - это ваш cursor
+        #massive = self._cursor.fetchone()#этот метод вернет вам один кортеж с только одной строкой из базы
+       # massive_big = self._cursor.fetchall()#этот метод вернет вам все элементы в одном кортеже. Данные из строк будут представлены как вложенные кортежи
+        #перебираем обычный кортеж, просто печатаем элементы кортежа
+        #for i in range(len(massive)):
+        #    print(massive[i])
+            
+        ''' while True:
+            next_row = self._cursor.fetchone()
+            if next_row:
+                print(next_row)
+            else:
+                break '''
+        self._all_db.row_factory = pysqlite3.Row
+        c = self._all_db.cursor()
+        c.execute('''WITH RECURSIVE parents AS (select * from invent
+                    inner JOIN (SELECT *  FROM additionalprices) as st
+                    ON st.additionalpricesid  = invent.inventcode
+                    )
+                    SELECT *
+                    FROM parents''')
+
+        result = c.fetchall()       
+        for r in result:
+            print(dict(r))
+
+        #перебираем кортеж с кортежами внутри, также печатаем элементы
+        #for z in range(len(massive_big)):
+        #    print(massive_big[z])        

@@ -23,6 +23,7 @@
         "mydb",
         "Priceoptions",
         "pymysql",
+        "pysqlite",
         "summ",
         "tlgrm"
     ]
