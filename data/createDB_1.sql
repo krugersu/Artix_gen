@@ -45,7 +45,7 @@ CREATE TABLE invent (
     inventgroup             TEXT (100),
     name                    TEXT (200),
     barcode                 TEXT (100),
-    barcodesid              TEXT (20),
+    barcodes                TEXT (20),
     price                   REAL (13, 2),
     minprice                REAL (13, 2),
     additionalpricesid      TEXT (20),

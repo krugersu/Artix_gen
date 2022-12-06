@@ -1,7 +1,7 @@
 
 import json
-import sqlite3 
-#import pysqlite3
+#import sqlite3 
+import pysqlite3
 from datetime import datetime
 from types import SimpleNamespace
 from pathlib import Path  
@@ -18,12 +18,12 @@ import pymysql
 
 class workDb:
     def __init__(self,rc, c_count = None):
-        #pysqlite3.paramstyle = 'named'
-        sqlite3.paramstyle = 'named'        
+        pysqlite3.paramstyle = 'named'
+        #sqlite3.paramstyle = 'named'        
         self.pathDB = Path("data", "myDB.sqlite") 
         self.pathScript = Path("data", "createDB.sql") 
-        #self._all_db = pysqlite3.connect(self.pathDB)
-        self._all_db = sqlite3.connect(self.pathDB)
+        self._all_db = pysqlite3.connect(self.pathDB)
+        #self._all_db = sqlite3.connect(self.pathDB)
         self._cursor = self._all_db.cursor()
         self.baseTableName = 'invent'
         
@@ -164,10 +164,10 @@ class workDb:
         
     def testDB(self):
     
-        self._cursor.execute("select * from invent")
+        #self._cursor.execute("select * from invent")
         #sql - это ваш cursor
         #massive = self._cursor.fetchone()#этот метод вернет вам один кортеж с только одной строкой из базы
-       # massive_big = self._cursor.fetchall()#этот метод вернет вам все элементы в одном кортеже. Данные из строк будут представлены как вложенные кортежи
+        #  massive_big = self._cursor.fetchall()#этот метод вернет вам все элементы в одном кортеже. Данные из строк будут представлены как вложенные кортежи
         #перебираем обычный кортеж, просто печатаем элементы кортежа
         #for i in range(len(massive)):
         #    print(massive[i])
@@ -178,33 +178,37 @@ class workDb:
                 print(next_row)
             else:
                 break '''
-      #  self._all_db.row_factory = pysqlite3.Row
-        self._all_db.row_factory = sqlite3.Row
+        self._all_db.row_factory = pysqlite3.Row
+        # self._all_db.row_factory = sqlite3.Row
         c = self._all_db.cursor()
-        c.execute('''WITH RECURSIVE parents AS (select * from invent
-                    inner JOIN (SELECT *  FROM additionalprices) as st
-                    ON st.additionalpricesid  = invent.inventcode
-                    )
-                    SELECT *
-                    FROM parents''')
-       
-        invent = c.fetchmany(1)
+        
+        c.execute('SELECT * FROM invent')                          
+
+        invent = c.fetchmany(10)
         c = self._all_db.cursor()       
         for r in invent:
-            #print(dict(r))
-            # pprint((r[1]))
-            tCode = (r[1])
-            print(tCode)
-            print(type(tCode))
-            c.execute('SELECT * FROM barcodes where barcodesid = ?', ('ЦБ-00006181',))
+            nDict = dict(r)
+            # pprint(nDict)
+            tCode = ((nDict['inventcode']))
+            #print(tCode)
+            #print(type(tCode))
+            c.execute("SELECT * FROM barcodes where barcodesid = ?",(tCode,))
+                                        
+            tBarcodes = dict(r)
             barcodes = c.fetchall()  
+            allBarcodes = []
             for itm in barcodes:
                 # pprint(dict(itm))
-                tBarcodes = dict(r)
                 #print(type(dict(itm)))
-                tBarcodes['barcodesid'] = (dict(itm)) 
-                pprint(tBarcodes)
-
+                allBarcodes.append((dict(itm)) )
+                
+            #pprint(allBarcodes)
+            nDict['barcodes'] = allBarcodes
+            pprint(nDict)
+            
+        with open('tData.json', 'w',encoding='utf-8') as outfile:
+            json.dump(nDict, outfile)    
+            
         #перебираем кортеж с кортежами внутри, также печатаем элементы
         #for z in range(len(massive_big)):
         #    print(massive_big[z])        

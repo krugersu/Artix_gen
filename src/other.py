@@ -334,3 +334,11 @@ def getListinvent(item_position):
 
   '''
 
+
+
+''' c.execute('''WITH RECURSIVE parents AS (select * from invent
+                    inner JOIN (SELECT *  FROM barcodes) as st
+                    ON st.barcodesid  = invent.inventcode
+                    )
+                    SELECT *
+                    FROM parents''') '''
