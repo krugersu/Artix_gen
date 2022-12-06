@@ -61,6 +61,7 @@ qrAddinvent = '''INSERT INTO invent (inventcode, inventgroup, name, barcode, bar
 
 qrSelectSales = 'SELECT goodsitemid, documentid, ttime, opcode,  cquant, code From goodsitem'
 qrSimpleSelectSale =  'SELECT code, opcode,  CAST(cquant AS CHAR) AS cquant  From goodsitem'
+qrSelectBarcodes = 'SELECT * FROM barcodes where barcodesid = ?'
 
 
 qrCalculatingTheAmount = '''UPDATE invent 

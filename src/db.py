@@ -1,7 +1,7 @@
 
 import json
-#import sqlite3 
-import pysqlite3
+import sqlite3 
+#import pysqlite3
 from datetime import datetime
 from types import SimpleNamespace
 from pathlib import Path  
@@ -9,6 +9,7 @@ import diff_data
 import logging
 import m_config
 from datetime import datetime
+from pprint import pprint
 
 #import MySQLdb
 import pymysql
@@ -17,11 +18,12 @@ import pymysql
 
 class workDb:
     def __init__(self,rc, c_count = None):
-        pysqlite3.paramstyle = 'named'        
+        #pysqlite3.paramstyle = 'named'
+        sqlite3.paramstyle = 'named'        
         self.pathDB = Path("data", "myDB.sqlite") 
         self.pathScript = Path("data", "createDB.sql") 
-        self._all_db = pysqlite3.connect(self.pathDB)
- #       self._all_db = sqlite3.connect(self.pathDB)
+        #self._all_db = pysqlite3.connect(self.pathDB)
+        self._all_db = sqlite3.connect(self.pathDB)
         self._cursor = self._all_db.cursor()
         self.baseTableName = 'invent'
         
@@ -101,7 +103,7 @@ class workDb:
     
     def uploadData(self,c_count):
                 
-       # self.createDB()
+        self.createDB()
         self.recursive_items(c_count)
         self.CalculatingTheAmount()
         self.querySales()
@@ -113,7 +115,7 @@ class workDb:
         logging.info('Start add DB from 1C')
         count = 0
         for key  in dictionary:
-            print(key)
+          #  print(key)
             self.addRecord(dictionary[key],key)
             count = count + len(dictionary[key])
         
@@ -176,7 +178,8 @@ class workDb:
                 print(next_row)
             else:
                 break '''
-        self._all_db.row_factory = pysqlite3.Row
+      #  self._all_db.row_factory = pysqlite3.Row
+        self._all_db.row_factory = sqlite3.Row
         c = self._all_db.cursor()
         c.execute('''WITH RECURSIVE parents AS (select * from invent
                     inner JOIN (SELECT *  FROM additionalprices) as st
@@ -184,10 +187,23 @@ class workDb:
                     )
                     SELECT *
                     FROM parents''')
-
-        result = c.fetchall()       
-        for r in result:
-            print(dict(r))
+       
+        invent = c.fetchmany(1)
+        c = self._all_db.cursor()       
+        for r in invent:
+            #print(dict(r))
+            # pprint((r[1]))
+            tCode = (r[1])
+            print(tCode)
+            print(type(tCode))
+            c.execute('SELECT * FROM barcodes where barcodesid = ?', ('ЦБ-00006181',))
+            barcodes = c.fetchall()  
+            for itm in barcodes:
+                # pprint(dict(itm))
+                tBarcodes = dict(r)
+                #print(type(dict(itm)))
+                tBarcodes['barcodesid'] = (dict(itm)) 
+                pprint(tBarcodes)
 
         #перебираем кортеж с кортежами внутри, также печатаем элементы
         #for z in range(len(massive_big)):
