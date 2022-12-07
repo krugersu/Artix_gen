@@ -179,32 +179,29 @@ class workDb:
         
         c.execute('SELECT * FROM invent')                          
         outfile = open('tData.json', 'w',encoding='utf-8')  
-
-        invent = c.fetchmany(10)
-        cBar = self._all_db.cursor()       
-        for r in invent:
-            nDict = dict(r)
-            # pprint(nDict)
-            tCode = ((nDict['inventcode']))
-            #print(tCode)
-            #print(type(tCode))
-            cBar.execute("SELECT * FROM barcodes where barcodesid = ?",(tCode,))
+        while True:
+            invent=c.fetchone()
+            if invent:
+        #invent = c.fetchmany(20)
+                cBar = self._all_db.cursor()       
+          #  for r in invent:
+                nDict = dict(invent)
+                tCode = ((nDict['inventcode']))
+                cBar.execute("SELECT * FROM barcodes where barcodesid = ?",(tCode,))
                                         
-            tBarcodes = dict(r)
-            barcodes = cBar.fetchall()  
-            allBarcodes = []
-            for itm in barcodes:
-                # pprint(dict(itm))
-                #print(type(dict(itm)))
-                allBarcodes.append((dict(itm)) )
+                tBarcodes = dict(invent)
+                barcodes = cBar.fetchall()  
+                allBarcodes = []
+                for itm in barcodes:
+                    allBarcodes.append((dict(itm)) )
                 
-            #pprint(allBarcodes)
-            nDict['barcodes'] = allBarcodes
-            pprint(nDict)
-            dictForArtix.update(nDict)
-            json.dump(dictForArtix, outfile,  indent=2, ensure_ascii=False )
-            outfile.write(',')    
-            
+                nDict['barcodes'] = allBarcodes
+                pprint(nDict)
+                dictForArtix.update(nDict)
+                json.dump(dictForArtix, outfile,  indent=2, ensure_ascii=False )
+                outfile.write(',')    
+            else:
+                break    
         #перебираем кортеж с кортежами внутри, также печатаем элементы
         #for z in range(len(massive_big)):
         #    print(massive_big[z])        
