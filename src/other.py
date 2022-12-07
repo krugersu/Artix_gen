@@ -342,3 +342,12 @@ def getListinvent(item_position):
                     )
                     SELECT *
                     FROM parents''') '''
+                    
+                    
+                    
+                            ''' while True:
+            next_row = self._cursor.fetchone()
+            if next_row:
+                print(next_row)
+            else:
+                break '''

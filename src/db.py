@@ -1,7 +1,7 @@
 
 import json
-#import sqlite3 
-import pysqlite3
+import sqlite3 
+#import pysqlite3
 from datetime import datetime
 from types import SimpleNamespace
 from pathlib import Path  
@@ -14,16 +14,16 @@ from pprint import pprint
 #import MySQLdb
 import pymysql
 #import m_config
-
+import codecs
 
 class workDb:
     def __init__(self,rc, c_count = None):
-        pysqlite3.paramstyle = 'named'
-        #sqlite3.paramstyle = 'named'        
+        #pysqlite3.paramstyle = 'named'
+        sqlite3.paramstyle = 'named'        
         self.pathDB = Path("data", "myDB.sqlite") 
         self.pathScript = Path("data", "createDB.sql") 
-        self._all_db = pysqlite3.connect(self.pathDB)
-        #self._all_db = sqlite3.connect(self.pathDB)
+        #self._all_db = pysqlite3.connect(self.pathDB)
+        self._all_db = sqlite3.connect(self.pathDB)
         self._cursor = self._all_db.cursor()
         self.baseTableName = 'invent'
         
@@ -171,31 +171,27 @@ class workDb:
         #перебираем обычный кортеж, просто печатаем элементы кортежа
         #for i in range(len(massive)):
         #    print(massive[i])
-            
-        ''' while True:
-            next_row = self._cursor.fetchone()
-            if next_row:
-                print(next_row)
-            else:
-                break '''
-        self._all_db.row_factory = pysqlite3.Row
-        # self._all_db.row_factory = sqlite3.Row
+        dictForArtix = {}
+
+        #self._all_db.row_factory = pysqlite3.Row # Позволяет работать с возвращаемым результатам с обращением к столбцам по имени
+        self._all_db.row_factory = sqlite3.Row
         c = self._all_db.cursor()
         
         c.execute('SELECT * FROM invent')                          
+        outfile = open('tData.json', 'w',encoding='utf-8')  
 
         invent = c.fetchmany(10)
-        c = self._all_db.cursor()       
+        cBar = self._all_db.cursor()       
         for r in invent:
             nDict = dict(r)
             # pprint(nDict)
             tCode = ((nDict['inventcode']))
             #print(tCode)
             #print(type(tCode))
-            c.execute("SELECT * FROM barcodes where barcodesid = ?",(tCode,))
+            cBar.execute("SELECT * FROM barcodes where barcodesid = ?",(tCode,))
                                         
             tBarcodes = dict(r)
-            barcodes = c.fetchall()  
+            barcodes = cBar.fetchall()  
             allBarcodes = []
             for itm in barcodes:
                 # pprint(dict(itm))
@@ -205,9 +201,9 @@ class workDb:
             #pprint(allBarcodes)
             nDict['barcodes'] = allBarcodes
             pprint(nDict)
-            
-        with open('tData.json', 'w',encoding='utf-8') as outfile:
-            json.dump(nDict, outfile)    
+            dictForArtix.update(nDict)
+            json.dump(dictForArtix, outfile,  indent=2, ensure_ascii=False )
+            outfile.write(',')    
             
         #перебираем кортеж с кортежами внутри, также печатаем элементы
         #for z in range(len(massive_big)):
