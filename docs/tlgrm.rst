@@ -1,7 +1,7 @@
-conf module
-===========
+tlgrm module
+============
 
-.. automodule:: conf
+.. automodule:: tlgrm
    :members:
    :undoc-members:
    :show-inheritance:

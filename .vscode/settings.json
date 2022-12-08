@@ -28,5 +28,6 @@
         "pysqlite",
         "summ",
         "tlgrm"
-    ]
+    ],
+    "esbonio.sphinx.confDir": ""
 }

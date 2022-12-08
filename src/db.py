@@ -163,6 +163,14 @@ class workDb:
         
         
     def testDB(self):
+        """Maps a number from one range to another.
+    :param number:  The input number to map.
+    :param in_min:  The minimum value of an input number.
+    :param in_max:  The maximum value of an input number.
+    :param out_min: The minimum value of an output number.
+    :param out_max: The maximum value of an output number.
+    :return: The mapped number.
+    """
     
         #self._cursor.execute("select * from invent")
         #sql - это ваш cursor
