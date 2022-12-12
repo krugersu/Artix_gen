@@ -150,6 +150,8 @@ class workDb:
         elif key == 'sellrestrictperiods':
             self._cursor.executemany(diff_data.qrAddSellrestrictperiods, item_position,)                                           
 
+        self._cursor.execute(diff_data.qrAddOptions)
+        
         self._all_db.commit() 
         
         
@@ -213,9 +215,76 @@ class workDb:
                 allSellrestrictperiods = []
                 for itm in sellrestrictperiods:
                     allSellrestrictperiods.append((dict(itm)) )
-                    
-                nDict['sellrestrictperiods'] = allSellrestrictperiods                    
+
+
+                # Add Additionalprices  Массив дополнительных цен
+                cAdditionalprices = self._all_db.cursor()       
+                cAdditionalprices.execute("SELECT * FROM additionalprices where additionalpricesid = ?",(tCode,))
+                additionalpricesid = cAdditionalprices.fetchall()  
+                alladditionalpricesid = []
+                for itm in additionalpricesid:
+                    alladditionalpricesid.append((dict(itm)) )
+
+
+
+                # Add inventitemoptions Опции товара
+                cinventitemoptions = self._all_db.cursor()       
+                cinventitemoptions.execute("SELECT * FROM inventitemoptions where inventitemoptionsid = ?",(tCode,))
+                inventitemoptions = cinventitemoptions.fetchall()  
+                allinventitemoptions = []
+                for itm in inventitemoptions:
+                    allinventitemoptions.append((dict(itm)) )
+
+                # Add priceoptions Опции цены
+                cpriceoptions = self._all_db.cursor()       
+                cpriceoptions.execute("SELECT * FROM priceoptions where priceoptionsid = ?",(tCode,))
+                priceoptions = cpriceoptions.fetchall()  
+                allpriceoptions = []
+                for itm in priceoptions:
+                    allpriceoptions.append((dict(itm)) )
+        
+
+
+                # Add quantityoptions Опции количества
+                cquantityoptions = self._all_db.cursor()       
+                cquantityoptions.execute("SELECT * FROM priceoptions where priceoptionsid = ?",(tCode,))
+                quantityoptions = cquantityoptions.fetchall()  
+                allquantityoptions = []
+                for itm in quantityoptions:
+                    allquantityoptions.append((dict(itm)) )
+
+
+
+                # Add quantityoptions Опции количества
+                cremainsoptions = self._all_db.cursor()       
+                cremainsoptions.execute("SELECT * FROM remainsoptions where remainsoptionsid = ?",(tCode,))
+                remainsoptions = cremainsoptions.fetchall()  
+                allremainsoptions = []
+                for itm in remainsoptions:
+                    allremainsoptions.append((dict(itm)) )
+
+        
+##########################################################################################
+                # Add options Опции товара
+                '''   coptions = self._all_db.cursor()       
+                coptions.execute("SELECT * FROM options where optionsidid = ?",(tCode,))
+                options = coptions.fetchall()   '''
+                alloptions = {}
+                alloptions['inventitemoptionsid'] = allinventitemoptions
+                alloptions['priceoptionsid'] = allpriceoptions
+                alloptions['quantityoptionsid'] = allquantityoptions   
+                alloptions['remainsoptionsid'] = allremainsoptions             
                 
+                ''' for itm in options:
+                    alloptions.append((dict(itm)) ) '''
+###########################################################################################
+
+
+
+                    
+                nDict['options'] = alloptions                        
+                nDict['sellrestrictperiods'] = allSellrestrictperiods                    
+                nDict['additionalprices'] = alladditionalpricesid                    
                 nDict['barcodes'] = allBarcodes
                 
                 pprint(nDict)

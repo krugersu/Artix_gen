@@ -2,6 +2,10 @@
 curVal = ''
 addinvent = ''
 
+# заполнить таблицу иначе она пустая и некоторые сложности при добавлении записи, поом переделать
+qrAddOptions = '''insert into optionsa  (inventitemoptionsid,priceoptionsid,quantityoptionsid, remainsoptionsid)
+                    SELECT inventcode,inventcode, inventcode, inventcode FROM invent'''
+
 qrAddPriceoptions = '''INSERT INTO priceoptions (priceoptionsid, enablepricemanual, requirepricemanual, requireselectprice, requiredeferredprice,enableexcisemarkprice)
                     VALUES 
                     (:priceoptionsid, :enablepricemanual, :requirepricemanual, :requireselectprice, :requiredeferredprice, :enableexcisemarkprice);'''
@@ -45,7 +49,7 @@ qrAddPriceoptions = '''INSERT INTO priceoptions (priceoptionsid, enablepricemanu
 
 
 
-qrAddinvent = '''INSERT INTO invent (inventcode, inventgroup, name, barcode, barcodes, price, minprice, additionalpricesid, options, 
+qrAddinvent = '''INSERT INTO invent (inventcode, inventgroup, name, barcode, barcodes, price, minprice, additionalprices, options, 
                                 sellrestrictperiods, extendedoptions, discautoscheme, deptcode, taxgroupcode, measurecode, remain, remaindate, articul,
                                 defaultquantity, taramode, taracapacity, aspectschemecode, aspectvaluesetcode, aspectusecase, aspectselectionrule, age, 
                                 alcoholpercent, cquant, inn, kpp, alctypecode, paymentobject, manufacturercountrycode, opmode, loyaltymode, minretailprice, 

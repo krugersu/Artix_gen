@@ -46,7 +46,7 @@ CREATE TABLE invent (
     barcodes                TEXT (20),
     price                   REAL (13, 2),
     minprice                REAL (13, 2),
-    additionalpricesid      TEXT (20),
+    additionalprices        TEXT (20),
     options                 TEXT (20),
     sellrestrictperiods     TEXT (20),
     extendedoptions         TEXT,
@@ -113,14 +113,14 @@ CREATE TABLE inventitemoptions (
 
 
 
-DROP TABLE IF EXISTS options;
+DROP TABLE IF EXISTS optionsa;
 
-CREATE TABLE options (
+CREATE TABLE optionsa (
     optionsidid         TEXT (20),
-    inventitemoptionsid INTEGER,
-    priceoptionsid      INTEGER,
-    quantityoptionsid   INTEGER,
-    remainsoptionsid    INTEGER
+    inventitemoptionsid TEXT (20),
+    priceoptionsid      TEXT (20),
+    quantityoptionsid   TEXT (20),
+    remainsoptionsid    TEXT (20)
 );
 
 
