@@ -1,7 +1,7 @@
 
 import json
-import sqlite3 
-#import pysqlite3
+#import sqlite3 
+import pysqlite3
 from datetime import datetime
 from types import SimpleNamespace
 from pathlib import Path  
@@ -18,12 +18,12 @@ import codecs
 
 class workDb:
     def __init__(self,rc, c_count = None):
-        #pysqlite3.paramstyle = 'named'
-        sqlite3.paramstyle = 'named'        
+        pysqlite3.paramstyle = 'named'
+        #sqlite3.paramstyle = 'named'        
         self.pathDB = Path("data", "myDB.sqlite") 
         self.pathScript = Path("data", "createDB.sql") 
-        #self._all_db = pysqlite3.connect(self.pathDB)
-        self._all_db = sqlite3.connect(self.pathDB)
+        self._all_db = pysqlite3.connect(self.pathDB)
+        #self._all_db = sqlite3.connect(self.pathDB)
         self._cursor = self._all_db.cursor()
         self.baseTableName = 'invent'
         
@@ -181,8 +181,8 @@ class workDb:
         #    print(massive[i])
         dictForArtix = {}
 
-        #self._all_db.row_factory = pysqlite3.Row # Позволяет работать с возвращаемым результатам с обращением к столбцам по имени
-        self._all_db.row_factory = sqlite3.Row
+        self._all_db.row_factory = pysqlite3.Row # Позволяет работать с возвращаемым результатам с обращением к столбцам по имени
+        #self._all_db.row_factory = sqlite3.Row
         c = self._all_db.cursor()
         
         c.execute('SELECT * FROM invent')                          
@@ -191,6 +191,7 @@ class workDb:
             invent=c.fetchone()
             if invent:
         #invent = c.fetchmany(20)
+        # Add Barcodes
                 cBar = self._all_db.cursor()       
           #  for r in invent:
                 nDict = dict(invent)
@@ -203,9 +204,27 @@ class workDb:
                 for itm in barcodes:
                     allBarcodes.append((dict(itm)) )
                 
+                #nDict['barcodes'] = allBarcodes
+                
+                # Add sellrestrictperiods Массив ограничений продаж по времени, пока не заполняем, нам без надобности
+                cSellPeriod = self._all_db.cursor()       
+                cSellPeriod.execute("SELECT * FROM sellrestrictperiods where sellrestrictperiodsid = ?",(tCode,))
+                sellrestrictperiods = cSellPeriod.fetchall()  
+                allSellrestrictperiods = []
+                for itm in sellrestrictperiods:
+                    allSellrestrictperiods.append((dict(itm)) )
+                    
+                nDict['sellrestrictperiods'] = allSellrestrictperiods                    
+                
                 nDict['barcodes'] = allBarcodes
+                
                 pprint(nDict)
                 dictForArtix.update(nDict)
+                
+                
+                
+                
+                
                 json.dump(dictForArtix, outfile,  indent=2, ensure_ascii=False )
                 outfile.write(',')    
             else:

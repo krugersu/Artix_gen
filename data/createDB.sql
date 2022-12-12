@@ -48,7 +48,7 @@ CREATE TABLE invent (
     minprice                REAL (13, 2),
     additionalpricesid      TEXT (20),
     options                 TEXT (20),
-    sellrestrictperiodsid   TEXT (20),
+    sellrestrictperiods     TEXT (20),
     extendedoptions         TEXT,
     discautoscheme          INTEGER,
     deptcode                INTEGER,

@@ -46,7 +46,7 @@ qrAddPriceoptions = '''INSERT INTO priceoptions (priceoptionsid, enablepricemanu
 
 
 qrAddinvent = '''INSERT INTO invent (inventcode, inventgroup, name, barcode, barcodes, price, minprice, additionalpricesid, options, 
-                                sellrestrictperiodsid, extendedoptions, discautoscheme, deptcode, taxgroupcode, measurecode, remain, remaindate, articul,
+                                sellrestrictperiods, extendedoptions, discautoscheme, deptcode, taxgroupcode, measurecode, remain, remaindate, articul,
                                 defaultquantity, taramode, taracapacity, aspectschemecode, aspectvaluesetcode, aspectusecase, aspectselectionrule, age, 
                                 alcoholpercent, cquant, inn, kpp, alctypecode, paymentobject, manufacturercountrycode, opmode, loyaltymode, minretailprice, 
                                 isParent, Parent)

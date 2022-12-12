@@ -26,6 +26,8 @@
         "Priceoptions",
         "pymysql",
         "pysqlite",
+        "sellrestrictperiods",
+        "sellrestrictperiodsid",
         "summ",
         "tlgrm"
     ],
