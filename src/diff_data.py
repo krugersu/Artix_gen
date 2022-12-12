@@ -3,7 +3,7 @@ curVal = ''
 addinvent = ''
 
 # заполнить таблицу иначе она пустая и некоторые сложности при добавлении записи, поом переделать
-qrAddOptions = '''insert into optionsa  (inventitemoptionsid,priceoptionsid,quantityoptionsid, remainsoptionsid)
+qrAddOptions = '''insert into optionsa  (inventitemoptions,priceoptions,quantityoptions, remainsoptions)
                     SELECT inventcode,inventcode, inventcode, inventcode FROM invent'''
 
 qrAddPriceoptions = '''INSERT INTO priceoptions (priceoptionsid, enablepricemanual, requirepricemanual, requireselectprice, requiredeferredprice,enableexcisemarkprice)
@@ -76,3 +76,41 @@ INNER JOIN
 invent ON SummIsParent.isParent = invent.inventcode
 ) as sumItog
 WHERE  invent.inventcode  = sumItog.inventcode'''
+
+
+# Work file
+
+header = "### data begin ###"
+footer = "### data end ###"
+separator = "---"
+addInventItem = str({"command": "addInventItem" }) # Команда addInventItem добавляет товар в справочник товаров. 
+clearInventory = str({"command":"clearInventory"}) # Команда clearInventory очищает справочник товаров со всеми зависимыми записями. 
+clearTmcScale = str({"command":"clearTmcScale"})  # Команда clearTmcScale очищает справочник товаров для прогрузки на весы
+
+
+
+# Запросы для формирования файла
+
+qrAdditionalprices = '''SELECT pricecode, price, name FROM additionalprices where additionalpricesid = ?'''
+qrBarcodes = '''SELECT aspectvaluesetcode, barcode, cquant, measurecode,
+                            minprice, name, packingmeasure, packingprice, price, quantdefault, minretailprice, customsdeclarationnumber, tmctype, ntin 
+                            FROM barcodes where barcodesid = ?'''
+                            
+qrsellrestrictperiods = '''SELECT dateend, datestart, dayend, daystart, timeend, timestart
+                            FROM sellrestrictperiods where sellrestrictperiodsid = ?'''
+qrinventitemoptions = '''SELECT disablebackinsale, disableinventshow, disableinventsale, disableinventback, requiredepartmentmanual,
+                                    enabledepartmentmanual, enablebarcodemanual, enablebarcodescanner, visualverify, ageverify, requiresalerestrict, egaisverify, 
+                                    prepackaged, nopdfegaisverify, alcoset, freesale, rfidverify, lowweight, weightcontrolbypass, tobacco, shoes, fuzzyweight, 
+                                    ignoremarking, markdownverify
+                                    FROM inventitemoptions where inventitemoptionsid = ?'''
+
+qrpriceoptions =  '''SELECT enablepricemanual, requirepricemanual, requireselectprice, requiredeferredprice,enableexcisemarkprice
+                        FROM priceoptions where priceoptionsid = ?'''                           
+
+qrquantityoptions = '''SELECT enabledefaultquantity, enablequantitylimit, quantitylimit, enablequantityscales, enablequantitybarcode,
+                                    enablequantitymanual, requirequantitymanual, requirequantitybarcode, requirequantityscales, enabledocumentquantitylimit, autogetquantityfromscales,
+                                    documentquantlimit
+                        FROM quantityoptions where quantityoptionsid = ?'''
+
+qrremainsoptions = '''SELECT * FROM remainsoptions where remainsoptionsid = ?'''
+

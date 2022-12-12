@@ -117,10 +117,10 @@ DROP TABLE IF EXISTS optionsa;
 
 CREATE TABLE optionsa (
     optionsidid         TEXT (20),
-    inventitemoptionsid TEXT (20),
-    priceoptionsid      TEXT (20),
-    quantityoptionsid   TEXT (20),
-    remainsoptionsid    TEXT (20)
+    inventitemoptions   TEXT (20),
+    priceoptions        TEXT (20),
+    quantityoptions     TEXT (20),
+    remainsoptions      TEXT (20)
 );
 
 

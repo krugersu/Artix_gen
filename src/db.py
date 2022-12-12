@@ -181,6 +181,17 @@ class workDb:
         #перебираем обычный кортеж, просто печатаем элементы кортежа
         #for i in range(len(massive)):
         #    print(massive[i])
+        
+        #outfile = open('tData.aif', 'w',encoding='utf-8')  
+        outfile = open('tData.json', 'w',encoding='utf-8')  
+        outfile.writelines(diff_data.header)
+        outfile.writelines(diff_data.clearInventory)
+        outfile.writelines(diff_data.separator)
+        outfile.writelines(diff_data.clearTmcScale)    
+        outfile.writelines(diff_data.separator)
+        
+        
+        
         dictForArtix = {}
 
         self._all_db.row_factory = pysqlite3.Row # Позволяет работать с возвращаемым результатам с обращением к столбцам по имени
@@ -188,17 +199,16 @@ class workDb:
         c = self._all_db.cursor()
         
         c.execute('SELECT * FROM invent')                          
-        outfile = open('tData.json', 'w',encoding='utf-8')  
+        
         while True:
             invent=c.fetchone()
             if invent:
-        #invent = c.fetchmany(20)
+
         # Add Barcodes
                 cBar = self._all_db.cursor()       
-          #  for r in invent:
                 nDict = dict(invent)
                 tCode = ((nDict['inventcode']))
-                cBar.execute("SELECT * FROM barcodes where barcodesid = ?",(tCode,))
+                cBar.execute(diff_data.qrBarcodes,(tCode,))
                                         
                 tBarcodes = dict(invent)
                 barcodes = cBar.fetchall()  
@@ -210,7 +220,7 @@ class workDb:
                 
                 # Add sellrestrictperiods Массив ограничений продаж по времени, пока не заполняем, нам без надобности
                 cSellPeriod = self._all_db.cursor()       
-                cSellPeriod.execute("SELECT * FROM sellrestrictperiods where sellrestrictperiodsid = ?",(tCode,))
+                cSellPeriod.execute(diff_data.qrsellrestrictperiods,(tCode,))
                 sellrestrictperiods = cSellPeriod.fetchall()  
                 allSellrestrictperiods = []
                 for itm in sellrestrictperiods:
@@ -219,7 +229,7 @@ class workDb:
 
                 # Add Additionalprices  Массив дополнительных цен
                 cAdditionalprices = self._all_db.cursor()       
-                cAdditionalprices.execute("SELECT * FROM additionalprices where additionalpricesid = ?",(tCode,))
+                cAdditionalprices.execute(diff_data.qrAdditionalprices,(tCode,))
                 additionalpricesid = cAdditionalprices.fetchall()  
                 alladditionalpricesid = []
                 for itm in additionalpricesid:
@@ -229,7 +239,7 @@ class workDb:
 
                 # Add inventitemoptions Опции товара
                 cinventitemoptions = self._all_db.cursor()       
-                cinventitemoptions.execute("SELECT * FROM inventitemoptions where inventitemoptionsid = ?",(tCode,))
+                cinventitemoptions.execute(diff_data.qrinventitemoptions,(tCode,))
                 inventitemoptions = cinventitemoptions.fetchall()  
                 allinventitemoptions = []
                 for itm in inventitemoptions:
@@ -237,7 +247,7 @@ class workDb:
 
                 # Add priceoptions Опции цены
                 cpriceoptions = self._all_db.cursor()       
-                cpriceoptions.execute("SELECT * FROM priceoptions where priceoptionsid = ?",(tCode,))
+                cpriceoptions.execute(diff_data.qrpriceoptions,(tCode,))
                 priceoptions = cpriceoptions.fetchall()  
                 allpriceoptions = []
                 for itm in priceoptions:
@@ -247,7 +257,7 @@ class workDb:
 
                 # Add quantityoptions Опции количества
                 cquantityoptions = self._all_db.cursor()       
-                cquantityoptions.execute("SELECT * FROM priceoptions where priceoptionsid = ?",(tCode,))
+                cquantityoptions.execute(diff_data.qrquantityoptions,(tCode,))
                 quantityoptions = cquantityoptions.fetchall()  
                 allquantityoptions = []
                 for itm in quantityoptions:
@@ -257,7 +267,7 @@ class workDb:
 
                 # Add quantityoptions Опции количества
                 cremainsoptions = self._all_db.cursor()       
-                cremainsoptions.execute("SELECT * FROM remainsoptions where remainsoptionsid = ?",(tCode,))
+                cremainsoptions.execute(diff_data.qrremainsoptions,(tCode,))
                 remainsoptions = cremainsoptions.fetchall()  
                 allremainsoptions = []
                 for itm in remainsoptions:
@@ -270,10 +280,10 @@ class workDb:
                 coptions.execute("SELECT * FROM options where optionsidid = ?",(tCode,))
                 options = coptions.fetchall()   '''
                 alloptions = {}
-                alloptions['inventitemoptionsid'] = allinventitemoptions
-                alloptions['priceoptionsid'] = allpriceoptions
-                alloptions['quantityoptionsid'] = allquantityoptions   
-                alloptions['remainsoptionsid'] = allremainsoptions             
+                alloptions['inventitemoptions'] = allinventitemoptions
+                alloptions['priceoptions'] = allpriceoptions
+                alloptions['quantityoptions'] = allquantityoptions   
+                alloptions['remainsoptions'] = allremainsoptions             
                 
                 ''' for itm in options:
                     alloptions.append((dict(itm)) ) '''
@@ -290,14 +300,13 @@ class workDb:
                 pprint(nDict)
                 dictForArtix.update(nDict)
                 
-                
-                
-                
-                
-                json.dump(dictForArtix, outfile,  indent=2, ensure_ascii=False )
+                #outfile.writelines(str(nDict))
+                #outfile.writelines(diff_data.separator)
+                json.dump(dictForArtix, outfile,  indent=2,  ensure_ascii=False )
                 outfile.write(',')    
             else:
                 break    
+        outfile.write(diff_data.footer)    
         #перебираем кортеж с кортежами внутри, также печатаем элементы
         #for z in range(len(massive_big)):
         #    print(massive_big[z])        
