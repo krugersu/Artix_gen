@@ -183,12 +183,12 @@ class workDb:
         #    print(massive[i])
         
         outfile = open('tData.aif', 'w',encoding='utf-8')  
-       # outfile = open('tData.json', 'w',encoding='utf-8')  
-        outfile.writelines(diff_data.header+ '\n')
-        outfile.writelines(diff_data.clearInventory+ '\n')
-        outfile.writelines(diff_data.separator+ '\n')
-        outfile.writelines(diff_data.clearTmcScale+ '\n')    
-        outfile.writelines(diff_data.separator+ '\n')
+        #outfile = open('tData.json', 'w',encoding='utf-8')  
+        outfile.writelines(diff_data.header)
+        outfile.writelines(diff_data.clearInventory)
+        outfile.writelines(diff_data.separator)
+        outfile.writelines(diff_data.clearTmcScale)    
+        outfile.writelines(diff_data.separator)
         
         
         
@@ -300,8 +300,8 @@ class workDb:
                 pprint(nDict)
                 dictForArtix.update(nDict)
                 
-                outfile.writelines(str(nDict)+ '\n')
-                outfile.writelines(diff_data.separator+ '\n')
+                outfile.writelines(str(nDict))
+                outfile.writelines(diff_data.separator)
                 
                 #json.dump(dictForArtix, outfile,  indent=2,  ensure_ascii=False )
                 #outfile.write(',')    
