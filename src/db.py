@@ -1,7 +1,8 @@
 
+import sys
 import json
-#import sqlite3 
-import pysqlite3
+# 
+
 from datetime import datetime
 from types import SimpleNamespace
 from pathlib import Path  
@@ -16,14 +17,31 @@ import pymysql
 #import m_config
 import codecs
 
+
+if sys.platform.startswith("linux"):  # could be "linux", "linux2", "linux3", ...
+    import pysqlite3
+elif sys.platform == "darwin":
+    pass
+elif sys.platform == "win32":
+   import sqlite3
+
+
 class workDb:
     def __init__(self,rc, c_count = None):
-        pysqlite3.paramstyle = 'named'
-        #sqlite3.paramstyle = 'named'        
-        self.pathDB = Path("data", "myDB.sqlite") 
+        
+        self.pathDB = Path("data", "myDB.sqlite")
+        
+        if sys.platform.startswith("linux"):  # could be "linux", "linux2", "linux3", ...
+                pysqlite3.paramstyle = 'named'
+                self._all_db = pysqlite3.connect(self.pathDB)
+        elif sys.platform == "darwin":
+            pass
+        elif sys.platform == "win32":
+            sqlite3.paramstyle = 'named'
+            self._all_db = sqlite3.connect(self.pathDB)
+        
+         
         self.pathScript = Path("data", "createDB.sql") 
-        self._all_db = pysqlite3.connect(self.pathDB)
-        #self._all_db = sqlite3.connect(self.pathDB)
         self._cursor = self._all_db.cursor()
         self.baseTableName = 'invent'
         
@@ -182,20 +200,22 @@ class workDb:
         #for i in range(len(massive)):
         #    print(massive[i])
         
-        outfile = open('tData.aif', 'w',encoding='utf-8')  
-        #outfile = open('tData.json', 'w',encoding='utf-8')  
+        if sys.platform.startswith("linux"):  # could be "linux", "linux2", "linux3", ...
+                self._all_db.row_factory = pysqlite3.Row # Позволяет работать с возвращаемым результатам с обращением к столбцам по имени
+        elif sys.platform == "darwin":
+            pass
+        elif sys.platform == "win32":
+            self._all_db.row_factory = sqlite3.Row
+        
+        #outfile = open('tData.aif', 'w',encoding='utf-8')  
+        outfile = open('tData.json', 'w',encoding='utf-8')  
         outfile.writelines(diff_data.header)
         outfile.writelines(diff_data.clearInventory)
         outfile.writelines(diff_data.separator)
         outfile.writelines(diff_data.clearTmcScale)    
         outfile.writelines(diff_data.separator)
         
-        
-        
         dictForArtix = {}
-
-        self._all_db.row_factory = pysqlite3.Row # Позволяет работать с возвращаемым результатам с обращением к столбцам по имени
-        #self._all_db.row_factory = sqlite3.Row
         c = self._all_db.cursor()
         
         c.execute('SELECT * FROM invent')                          
@@ -205,9 +225,12 @@ class workDb:
             if invent:
 
         # Add Barcodes
-                cBar = self._all_db.cursor()       
-                nDict = dict(invent)
+                cBar = self._all_db.cursor()
+                nDict = dict(diff_data.addInventItem)       
+                nDict.append(dict(invent))
                 tCode = ((nDict['inventcode']))
+
+
                 cBar.execute(diff_data.qrBarcodes,(tCode,))
                                         
                 tBarcodes = dict(invent)
@@ -300,11 +323,11 @@ class workDb:
                 pprint(nDict)
                 dictForArtix.update(nDict)
                 
-                outfile.writelines(str(nDict))
-                outfile.writelines(diff_data.separator)
+                #outfile.writelines(str(nDict))
+                #outfile.writelines(diff_data.separator)
                 
-                #json.dump(dictForArtix, outfile,  indent=2,  ensure_ascii=False )
-                #outfile.write(',')    
+                json.dump(dictForArtix, outfile,  indent=2,  ensure_ascii=False )
+                outfile.write(',')    
             else:
                 break    
         outfile.write(diff_data.footer)    
