@@ -311,3 +311,4 @@ class workDb:
         #перебираем кортеж с кортежами внутри, также печатаем элементы
         #for z in range(len(massive_big)):
         #    print(massive_big[z])        
+        #{"command":"addInventItem",
