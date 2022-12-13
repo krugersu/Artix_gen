@@ -226,8 +226,8 @@ class workDb:
 
         # Add Barcodes
                 cBar = self._all_db.cursor()
-                nDict = dict(diff_data.addInventItem)       
-                nDict.append(dict(invent))
+#                nDict = dict(diff_data.addInventItem)       
+                nDict = (dict(invent))
                 tCode = ((nDict['inventcode']))
 
 
