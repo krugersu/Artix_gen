@@ -40,7 +40,7 @@ class workDb:
             sqlite3.paramstyle = 'named'
             self._all_db = sqlite3.connect(self.pathDB)
         
-         
+
         self.pathScript = Path("data", "createDB.sql") 
         self._cursor = self._all_db.cursor()
         self.baseTableName = 'invent'

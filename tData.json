@@ -1,4 +1,4 @@
-### data begin ###{'command': 'clearInventory'}---{'command': 'clearTmcScale'}---{
+### data begin ###command---command---{
   "command": "addInventItem",
   "inventcode": "ЦБ-00008202",
   "inventgroup": "ЦБ-00007331",

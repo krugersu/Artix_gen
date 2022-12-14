@@ -1,1 +1,4 @@
-### data begin ###{'command': 'clearInventory'}---{'command': 'clearTmcScale'}---### data end ###
+### data begin ###
+{"command": "clearInventory"}
+---
+### data end ###

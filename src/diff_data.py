@@ -84,8 +84,8 @@ header = "### data begin ###"
 footer = "### data end ###"
 separator = "---"
 addInventItem = str({"command": "addInventItem" }) # Команда addInventItem добавляет товар в справочник товаров. 
-clearInventory = str({"command":"clearInventory"}) # Команда clearInventory очищает справочник товаров со всеми зависимыми записями. 
-clearTmcScale = str({"command":"clearTmcScale"})  # Команда clearTmcScale очищает справочник товаров для прогрузки на весы
+clearInventory = {"command":"clearInventory"} # Команда clearInventory очищает справочник товаров со всеми зависимыми записями. 
+clearTmcScale = {"command":"clearTmcScale"}  # Команда clearTmcScale очищает справочник товаров для прогрузки на весы
 addInventItem = {"command":"addInventItem"}  # Команда addInventItem добавляет товар в справочник товаров. Атрибуты товара задаются обязательным параметром invent.  
 
 
