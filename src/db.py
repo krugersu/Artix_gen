@@ -226,9 +226,12 @@ class workDb:
 
         # Add Barcodes
                 cBar = self._all_db.cursor()
-#                nDict = dict(diff_data.addInventItem)       
+#                nDict = dict(diff_data.addInventItem) 
+                tCommand = diff_data.addInventItem      
+                
                 nDict = (dict(invent))
-                tCode = ((nDict['inventcode']))
+                tCommand.update(nDict)
+                tCode = ((tCommand['inventcode']))
 
 
                 cBar.execute(diff_data.qrBarcodes,(tCode,))
@@ -315,13 +318,13 @@ class workDb:
 
 
                     
-                nDict['options'] = alloptions                        
-                nDict['sellrestrictperiods'] = allSellrestrictperiods                    
-                nDict['additionalprices'] = alladditionalpricesid                    
-                nDict['barcodes'] = allBarcodes
+                tCommand['options'] = alloptions                        
+                tCommand['sellrestrictperiods'] = allSellrestrictperiods                    
+                tCommand['additionalprices'] = alladditionalpricesid                    
+                tCommand['barcodes'] = allBarcodes
                 
-                pprint(nDict)
-                dictForArtix.update(nDict)
+                pprint(tCommand)
+                dictForArtix.update(tCommand)
                 
                 #outfile.writelines(str(nDict))
                 #outfile.writelines(diff_data.separator)

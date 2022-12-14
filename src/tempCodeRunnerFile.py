@@ -1,1 +1,1 @@
-def main():
+#!/usr/bin/env python3.11

@@ -1,4 +1,5 @@
 ### data begin ###{'command': 'clearInventory'}---{'command': 'clearTmcScale'}---{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008202",
   "inventgroup": "ЦБ-00007331",
   "name": "Креветка Черноморская суш с перцем 22 гр",
@@ -125,6 +126,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000155   ",
   "inventgroup": "ЦБ-00004470",
   "name": "Кета балык х/к",
@@ -234,6 +236,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006548",
   "inventgroup": "ЦБ-00005803",
   "name": "Арахис Шашлык Премиум",
@@ -343,6 +346,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009462",
   "inventgroup": "ЦБ-00004705",
   "name": "Леденцы Halls экстра-стронг 24,5 гр",
@@ -469,6 +473,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000863   ",
   "inventgroup": "ЦБ-00004470",
   "name": "Кета боковник шоколадка х/к",
@@ -578,6 +583,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007990",
   "inventgroup": "ЦБ-00005125",
   "name": "Chesterfield Original",
@@ -704,6 +710,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000101   ",
   "inventgroup": "ЮТ-00000001",
   "name": "Вобла вяленая",
@@ -813,6 +820,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000670   ",
   "inventgroup": "ЮТ-00000001",
   "name": "Вомер вяленый",
@@ -922,6 +930,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000156   ",
   "inventgroup": "ЦБ-00004470",
   "name": "Горбуша балык х/к",
@@ -1031,6 +1040,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000227   ",
   "inventgroup": "ЦБ-00007372",
   "name": "Горбуша соломка вялено-копчёная",
@@ -1140,6 +1150,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000984   ",
   "inventgroup": "ЦБ-00004470",
   "name": "Горбуша теша х/к",
@@ -1249,6 +1260,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000606   ",
   "inventgroup": "ЦБ-00007373",
   "name": "Хе из кеты",
@@ -1358,6 +1370,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006181",
   "inventgroup": "ЦБ-00005126",
   "name": "Максим красный",
@@ -1532,6 +1545,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008217",
   "inventgroup": "ЦБ-00002222",
   "name": "Сухарики Цветной кубик Грузино-Шашлычино вес",
@@ -1641,6 +1655,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001124   ",
   "inventgroup": "ЦБ-00007372",
   "name": "Желтый полосатик",
@@ -1750,6 +1765,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000222   ",
   "inventgroup": "КН000344   ",
   "name": "Икра сельди вяленая",
@@ -1859,6 +1875,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000173   ",
   "inventgroup": "ЦБ-00007372",
   "name": "Кальмар полукольца (кольца)",
@@ -1968,6 +1985,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000169   ",
   "inventgroup": "ЦБ-00007372",
   "name": "Кальмар рваный",
@@ -2077,6 +2095,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006435",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Читос Сыр 85 гр",
@@ -2203,6 +2222,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000752   ",
   "inventgroup": "ЦБ-00007372",
   "name": "Кальмар стружка",
@@ -2312,6 +2332,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000146   ",
   "inventgroup": "ЮТ-00000001",
   "name": "Камбала вяленая б/г",
@@ -2421,6 +2442,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000228   ",
   "inventgroup": "ЮТ-00000001",
   "name": "Камбала вяленая б/ш",
@@ -2530,6 +2552,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000813   ",
   "inventgroup": "ЮТ-00000001",
   "name": "Камбала вяленая икряная",
@@ -2639,6 +2662,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007670",
   "inventgroup": "ЦБ-00006535",
   "name": "Стики Heets Parlament Summer Breeze",
@@ -2781,6 +2805,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008674",
   "inventgroup": "ЦБ-00006535",
   "name": "Стики Heets Purple Wave",
@@ -2939,6 +2964,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000660   ",
   "inventgroup": "ЦБ-00007372",
   "name": "Камбала филе вяленое",
@@ -3048,6 +3074,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000020   ",
   "inventgroup": "ЦБ-00007326",
   "name": "Зажигалка \"Крюгер\"",
@@ -3174,6 +3201,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000145   ",
   "inventgroup": "ЦБ-00004470",
   "name": "Камбала х/к б/г",
@@ -3283,6 +3311,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000048   ",
   "inventgroup": "ЮТ-00000001",
   "name": "Карась пласт вяленый ",
@@ -3392,6 +3421,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000067   ",
   "inventgroup": "ЦБ-00004471",
   "name": "Карпаччо из птицы",
@@ -3501,6 +3531,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007521",
   "inventgroup": "МА000216   ",
   "name": "Напиток Энергетический  Берн Яблоко- Киви ж/б  0,449",
@@ -3627,6 +3658,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000233   ",
   "inventgroup": "ЦБ-00004470",
   "name": "Кета боковник х/к",
@@ -3736,6 +3768,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000157   ",
   "inventgroup": "ЦБ-00004470",
   "name": "Кета теша х/к ",
@@ -3845,6 +3878,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010122",
   "inventgroup": "МА000216   ",
   "name": "Напиток Рич Индиан Тоник 1,0",
@@ -3971,6 +4005,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000058   ",
   "inventgroup": "ЦБ-00005803",
   "name": "Орех Кешью ж/с",
@@ -4080,6 +4115,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000020   ",
   "inventgroup": "ЦБ-00007372",
   "name": "Минтай соломка",
@@ -4189,6 +4225,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004184",
   "inventgroup": "ЦБ-00005126",
   "name": "Parlament SS 100",
@@ -4331,6 +4368,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000172   ",
   "inventgroup": "ЦБ-00007372",
   "name": "Минтай филе сушеный широкий",
@@ -4440,6 +4478,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000050   ",
   "inventgroup": "ЦБ-00004470",
   "name": "Мойва х/к",
@@ -4549,6 +4588,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000148   ",
   "inventgroup": "ЮТ-00000001",
   "name": "Окунь мелкий вяленый",
@@ -4658,6 +4698,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000012   ",
   "inventgroup": "ЮТ-00000001",
   "name": "Окунь средний вяленый",
@@ -4767,6 +4808,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009708",
   "inventgroup": "ЦБ-00004705",
   "name": "Жевательная резинка Дирол XXL colors мятное ассорти 19 гр",
@@ -4909,6 +4951,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЕК-00000002",
   "inventgroup": "ЦБ-00007317",
   "name": "Медовуха Астти Шампань Розе 1л",
@@ -5035,6 +5078,7 @@
   "Parent": 1,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000150   ",
   "inventgroup": "ЮТ-00000001",
   "name": "Окунь пласт вяленый",
@@ -5144,6 +5188,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000371   ",
   "inventgroup": "ЦБ-00007372",
   "name": "Палочки лососевые вяленые Камшат",
@@ -5253,6 +5298,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000151   ",
   "inventgroup": "ЮТ-00000001",
   "name": "Пелядь вяленая",
@@ -5362,6 +5408,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002750",
   "inventgroup": "ЦБ-00004471",
   "name": "Колбаски Мясной хворост БМК с/к",
@@ -5471,6 +5518,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001841",
   "inventgroup": "ЦБ-00005803",
   "name": "Арахис в глазури Креветка",
@@ -5580,6 +5628,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000056   ",
   "inventgroup": "ЦБ-00004470",
   "name": "Пелядь х/к",
@@ -5689,6 +5738,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000099   ",
   "inventgroup": "ЮТ-00000001",
   "name": "Плотва вяленая",
@@ -5798,6 +5848,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000024   ",
   "inventgroup": "ЦБ-00002556",
   "name": "Кружка для пива керамическая Два рака 0,7 л",
@@ -5924,6 +5975,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005124",
   "inventgroup": "КН000384   ",
   "name": "Пивной напиток Бланш Бир Пшеничное Белое н/ф 1л",
@@ -6050,6 +6102,7 @@
   "Parent": 1,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000362   ",
   "inventgroup": "ЮТ-00000001",
   "name": "Ряпушка вяленая",
@@ -6159,6 +6212,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000051   ",
   "inventgroup": "ЦБ-00004470",
   "name": "Скумбрия х/к ",
@@ -6268,6 +6322,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003602",
   "inventgroup": "ЦБ-00005126",
   "name": "Jade Rose SSL",
@@ -6490,6 +6545,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001092   ",
   "inventgroup": "ЮТ-00000001",
   "name": "Судак пласт вяленый",
@@ -6599,6 +6655,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008433",
   "inventgroup": "ЦБ-00007329",
   "name": "Семечки Солнечный великан Джинн особо соленые 100 гр",
@@ -6725,6 +6782,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001140   ",
   "inventgroup": "ЦБ-00007372",
   "name": "Судак соломка",
@@ -6834,6 +6892,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000368   ",
   "inventgroup": "КН000344   ",
   "name": "Судак пласт х/к",
@@ -6943,6 +7002,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00000326",
   "inventgroup": "ЦБ-00005980",
   "name": "Банка стеклянная 3л",
@@ -7069,6 +7129,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000751   ",
   "inventgroup": "ЦБ-00004470",
   "name": "Терпуг пласт х/к",
@@ -7178,6 +7239,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002657",
   "inventgroup": "ЦБ-00004744",
   "name": "Попкорн Show Time сыр 80 гр",
@@ -7304,6 +7366,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000255   ",
   "inventgroup": "ЦБ-00005803",
   "name": "Фисташка Калифорния",
@@ -7413,6 +7476,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000163   ",
   "inventgroup": "КН000344   ",
   "name": "Форель теша х/к",
@@ -7522,6 +7586,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000167   ",
   "inventgroup": "ЦБ-00007372",
   "name": "Щука соломка вяленая",
@@ -7631,6 +7696,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003753",
   "inventgroup": "ЦБ-00005125",
   "name": "Next Violet",
@@ -7773,6 +7839,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000365   ",
   "inventgroup": "ЦБ-00004470",
   "name": "Щупальца кальмара г/к",
@@ -7882,6 +7949,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000570   ",
   "inventgroup": "ЦБ-00004470",
   "name": "Язь пласт х/к",
@@ -7991,6 +8059,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008219",
   "inventgroup": "ЦБ-00002222",
   "name": "Сухарики Цветной кубик СЫРян-братан вес",
@@ -8100,6 +8169,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004313",
   "inventgroup": "ЦБ-00002556",
   "name": "Кружка для пива керамическая Пей пиво с раками 0,7 л",
@@ -8226,6 +8296,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000175   ",
   "inventgroup": "ЦБ-00007372",
   "name": "Янтарная рыбка с перцем",
@@ -8335,6 +8406,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006195",
   "inventgroup": "ЦБ-00005127",
   "name": "LD Autograph  Club Compact 100 Blue",
@@ -8477,6 +8549,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003998",
   "inventgroup": "ЦБ-00005125",
   "name": "Parlament Aqua Blue",
@@ -8667,6 +8740,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001343   ",
   "inventgroup": "ЦБ-00007329",
   "name": "Семечки Жаро гиганты 280 гр",
@@ -8793,6 +8867,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005571",
   "inventgroup": "ЦБ-00005127",
   "name": "LD Autograph Club Compact Blue",
@@ -8935,6 +9010,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001162   ",
   "inventgroup": "КН000302   ",
   "name": "Кириешки ржаные сёмга-сыр с соусом тар-тар 60 гр",
@@ -9061,6 +9137,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010283",
   "inventgroup": "ЦБ-00007736",
   "name": "Соус Heinz Горчичный",
@@ -9170,6 +9247,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000300   ",
   "inventgroup": "КН000302   ",
   "name": "Кириешки ржаные Heinz шашлык кетчуп 60 гр",
@@ -9296,6 +9374,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000265   ",
   "inventgroup": "ЦБ-00002222",
   "name": "Сухарики Гаринские сметана-лук вес",
@@ -9405,6 +9484,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000266   ",
   "inventgroup": "ЦБ-00002222",
   "name": "Сухарики Гаринские холодец хрен вес",
@@ -9514,6 +9594,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010092",
   "inventgroup": "МА000216   ",
   "name": "Чай Рич Манго Зеленый 0,5",
@@ -9640,6 +9721,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004772",
   "inventgroup": "ЦБ-00002556",
   "name": "Кружка для пива керамическая Волк 0,5 л",
@@ -9749,6 +9831,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000838   ",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Бингре Крабовые 80 гр",
@@ -9875,6 +9958,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004328",
   "inventgroup": "ЦБ-00005125",
   "name": "Parlament Silver Blue",
@@ -10017,6 +10101,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004074",
   "inventgroup": "ЦБ-00004707",
   "name": "Масло эфирное мята 10 мл",
@@ -10143,6 +10228,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002085",
   "inventgroup": "ЦБ-00004707",
   "name": "Веник Берёзовый Русский лес",
@@ -10269,6 +10355,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002086",
   "inventgroup": "ЦБ-00004707",
   "name": "Уголь Мега Гриль 10л",
@@ -10395,6 +10482,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003751",
   "inventgroup": "ЦБ-00004471",
   "name": "Колбаски Би-Фи Три богатыря",
@@ -10504,6 +10592,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010203",
   "inventgroup": "КН000384   ",
   "name": "Пиво Ловенбрау Оригинальное светлое** 1л",
@@ -10630,6 +10719,7 @@
   "Parent": 0,
   "isParent": "ЦБ-00003451"
 },{
+  "command": "addInventItem",
   "inventcode": "КН001402   ",
   "inventgroup": "КН000302   ",
   "name": "Кириешки  в ассорт 40 гр",
@@ -10756,6 +10846,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004682",
   "inventgroup": "ЦБ-00004705",
   "name": "Драже Вкусные часики (банка) 12 гр",
@@ -10882,6 +10973,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001309   ",
   "inventgroup": "ЦБ-00001705",
   "name": "Ассоль Питьевая вода 0,5",
@@ -11008,6 +11100,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000774   ",
   "inventgroup": "ЦБ-00001705",
   "name": "Ассоль Питьевая вода 1,5",
@@ -11134,6 +11227,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000340   ",
   "inventgroup": "ЦБ-00005980",
   "name": "ПЭТ бутылка 1,5л",
@@ -11260,6 +11354,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001310   ",
   "inventgroup": "ЦБ-00001705",
   "name": "Ассоль Питьевая вода 6,0",
@@ -11386,6 +11481,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000339   ",
   "inventgroup": "ЦБ-00005980",
   "name": "ПЭТ бутылка 1л",
@@ -11512,6 +11608,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002453",
   "inventgroup": "ЦБ-00004705",
   "name": "Карамель на палочке Арбузик 40 гр",
@@ -11638,6 +11735,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000029   ",
   "inventgroup": "ЦБ-00001705",
   "name": "Виваль газ вода 0,5",
@@ -11764,6 +11862,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009838",
   "inventgroup": "ЦБ-00004705",
   "name": "Жевательная резинка Doublemint в ассорт 13,6 гр",
@@ -11890,6 +11989,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000030   ",
   "inventgroup": "ЦБ-00001705",
   "name": "Виваль газ вода 1,5",
@@ -12016,6 +12116,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000341   ",
   "inventgroup": "ЦБ-00002622",
   "name": "ПЭТ бутылка 2л",
@@ -12142,6 +12243,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000031   ",
   "inventgroup": "ЦБ-00001705",
   "name": "Виваль негаз вода 1,5",
@@ -12268,6 +12370,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000342   ",
   "inventgroup": "ЦБ-00002622",
   "name": "ПЭТ бутылка 3л",
@@ -12394,6 +12497,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000641   ",
   "inventgroup": "ЦБ-00001705",
   "name": "Виваль негаз.вода 0,5",
@@ -12520,6 +12624,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008514",
   "inventgroup": "ЦБ-00004706",
   "name": "Фруктовая соломка с сах пудрой 7 гр",
@@ -12646,6 +12751,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000226   ",
   "inventgroup": "ЦБ-00001705",
   "name": "Минеральная вода Карачинская 0,5",
@@ -12772,6 +12878,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010081",
   "inventgroup": "МА000216   ",
   "name": "Напиток Добрый Апельсин 1,0",
@@ -12898,6 +13005,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000225   ",
   "inventgroup": "ЦБ-00001705",
   "name": "Минеральная вода Карачинская 1,5",
@@ -13024,6 +13132,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001962   ",
   "inventgroup": "ЦБ-00000204",
   "name": "Пиво Сибирский пивовар светлое 1л",
@@ -13150,6 +13259,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000046   ",
   "inventgroup": "ЦБ-00001705",
   "name": "Минеральная вода Чажемто 0,5",
@@ -13276,6 +13386,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007508",
   "inventgroup": "ЦБ-00005127",
   "name": "Camel Compact Yellow Crush",
@@ -13402,6 +13513,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000047   ",
   "inventgroup": "ЦБ-00001705",
   "name": "Минеральная вода Чажемто 1,5",
@@ -13528,6 +13640,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001301   ",
   "inventgroup": "ЦБ-00001705",
   "name": "Напиток Мохито 0,5",
@@ -13654,6 +13767,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007311",
   "inventgroup": "ЦБ-00000204",
   "name": "Пиво Трое в лодке светлое* 1л",
@@ -13780,6 +13894,7 @@
   "Parent": 0,
   "isParent": "КН001057   "
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008340",
   "inventgroup": "ЦБ-00006535",
   "name": "Стики Heets Parlament Ruby Fuse",
@@ -13906,6 +14021,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001302   ",
   "inventgroup": "ЦБ-00001705",
   "name": "Напиток Мохито Имбирный 0,5",
@@ -14032,6 +14148,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "БЮ-00000001",
   "inventgroup": "ЦБ-00004704",
   "name": "Шоколад Alpen Gold в ассортименте 90 гр",
@@ -14141,6 +14258,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001369   ",
   "inventgroup": "ЦБ-00001705",
   "name": "Напиток Экстра-Тархун 0,5",
@@ -14267,6 +14385,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001306   ",
   "inventgroup": "ЦБ-00001705",
   "name": "Напиток Экстра-Грушевый 0,5",
@@ -14393,6 +14512,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000110   ",
   "inventgroup": "ЦБ-00000204",
   "name": "Пиво Нефильтрофф светлое н/ф 1л",
@@ -14519,6 +14639,7 @@
   "Parent": 0,
   "isParent": "КН000107   "
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006413",
   "inventgroup": "ЦБ-00001705",
   "name": "Напиток Мохито Ботаник лимонад 1,5",
@@ -14645,6 +14766,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001307   ",
   "inventgroup": "ЦБ-00001705",
   "name": "Напиток Экстра-Лимонад 0,5",
@@ -14771,6 +14893,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001308   ",
   "inventgroup": "ЦБ-00001705",
   "name": "Напиток Экстра-Ситро 0,5",
@@ -14897,6 +15020,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004641",
   "inventgroup": "ЦБ-00001705",
   "name": "Напиток Ягуар Дикий со вкусом тропических фруктов ж/б б/а0,5",
@@ -15023,6 +15147,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000370   ",
   "inventgroup": "МА000216   ",
   "name": "Напиток Ред Булл 0,25",
@@ -15149,6 +15274,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000219   ",
   "inventgroup": "МА000216   ",
   "name": "Напиток Ред Булл 0,355",
@@ -15275,6 +15401,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000220   ",
   "inventgroup": "МА000216   ",
   "name": "Напиток Ред Булл 0,473",
@@ -15401,6 +15528,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001038   ",
   "inventgroup": "МА000216   ",
   "name": "Сок Фруктовый Сад в ассорт 0,95",
@@ -15527,6 +15655,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001303   ",
   "inventgroup": "ЦБ-00001705",
   "name": "Напиток Шорли Грейпфрут-Лимон 6% сок 0,5",
@@ -15653,6 +15782,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001304   ",
   "inventgroup": "ЦБ-00001705",
   "name": "Напиток Шорли Лесные ягоды 5% сок 0,5",
@@ -15779,6 +15909,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001305   ",
   "inventgroup": "ЦБ-00001705",
   "name": "Напиток Шорли Яблочный 7% сок 0,5",
@@ -15905,6 +16036,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002388",
   "inventgroup": "ЦБ-00007372",
   "name": "Кальмар мясо с перцем по-шанхайски",
@@ -16014,6 +16146,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009396",
   "inventgroup": "ЦБ-00005126",
   "name": "Русский Стиль Чёрный",
@@ -16140,6 +16273,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006052",
   "inventgroup": "ЦБ-00005125",
   "name": "Parlament Night Blue",
@@ -16298,6 +16432,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008170",
   "inventgroup": "ЦБ-00007329",
   "name": "Семечки Жаро Белые солёные 140 гр",
@@ -16424,6 +16559,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005060",
   "inventgroup": "ЦБ-00004706",
   "name": "Конфитрейд Мармеладные палочки фруктовые с начинкой 16 гр",
@@ -16550,6 +16686,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005149",
   "inventgroup": "ЦБ-00005127",
   "name": "Winston Compact Plus Blue",
@@ -16692,6 +16829,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003830",
   "inventgroup": "ЦБ-00002222",
   "name": "Сухарики Гаринские сало с чесноком вес",
@@ -16801,6 +16939,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000746   ",
   "inventgroup": "ЦБ-00000204",
   "name": "Пиво Богемское полутёмное 1л",
@@ -16927,6 +17066,7 @@
   "Parent": 1,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000103   ",
   "inventgroup": "ЦБ-00000204",
   "name": "Пиво Крюгер Бархатное  тёмное 1л",
@@ -17053,6 +17193,7 @@
   "Parent": 0,
   "isParent": "КН000746   "
 },{
+  "command": "addInventItem",
   "inventcode": "КН000104   ",
   "inventgroup": "ЦБ-00000204",
   "name": "Пиво Крюгер Вайс светлое н/ф 1л",
@@ -17179,6 +17320,7 @@
   "Parent": 0,
   "isParent": "КН000746   "
 },{
+  "command": "addInventItem",
   "inventcode": "КН000107   ",
   "inventgroup": "ЦБ-00000204",
   "name": "Пиво Жигулевское ГОСТ светлое 1л",
@@ -17305,6 +17447,7 @@
   "Parent": 1,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004304",
   "inventgroup": "ЦБ-00005126",
   "name": "Next Rose",
@@ -17463,6 +17606,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000106   ",
   "inventgroup": "ЦБ-00000204",
   "name": "Пиво Крюгер Золотое полутёмное 1л",
@@ -17589,6 +17733,7 @@
   "Parent": 0,
   "isParent": "КН000107   "
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007668",
   "inventgroup": "МА000216   ",
   "name": "Пиво Стелла Артуа б/а ст/б 0,44",
@@ -17715,6 +17860,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000111   ",
   "inventgroup": "ЦБ-00000204",
   "name": "Пиво Ирландский Эль Шемрок тёмное 1л",
@@ -17841,6 +17987,7 @@
   "Parent": 0,
   "isParent": "КН000107   "
 },{
+  "command": "addInventItem",
   "inventcode": "КН000102   ",
   "inventgroup": "ЦБ-00000204",
   "name": "Пиво Крюгер Классическое светлое 1л",
@@ -17967,6 +18114,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000105   ",
   "inventgroup": "ЦБ-00000204",
   "name": "Пиво Крюгер н/ф Классическое светлое 1л",
@@ -18093,6 +18241,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000119   ",
   "inventgroup": "КН000384   ",
   "name": "Пиво Сладовар Пшеничное светлое н/ф 1л",
@@ -18219,6 +18368,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000108   ",
   "inventgroup": "ЦБ-00000204",
   "name": "Пиво Чешский Джбанек светлое 1л",
@@ -18345,6 +18495,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000113   ",
   "inventgroup": "ЦБ-00001704",
   "name": "Квас Благодей 1л ОАО Томское Пиво",
@@ -18471,6 +18622,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000382   ",
   "inventgroup": "КН001143   ",
   "name": "Напиток Мохито 1л",
@@ -18597,6 +18749,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007942",
   "inventgroup": "ЦБ-00004707",
   "name": "Масло эфирное имбирь 10 мл",
@@ -18706,6 +18859,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000091   ",
   "inventgroup": "ЦБ-00005980",
   "name": "Пакет Крюгер Хаус большой",
@@ -18832,6 +18986,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005766",
   "inventgroup": "ЦБ-00004706",
   "name": "Куб Ди LOLLY BOX карамель на палочке с игрушкой 11,4 гр",
@@ -18990,6 +19145,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000789   ",
   "inventgroup": "ЦБ-00005980",
   "name": "Пакет Крюгер Хаус бумажный ",
@@ -19116,6 +19272,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000347   ",
   "inventgroup": "ЦБ-00005980",
   "name": "Пакет Крюгер Хаус маленький",
@@ -19242,6 +19399,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000583   ",
   "inventgroup": "ЦБ-00004705",
   "name": "Жевательная резинка Орбит подушка в ассорт",
@@ -19368,6 +19526,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004307",
   "inventgroup": "ЦБ-00005127",
   "name": "Winston Blue",
@@ -19526,6 +19685,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000210   ",
   "inventgroup": "ЦБ-00004710",
   "name": "Презервативы Contex №3 Classic",
@@ -19652,6 +19812,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000211   ",
   "inventgroup": "ЦБ-00004710",
   "name": "Презервативы Contex №3 Lights",
@@ -19778,6 +19939,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001313   ",
   "inventgroup": "ЦБ-00004705",
   "name": "Драже Скитлс 38 гр",
@@ -19936,6 +20098,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000486   ",
   "inventgroup": "ЦБ-00004704",
   "name": "Шоколад Баунти 55гр",
@@ -20062,6 +20225,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001238   ",
   "inventgroup": "ЦБ-00004704",
   "name": "Шоколад Баунти 82,5гр",
@@ -20188,6 +20352,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001158   ",
   "inventgroup": "ЦБ-00004704",
   "name": "Шоколад М*Мс арахис 45 гр",
@@ -20314,6 +20479,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000695   ",
   "inventgroup": "ЦБ-00004704",
   "name": "Шоколад Милки Вей 52 гр",
@@ -20440,6 +20606,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004225",
   "inventgroup": "ЦБ-00005127",
   "name": "Winston XStyle Blue",
@@ -20582,6 +20749,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001116   ",
   "inventgroup": "ЦБ-00004704",
   "name": "Шоколад Милки Вей клубника 26 гр",
@@ -20708,6 +20876,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000490   ",
   "inventgroup": "ЦБ-00004704",
   "name": "Шоколад Сникерс 50,5 гр",
@@ -20834,6 +21003,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001350   ",
   "inventgroup": "ЦБ-00004704",
   "name": "Шоколад Сникерс лесной орех 81 гр",
@@ -20960,6 +21130,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001717   ",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Бингре Крабовые 50 гр",
@@ -21086,6 +21257,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН000492   ",
   "inventgroup": "ЦБ-00004704",
   "name": "Шоколад Твикс 55 гр",
@@ -21212,6 +21384,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001223   ",
   "inventgroup": "ЦБ-00004704",
   "name": "Шоколад Твикс 82 гр",
@@ -21338,6 +21511,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002252",
   "inventgroup": "КН000302   ",
   "name": "Кириешки ржаные Heinz Стейк с соусом Барбекью 50г/25мл",
@@ -21464,6 +21638,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001126   ",
   "inventgroup": "ЦБ-00005980",
   "name": "ПЭТ бутылка 0,5л",
@@ -21590,6 +21765,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007124",
   "inventgroup": "ЦБ-00002556",
   "name": "Кружка для пива керамическая Сила Медведя 0,5 л",
@@ -21699,6 +21875,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000069   ",
   "inventgroup": "ЦБ-00005980",
   "name": "Стакан 0,5л",
@@ -21825,6 +22002,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001523",
   "inventgroup": "ЦБ-00004707",
   "name": "Уголь Берёзовый 2 кг",
@@ -21951,6 +22129,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009025",
   "inventgroup": "ЦБ-00007372",
   "name": "Кета соломка х/к Сахалин",
@@ -22060,6 +22239,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006828",
   "inventgroup": "ЦБ-00004707",
   "name": "Масло эфирное иланг-иланг 10 мл",
@@ -22186,6 +22366,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001168",
   "inventgroup": "ЦБ-00004706",
   "name": "Яйцо шоколадное Киндер Сюрприз для мальчиков 36 гр",
@@ -22312,6 +22493,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001448",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Русская Картошка жареная курица 80 гр",
@@ -22438,6 +22620,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "МА000011   ",
   "inventgroup": "ЦБ-00002556",
   "name": "Кружка для пива керамическая С лёгким паром 0,7 л",
@@ -22547,6 +22730,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002808",
   "inventgroup": "ЦБ-00004471",
   "name": "Свинина соломка классическая ННП",
@@ -22656,6 +22840,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004039",
   "inventgroup": "ЦБ-00007329",
   "name": "Семечки Джинн соленые 250 гр",
@@ -22782,6 +22967,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001450   ",
   "inventgroup": "КН000302   ",
   "name": "Кириешки  в ассорт 100 гр",
@@ -22908,6 +23094,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005263",
   "inventgroup": "ЦБ-00005127",
   "name": "Winston Compact Plus Impulse",
@@ -23050,6 +23237,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001462   ",
   "inventgroup": "ЦБ-00004471",
   "name": "Палочки куринные ",
@@ -23159,6 +23347,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001476   ",
   "inventgroup": "ЦБ-00007329",
   "name": "Семечки Жаро отборные 200 гр",
@@ -23285,6 +23474,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001383",
   "inventgroup": "ЦБ-00004707",
   "name": "Веник Дубовый Русский Лес",
@@ -23411,6 +23601,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001644",
   "inventgroup": "ЦБ-00004704",
   "name": "Шоколад Киндер с молочной начинкой 100гр",
@@ -23537,6 +23728,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001645",
   "inventgroup": "ЦБ-00004704",
   "name": "Шоколад Киндер с молочной начинкой 50гр",
@@ -23663,6 +23855,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001735",
   "inventgroup": "ЦБ-00004706",
   "name": "Мармелад Бегемотик Бонди 70 гр",
@@ -23789,6 +23982,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001580   ",
   "inventgroup": "ЦБ-00001705",
   "name": "Лимонад Диво Дюшес 1,5",
@@ -23931,6 +24125,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001753",
   "inventgroup": "ЦБ-00004705",
   "name": "Леденец Чупа Чупс Ассорти",
@@ -24073,6 +24268,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008254",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Лейз Сметана зелень 50 гр",
@@ -24199,6 +24395,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006678",
   "inventgroup": "ЦБ-00005125",
   "name": "Philip Moriris red",
@@ -24341,6 +24538,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001789",
   "inventgroup": "КН000301   ",
   "name": "Луковые кольца Золотые лук и сметана 40 гр",
@@ -24467,6 +24665,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002856",
   "inventgroup": "ЦБ-00004705",
   "name": "Конфитрейд Соска 12 гр",
@@ -24609,6 +24808,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001804",
   "inventgroup": "ЦБ-00005803",
   "name": "Арахис в глазури Сыр",
@@ -24718,6 +24918,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001807",
   "inventgroup": "ЦБ-00004710",
   "name": "Презервативы Contex №3 Extra Sensation",
@@ -24844,6 +25045,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001828",
   "inventgroup": "ЦБ-00000204",
   "name": "Пиво Холодный Хмель светлое 1л",
@@ -24970,6 +25172,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001889",
   "inventgroup": "ЦБ-00004707",
   "name": "Опахало для костра пластик",
@@ -25096,6 +25299,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001945",
   "inventgroup": "ЦБ-00006535",
   "name": "Сигариллы Cafe Creme Coffee ",
@@ -25205,6 +25409,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001621   ",
   "inventgroup": "ЦБ-00002222",
   "name": "Сухарики Гаринские красная  икра вес",
@@ -25331,6 +25536,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008747",
   "inventgroup": "ЦБ-00005127",
   "name": "Camel Compact Green",
@@ -25457,6 +25663,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001641   ",
   "inventgroup": "ЦБ-00007372",
   "name": "Лососевая соломка с дымком",
@@ -25583,6 +25790,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "НД-00000001",
   "inventgroup": "ЦБ-00007330",
   "name": "Арахис ж/с в банке со вкусом грибов 110 гр Ким",
@@ -25709,6 +25917,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004067",
   "inventgroup": "КН000344   ",
   "name": "Кета ломтики",
@@ -25818,6 +26027,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001402",
   "inventgroup": "КН000301   ",
   "name": "Кукурузные шарики СырBall Сыр 45 гр",
@@ -25944,6 +26154,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001654   ",
   "inventgroup": "ЦБ-00004470",
   "name": "Горбуша филе х/к",
@@ -26053,6 +26264,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001660   ",
   "inventgroup": "ЦБ-00007329",
   "name": "Семечки Жаро отборные 100 гр",
@@ -26179,6 +26391,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001661   ",
   "inventgroup": "ЦБ-00007329",
   "name": "Семечки Жаро отборные солёные 100 гр",
@@ -26305,6 +26518,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001780   ",
   "inventgroup": "ЦБ-00004471",
   "name": "Мясо Свинина",
@@ -26414,6 +26628,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009610",
   "inventgroup": "ЦБ-00005125",
   "name": "Marlboro Crafted Compakt (BONDSTREET)",
@@ -26540,6 +26755,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001786   ",
   "inventgroup": "ЦБ-00002224",
   "name": "Сыр бочонок копчёный вес",
@@ -26649,6 +26865,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002768",
   "inventgroup": "ЦБ-00007330",
   "name": "Арахис ж/с в банке со вкусом сметана и зелень 110 гр Ким",
@@ -26775,6 +26992,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009091",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Лейз Ребрышки гриль140 гр",
@@ -26901,6 +27119,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002080",
   "inventgroup": "ЦБ-00004707",
   "name": "Мангал складной 30*24",
@@ -27027,6 +27246,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002082",
   "inventgroup": "ЦБ-00004707",
   "name": "Решётка гриль глубокая 28*22",
@@ -27153,6 +27373,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004379",
   "inventgroup": "ЦБ-00004704",
   "name": "Шоколад Сникерс 80гр",
@@ -27295,6 +27516,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002099",
   "inventgroup": "ЦБ-00004707",
   "name": "Масло эфирное кедр 10 мл",
@@ -27421,6 +27643,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002100",
   "inventgroup": "ЦБ-00004707",
   "name": "Масло эфирное эвкалипт 10 мл",
@@ -27547,6 +27770,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002101",
   "inventgroup": "ЦБ-00004707",
   "name": "Щепа для копчения Русский Лес в ассортименте",
@@ -27656,6 +27880,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007445",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Лейз из печи Сметана и ароматные травы 85 гр",
@@ -27782,6 +28007,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002102",
   "inventgroup": "ЦБ-00004707",
   "name": "Средство для розжига Русский Лес 0,25",
@@ -27908,6 +28134,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002151",
   "inventgroup": "КН000301   ",
   "name": "Кукурузные шарики СырBall Копчёный сыр 140 гр",
@@ -28034,6 +28261,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008894",
   "inventgroup": "ЦБ-00006535",
   "name": "Стики Heets Parlament Amber Selection",
@@ -28176,6 +28404,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002152",
   "inventgroup": "КН000301   ",
   "name": "Кукурузные шарики СырBall Сыр 140 гр",
@@ -28302,6 +28531,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002154",
   "inventgroup": "МА000216   ",
   "name": "Пиво Бакалар б/а ст/б 0,33",
@@ -28428,6 +28658,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005574",
   "inventgroup": "КН000384   ",
   "name": "Пиво Моби Дик *светлое 1л",
@@ -28554,6 +28785,7 @@
   "Parent": 0,
   "isParent": "ЦБ-00002039"
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002177",
   "inventgroup": "ЦБ-00002222",
   "name": "Сухарики Гаринские паприка с чесноком",
@@ -28663,6 +28895,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001999   ",
   "inventgroup": "КН001143   ",
   "name": "Пиво Бэссер б/а 1л",
@@ -28789,6 +29022,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002203",
   "inventgroup": "ЦБ-00004707",
   "name": "Шампур Берёзовый 15 шт Русский лес",
@@ -28898,6 +29132,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001916   ",
   "inventgroup": "ЦБ-00002222",
   "name": "Сухарики Гаринские по домашнему с чесноком вес",
@@ -29007,6 +29242,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001809   ",
   "inventgroup": "ЦБ-00001705",
   "name": "Лимонад Диво 1,5",
@@ -29133,6 +29369,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002282",
   "inventgroup": "КН000384   ",
   "name": "Пиво Амадеус светлое 1л",
@@ -29259,6 +29496,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002284",
   "inventgroup": "КН000384   ",
   "name": "Пиво Амадеус тёмное н/ф 1л",
@@ -29385,6 +29623,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002322",
   "inventgroup": "МА000216   ",
   "name": "Пиво Хугарден б/алк ж/б 0,33",
@@ -29527,6 +29766,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008210",
   "inventgroup": "ЦБ-00002556",
   "name": "Стакан Крюгер Хаус тюлип 0,5л",
@@ -29636,6 +29876,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002352",
   "inventgroup": "ЦБ-00004704",
   "name": "Шоколад Киндер со злаками 23,5 гр",
@@ -29762,6 +30003,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008846",
   "inventgroup": "МА000216   ",
   "name": "Пиво Хугарден грейпфрут б/алк ж/б 0,33",
@@ -29888,6 +30130,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002360",
   "inventgroup": "ЦБ-00004744",
   "name": "Попкорн Corin Corn сладко-солёный 85 гр",
@@ -30014,6 +30257,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004312",
   "inventgroup": "ЦБ-00002556",
   "name": "Кружка для пива керамическая Ни пуха Ни пера Привал 0,7 л",
@@ -30140,6 +30384,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002361",
   "inventgroup": "ЦБ-00004744",
   "name": "Попкорн Corin Corn ванильный 85 гр",
@@ -30266,6 +30511,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КН001912   ",
   "inventgroup": "ЦБ-00005980",
   "name": "Стакан 0,2",
@@ -30392,6 +30638,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002431",
   "inventgroup": "ЦБ-00004706",
   "name": "Свитбокс Мармелад с игрушкой в коробочке 10 гр",
@@ -30534,6 +30781,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006563",
   "inventgroup": "МА000216   ",
   "name": "Сок Любимый Тропический Микс 0,95л",
@@ -30660,6 +30908,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002466",
   "inventgroup": "ЦБ-00004706",
   "name": "Конфитрейд Зефирная косичка Зефирка 25 гр",
@@ -30786,6 +31035,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002503",
   "inventgroup": "ЦБ-00007372",
   "name": "Щука солёно сушёная ",
@@ -30895,6 +31145,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006224",
   "inventgroup": "ЦБ-00005127",
   "name": "Winston SS Fresh Menthol",
@@ -31037,6 +31288,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006232",
   "inventgroup": "ЦБ-00000204",
   "name": "Пиво Крюгер Экипаж светлое 1л",
@@ -31163,6 +31415,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002613",
   "inventgroup": "ЦБ-00004704",
   "name": "Шоколад Сникерс в белом шоколаде 81 гр",
@@ -31289,6 +31542,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006544",
   "inventgroup": "ЦБ-00005803",
   "name": "Арахис Красная икра Премиум",
@@ -31398,6 +31652,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002648",
   "inventgroup": "ЦБ-00007329",
   "name": "Семечки Жаро гиганты солёные 280 гр",
@@ -31524,6 +31779,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005281",
   "inventgroup": "ЮТ-00000001",
   "name": "Корюшка Сахалинская сушеная икряная крупная 20+",
@@ -31633,6 +31889,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002656",
   "inventgroup": "ЦБ-00004744",
   "name": "Попкорн Show Time соль 80 гр",
@@ -31759,6 +32016,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002733",
   "inventgroup": "МА000216   ",
   "name": "Напитки из Черноголовки Лимонад ст/б 0,5",
@@ -31885,6 +32143,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002740",
   "inventgroup": "ЦБ-00004705",
   "name": "Карамель на светящейся палочке мороженое 10 гр",
@@ -32011,6 +32270,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005616",
   "inventgroup": "ЦБ-00004709",
   "name": "Элемент питания DURACELL Basic LR6/AA",
@@ -32153,6 +32413,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002745",
   "inventgroup": "ЦБ-00004706",
   "name": "Конфитрейд Зефирная косичка 12 гр",
@@ -32262,6 +32523,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002756",
   "inventgroup": "ЦБ-00007330",
   "name": "Арахис ж/с 90 гр Ким",
@@ -32388,6 +32650,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006146",
   "inventgroup": "ЦБ-00005127",
   "name": "Play Hit",
@@ -32546,6 +32809,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002757",
   "inventgroup": "ЦБ-00007330",
   "name": "Арахис ж/с 200 гр Ким",
@@ -32672,6 +32936,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007507",
   "inventgroup": "ЦБ-00005127",
   "name": "Camel Compact 100 Tropical Crush",
@@ -32814,6 +33079,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002767",
   "inventgroup": "ЦБ-00007330",
   "name": "Арахис ж/с в банке со вкусом сыра 110 гр Ким",
@@ -32940,6 +33206,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001290",
   "inventgroup": "ЦБ-00004744",
   "name": "Попкорн Corin Corn бекон 85 гр",
@@ -33066,6 +33333,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002769",
   "inventgroup": "ЦБ-00007330",
   "name": "Арахис ж/с в банке классический 110 гр Ким",
@@ -33192,6 +33460,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005789",
   "inventgroup": "ЦБ-00005127",
   "name": "Camel Yellow",
@@ -33350,6 +33619,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002800",
   "inventgroup": "ЦБ-00005127",
   "name": "Camel Blue",
@@ -33524,6 +33794,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002831",
   "inventgroup": "КН000797   ",
   "name": "Рёбра свиные с/м",
@@ -33633,6 +33904,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002832",
   "inventgroup": "ЦБ-00005126",
   "name": "Русский Стиль Синие",
@@ -33759,6 +34031,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002850",
   "inventgroup": "ЦБ-00007330",
   "name": "Арахис ж/с в банке со вкусом чеснока 110 гр Ким",
@@ -33885,6 +34158,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00002851",
   "inventgroup": "ЦБ-00007330",
   "name": "Арахис ж/с в банке со вкусом васаби 110 гр Ким",
@@ -34011,6 +34285,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003107",
   "inventgroup": "ЦБ-00004707",
   "name": "Масло эфирное можжевельник 10 мл",
@@ -34137,6 +34412,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006729",
   "inventgroup": "ЦБ-00006535",
   "name": "Стики FIIT Crisp",
@@ -34279,6 +34555,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006558",
   "inventgroup": "МА000216   ",
   "name": "Сок Любимый Яблочный 0,95л",
@@ -34421,6 +34698,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003097",
   "inventgroup": "ЦБ-00002556",
   "name": "Кружка для пива керамическая Крепость 1 л",
@@ -34530,6 +34808,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009343",
   "inventgroup": "МА000216   ",
   "name": "Напиток Рич Вишня Грейпфрут ж/б 0.33",
@@ -34656,6 +34935,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003105",
   "inventgroup": "ЦБ-00004707",
   "name": "Масло эфирное ель 10 мл",
@@ -34782,6 +35062,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005615",
   "inventgroup": "ЦБ-00004709",
   "name": "Элемент питания DURACELL Basic LR03/AAA",
@@ -34940,6 +35221,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003106",
   "inventgroup": "ЦБ-00004707",
   "name": "Масло эфирное лаванда 10 мл",
@@ -35049,6 +35331,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003108",
   "inventgroup": "ЦБ-00004707",
   "name": "Масло эфирное чайное дерево 10 мл",
@@ -35158,6 +35441,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003169",
   "inventgroup": "ЦБ-00004470",
   "name": "Вомер х/к ",
@@ -35267,6 +35551,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003187",
   "inventgroup": "ЦБ-00005127",
   "name": "Winston XS Silver",
@@ -35409,6 +35694,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003232",
   "inventgroup": "ЮТ-00000001",
   "name": "Корюшка Сахалинская сушеная икряная средняя 17+",
@@ -35518,6 +35804,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007518",
   "inventgroup": "ЦБ-00004708",
   "name": "Зажигалка БИК J3 ДЕКОР СМАЙЛИКИ",
@@ -35660,6 +35947,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003264",
   "inventgroup": "ЦБ-00002556",
   "name": "Кружка для пива керамическая Охота 0,5 л",
@@ -35769,6 +36057,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007711",
   "inventgroup": "ЦБ-00005126",
   "name": "Chapman SSL Блю",
@@ -35895,6 +36184,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003284",
   "inventgroup": "ЦБ-00005980",
   "name": "Ручка-держатель под пэт ",
@@ -36021,6 +36311,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001329",
   "inventgroup": "ЦБ-00004705",
   "name": "Леденец Чупа Чупс XXL 4Д",
@@ -36163,6 +36454,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004344",
   "inventgroup": "ЦБ-00007372",
   "name": "Минтай палочки вяленые",
@@ -36272,6 +36564,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006995",
   "inventgroup": "ЦБ-00007373",
   "name": "Тунец Рубиновый",
@@ -36381,6 +36674,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001366",
   "inventgroup": "ЦБ-00005803",
   "name": "Арахис в глазури Микс",
@@ -36490,6 +36784,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005938",
   "inventgroup": "ЦБ-00005126",
   "name": "Bond Street Compact Blue",
@@ -36648,6 +36943,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001379",
   "inventgroup": "ЦБ-00004707",
   "name": "Средство для розжига Grifon 0.5",
@@ -36774,6 +37070,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "КЦ-00000001",
   "inventgroup": "ЦБ-00004711",
   "name": "Презервативы Эротика Делюкс №3",
@@ -36900,6 +37197,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00000788",
   "inventgroup": "МА000216   ",
   "name": "Минеральная вода Боржоми  ст/б 0,5 ",
@@ -37026,6 +37324,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010360",
   "inventgroup": "МА000216   ",
   "name": "Нектар Добрый Яблоко Черная рябина Вишня 0,97",
@@ -37152,6 +37451,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001273",
   "inventgroup": "ЦБ-00007330",
   "name": "Арахис соленый Караван орехов 90 гр",
@@ -37278,6 +37578,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008508",
   "inventgroup": "ЦБ-00006535",
   "name": "Стики Heets Parlament Slate Selection ",
@@ -37420,6 +37721,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008525",
   "inventgroup": "ЦБ-00004706",
   "name": "Пластиковое яйцо с игрушкой и жевательным мармеладом 10 гр",
@@ -37546,6 +37848,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008526",
   "inventgroup": "ЦБ-00004705",
   "name": "Драже с витамином С Vitamint 14гр",
@@ -37672,6 +37975,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008678",
   "inventgroup": "ЦБ-00006535",
   "name": "Стики Heets Parlament Gold Selection",
@@ -37798,6 +38102,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008285",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Лейз Зеленый лук 81 гр",
@@ -37924,6 +38229,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008688",
   "inventgroup": "ЦБ-00004707",
   "name": "Решётка походная 22*30*3 ",
@@ -38050,6 +38356,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010064",
   "inventgroup": "ЦБ-00002224",
   "name": "Сыр жареный воздушный",
@@ -38159,6 +38466,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007844",
   "inventgroup": "ЦБ-00004707",
   "name": "Палочка шашлычная 0,3*25см ( штучные для букетов)",
@@ -38285,6 +38593,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008756",
   "inventgroup": "ЦБ-00004471",
   "name": "Свинина брусочки по-таежному",
@@ -38394,6 +38703,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006281",
   "inventgroup": "ЦБ-00005125",
   "name": "Philip Moriris exotic mix",
@@ -38536,6 +38846,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008766",
   "inventgroup": "ЦБ-00006535",
   "name": "Стики FIIT Regular Deep",
@@ -38662,6 +38973,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008767",
   "inventgroup": "ЦБ-00006535",
   "name": "Стики FIIT Spring",
@@ -38788,6 +39100,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004771",
   "inventgroup": "ЦБ-00004709",
   "name": "Элемент питания Трофи LR6-4ВL",
@@ -38914,6 +39227,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008909",
   "inventgroup": "ЦБ-00004707",
   "name": "Палочка шашлычная 0,3*25см 100 шт ",
@@ -39023,6 +39337,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "НЧ-00000001",
   "inventgroup": "ЦБ-00006535",
   "name": "Стики Heets Parlament Turquoise Selection",
@@ -39165,6 +39480,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007654",
   "inventgroup": "ЦБ-00007317",
   "name": "Медовуха Сочная груша* 1л",
@@ -39291,6 +39607,7 @@
   "Parent": 0,
   "isParent": "ЦБ-00004386"
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008200",
   "inventgroup": "МА000216   ",
   "name": "Пиво Горьковская Пивоварня IPA 0.0  б/а ж/б 0,33",
@@ -39417,6 +39734,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003995",
   "inventgroup": "ЦБ-00005126",
   "name": "Davidoff Reach Blue",
@@ -39591,6 +39909,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004642",
   "inventgroup": "ЦБ-00001705",
   "name": "Напиток Ягуар Фри ж/б б/а 0,5",
@@ -39717,6 +40036,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009064",
   "inventgroup": "ЦБ-00005126",
   "name": "Winston Demoseries Frozen Mix",
@@ -39843,6 +40163,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008294",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Лейз Белые грибы со сметаной 81 гр",
@@ -39969,6 +40290,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009067",
   "inventgroup": "КН000384   ",
   "name": "Пиво Балтика Портер №6 темное 1л",
@@ -40095,6 +40417,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009069",
   "inventgroup": "ЦБ-00006535",
   "name": "Стики Heets Parlament Satin Fuse",
@@ -40221,6 +40544,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009074",
   "inventgroup": "ЦБ-00005127",
   "name": "LD Compact Connekt+",
@@ -40347,6 +40671,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009076",
   "inventgroup": "КН000384   ",
   "name": "Пивной напиток Домашний свар светлое н/ф* 1л",
@@ -40473,6 +40798,7 @@
   "Parent": 0,
   "isParent": "ЦБ-00006948"
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009080",
   "inventgroup": "ЦБ-00004471",
   "name": "Брусочки из мяса птицы с/к",
@@ -40582,6 +40908,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006935",
   "inventgroup": "КН000302   ",
   "name": "Хрустим Багет Томат Зелень 60 гр",
@@ -40708,6 +41035,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009083",
   "inventgroup": "КН000384   ",
   "name": "Пивной напиток Черри Найт с ароматом вишни 1л",
@@ -40834,6 +41162,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009087",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Бингре Васаби 50 гр",
@@ -40960,6 +41289,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009113",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Лейз Рифленые лобстер 140 гр",
@@ -41086,6 +41416,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009114",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Лейз Рифленые паприка 140 гр",
@@ -41212,6 +41543,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005110",
   "inventgroup": "ЮТ-00000001",
   "name": "Корюшка Сахалинская сушеная средняя 19+",
@@ -41321,6 +41653,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009115",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Лейз Рифленые лосось в сливочном соусе 140 гр",
@@ -41447,6 +41780,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009117",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Лейз Сметана зелень 140 гр",
@@ -41573,6 +41907,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009118",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Лейз Молодой зеленый лук 140 гр",
@@ -41699,6 +42034,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005006",
   "inventgroup": "ЦБ-00002556",
   "name": "Кружка для пива керамическая Рысь 0,5 л",
@@ -41825,6 +42161,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009119",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Лейз Краб 140 гр",
@@ -41951,6 +42288,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009120",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Лейз Сыр 140 гр",
@@ -42077,6 +42415,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009121",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Лейз Рифленые сметана лук 140 гр",
@@ -42203,6 +42542,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005230",
   "inventgroup": "ЦБ-00005126",
   "name": "Bond Street Premium",
@@ -42377,6 +42717,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009122",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Лейз Соль 140 гр",
@@ -42503,6 +42844,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007591",
   "inventgroup": "ЦБ-00004706",
   "name": "Шарики кукурузные (какао) с игрушкой Play mе Лицензия 50 г",
@@ -42629,6 +42971,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009332",
   "inventgroup": "КН000302   ",
   "name": "Хрустим Ржаные Сладкий Чили в огне 60 гр",
@@ -42755,6 +43098,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009334",
   "inventgroup": "МА000216   ",
   "name": "Напиток Добрый Палпи киви и гуанабана с кусочками алоэ 0,45 пэт",
@@ -42881,6 +43225,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009336",
   "inventgroup": "МА000216   ",
   "name": "Фьюз чай Персик Роза зеро 0,5",
@@ -43007,6 +43352,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006833",
   "inventgroup": "ЦБ-00005127",
   "name": "Camel Compact",
@@ -43149,6 +43495,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009342",
   "inventgroup": "МА000216   ",
   "name": "Напиток Берн Темная энергия ж/б 0,449",
@@ -43275,6 +43622,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009344",
   "inventgroup": "МА000216   ",
   "name": "Напиток Рич Виноград Лимон ж/б 0.33",
@@ -43401,6 +43749,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008339",
   "inventgroup": "ЦБ-00006535",
   "name": "Стики Heets Parlament Amarelo Fuse",
@@ -43527,6 +43876,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007500",
   "inventgroup": "ЦБ-00007329",
   "name": "Семечки Солнечный великан Джинн с солью 300 гр",
@@ -43653,6 +44003,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009345",
   "inventgroup": "МА000216   ",
   "name": "Напиток Рич Виноград Лаванда ж/б 0.33",
@@ -43779,6 +44130,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009346",
   "inventgroup": "МА000216   ",
   "name": "Напиток Рич Виноград Лимон Мандарин Роза ж/б 0.33",
@@ -43905,6 +44257,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005379",
   "inventgroup": "КН000384   ",
   "name": "Пивной напиток Вишня в дубе 1л",
@@ -44031,6 +44384,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009379",
   "inventgroup": "ЦБ-00005125",
   "name": "Marlboro Crafted Gold (Chesterfield)",
@@ -44157,6 +44511,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009393",
   "inventgroup": "ЦБ-00005126",
   "name": "Русский Стиль Эталон Компакт",
@@ -44283,6 +44638,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007427",
   "inventgroup": "ЦБ-00002224",
   "name": "Сыр спагетти нано вес",
@@ -44409,6 +44765,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009400",
   "inventgroup": "ЦБ-00005127",
   "name": "LD Autograph Impulse Compact 100s",
@@ -44535,6 +44892,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009403",
   "inventgroup": "ЦБ-00004471",
   "name": "Чипсы Золотистые из мяса ц/б вяленые ",
@@ -44644,6 +45002,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006762",
   "inventgroup": "ЦБ-00007373",
   "name": "Кальмар в сметанном соусе",
@@ -44753,6 +45112,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001025",
   "inventgroup": "ЦБ-00006535",
   "name": "Сигариллы Capitain Black White Crema",
@@ -44895,6 +45255,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009443",
   "inventgroup": "КН000301   ",
   "name": "Чипсы EASY PEASY Вагон тушенки 70 гр",
@@ -45021,6 +45382,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009517",
   "inventgroup": "ЦБ-00004707",
   "name": "Брикет древесно-угольный 2 кг",
@@ -45130,6 +45492,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009582",
   "inventgroup": "ЮТ-00000001",
   "name": "Судак потрош вяленый",
@@ -45239,6 +45602,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ТМ-00000010",
   "inventgroup": "ЦБ-00004707",
   "name": "Уголь Берёзовый 3 кг ",
@@ -45365,6 +45729,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009661",
   "inventgroup": "ЦБ-00004744",
   "name": "Попкорн Corin Corn гималайская соль 100 гр",
@@ -45491,6 +45856,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010100",
   "inventgroup": "МА000216   ",
   "name": "Напиток Добрый Манго Маракуйя 0,5",
@@ -45617,6 +45983,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009692",
   "inventgroup": "ЦБ-00007736",
   "name": "Лапша Epic Крылья Баффало 70 гр",
@@ -45726,6 +46093,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007946",
   "inventgroup": "ЦБ-00004707",
   "name": "Шампур угловой 35*1*0,08 см сталь ",
@@ -45835,6 +46203,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009693",
   "inventgroup": "ЦБ-00007736",
   "name": "Лапша Epic Мощный Бургер 70 гр",
@@ -45944,6 +46313,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009695",
   "inventgroup": "ЦБ-00007736",
   "name": "Лапша Siem Sam Корейский Рамен со вкусом говядины BBQ 80 гр",
@@ -46053,6 +46423,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009740",
   "inventgroup": "ЦБ-00004470",
   "name": "Корюшка Сахалинская х/к",
@@ -46162,6 +46533,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009787",
   "inventgroup": "ЦБ-00004704",
   "name": "Шоколад Пикник 52 гр",
@@ -46288,6 +46660,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006625",
   "inventgroup": "ЦБ-00005127",
   "name": "LD Autograph Impulse Compact 100s Breezy",
@@ -46446,6 +46819,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009833",
   "inventgroup": "МА000216   ",
   "name": "Напитки из Черноголовки Кола ст/б 0,5",
@@ -46572,6 +46946,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009860",
   "inventgroup": "МА000216   ",
   "name": "Напиток Берн Тропический Микс  ж/б 0,25",
@@ -46698,6 +47073,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007716",
   "inventgroup": "ЦБ-00007317",
   "name": "Медовуха Клубника 1л",
@@ -46824,6 +47200,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00009881",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Бингре Морская капуста 40 гр",
@@ -46950,6 +47327,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005562",
   "inventgroup": "КН000384   ",
   "name": "Пиво Ваер Лагер светлое н/ф 1л",
@@ -47076,6 +47454,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006669",
   "inventgroup": "ЦБ-00005125",
   "name": "Next Violet Special 2 in1",
@@ -47218,6 +47597,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004629",
   "inventgroup": "КН000384   ",
   "name": "Пиво 54 светлое 1л",
@@ -47344,6 +47724,7 @@
   "Parent": 1,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010075",
   "inventgroup": "МА000216   ",
   "name": "Напиток Добрый Лимон Лайм 0,5",
@@ -47470,6 +47851,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010076",
   "inventgroup": "МА000216   ",
   "name": "Напиток Добрый Лимон Лайм 1,0",
@@ -47596,6 +47978,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003786",
   "inventgroup": "КН001143   ",
   "name": "Напиток Грушевый Фруктель Бориха 1л",
@@ -47722,6 +48105,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010078",
   "inventgroup": "МА000216   ",
   "name": "Напиток Добрый Лимон Лайм ж/б 0,33",
@@ -47848,6 +48232,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010080",
   "inventgroup": "МА000216   ",
   "name": "Напиток Добрый Апельсин 0,5",
@@ -47974,6 +48359,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010083",
   "inventgroup": "МА000216   ",
   "name": "Напиток Рич Биттер Лемон 1,0",
@@ -48100,6 +48486,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010289",
   "inventgroup": "ЦБ-00007373",
   "name": "Ассорти из грибов ",
@@ -48209,6 +48596,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010085",
   "inventgroup": "МА000216   ",
   "name": "Напиток Рич Гранат 1,0",
@@ -48335,6 +48723,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010099",
   "inventgroup": "МА000216   ",
   "name": "Напиток Добрый Манго Маракуйя 1,0",
@@ -48461,6 +48850,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007941",
   "inventgroup": "ЦБ-00004707",
   "name": "Масло эфирное жасмин 10 мл",
@@ -48570,6 +48960,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010113",
   "inventgroup": "МА000216   ",
   "name": "Напиток Добрый Вишня 0,5",
@@ -48696,6 +49087,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001222",
   "inventgroup": "МА000216   ",
   "name": "Бон Аква н/газ вода 1,0",
@@ -48822,6 +49214,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010114",
   "inventgroup": "МА000216   ",
   "name": "Напиток Добрый Сибирские травы 0,5",
@@ -48948,6 +49341,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010135",
   "inventgroup": "МА000216   ",
   "name": "Нектар Добрый Фермерские яблочки 0,97",
@@ -49074,6 +49468,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010136",
   "inventgroup": "МА000216   ",
   "name": "Нектар Добрый Мультифрукт 0,97",
@@ -49200,6 +49595,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005201",
   "inventgroup": "ЦБ-00004704",
   "name": "Шоколад М*Мс Миндаль 122 гр",
@@ -49326,6 +49722,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003536",
   "inventgroup": "ЦБ-00007329",
   "name": "Семечки Джинн соленые 140 гр",
@@ -49452,6 +49849,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003377",
   "inventgroup": "ЦБ-00005127",
   "name": "Winston XS Blue",
@@ -49594,6 +49992,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010196",
   "inventgroup": "ЦБ-00005125",
   "name": "Philip Moriris compact premium (Союз Apollo)",
@@ -49720,6 +50119,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010200",
   "inventgroup": "КН001143   ",
   "name": "Напиток Фьюжн со вкусом арбуза и клубники 1л",
@@ -49846,6 +50246,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010201",
   "inventgroup": "МА000216   ",
   "name": "Напиток Добрый Кола ж/б 0,33",
@@ -49972,6 +50373,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010205",
   "inventgroup": "МА000216   ",
   "name": "Нектар Добрый Апельсин 0,97",
@@ -50098,6 +50500,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010259",
   "inventgroup": "КН000384   ",
   "name": "Пиво Старый Мельник из Бочонка Мягкое светлое****1л",
@@ -50224,6 +50627,7 @@
   "Parent": 0,
   "isParent": "ЦБ-00007257"
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010282",
   "inventgroup": "ЦБ-00007736",
   "name": "Соус Heinz Сальса",
@@ -50333,6 +50737,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010288",
   "inventgroup": "ЦБ-00007373",
   "name": "Сельдь филе-кусочки К картошечке",
@@ -50442,6 +50847,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007324",
   "inventgroup": "ЦБ-00005125",
   "name": "Chesterfield compakt",
@@ -50568,6 +50974,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010362",
   "inventgroup": "ЦБ-00007372",
   "name": "Горбуша соломка вяленая ",
@@ -50677,6 +51084,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00010398",
   "inventgroup": "ЦБ-00005127",
   "name": "LD Impulse Compact Play",
@@ -50803,6 +51211,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00000516",
   "inventgroup": "ЦБ-00001705",
   "name": "Лимонад Диво Тархун 1,5",
@@ -50929,6 +51338,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00000526",
   "inventgroup": "КН000384   ",
   "name": "Пиво Алтайский колос светлое 1л",
@@ -51055,6 +51465,7 @@
   "Parent": 1,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001133",
   "inventgroup": "ЦБ-00007372",
   "name": "Карасик янтарный ",
@@ -51164,6 +51575,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001520",
   "inventgroup": "ЦБ-00004707",
   "name": "Веник Берёзовый с лекарственными травами Русский Лес",
@@ -51290,6 +51702,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001537",
   "inventgroup": "ЦБ-00004710",
   "name": "Презервативы Contex №3 Romantic",
@@ -51416,6 +51829,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001481",
   "inventgroup": "ЦБ-00007372",
   "name": "Сёмга соломка ",
@@ -51525,6 +51939,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001583",
   "inventgroup": "ЦБ-00002556",
   "name": "Кружка для пива керамическая Щас Спою 0,7 л",
@@ -51651,6 +52066,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001584",
   "inventgroup": "ЦБ-00002556",
   "name": "Кружка для пива керамическая За Отдых 0,7 л",
@@ -51777,6 +52193,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001072",
   "inventgroup": "ЦБ-00007329",
   "name": "Семечки Джинн 70 гр",
@@ -51903,6 +52320,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001073",
   "inventgroup": "ЦБ-00007329",
   "name": "Семечки Джинн 140 гр",
@@ -52029,6 +52447,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001074",
   "inventgroup": "ЦБ-00007329",
   "name": "Семечки Джинн 250 гр",
@@ -52155,6 +52574,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001188",
   "inventgroup": "ЦБ-00004470",
   "name": "Сельдь филе х/к",
@@ -52264,6 +52684,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006513",
   "inventgroup": "ЦБ-00004706",
   "name": "Яйцо шоколадное с игрушкой 20 гр",
@@ -52406,6 +52827,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001197",
   "inventgroup": "КН000301   ",
   "name": "Луковые кольца Золотые  шашлык 40 гр",
@@ -52532,6 +52954,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003435",
   "inventgroup": "ЦБ-00005803",
   "name": "Арахис в глазури Шашлык",
@@ -52641,6 +53064,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003451",
   "inventgroup": "КН000384   ",
   "name": "Пиво Ловенбрау Оригинальное светлое 1л",
@@ -52767,6 +53191,7 @@
   "Parent": 1,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003462",
   "inventgroup": "МА000216   ",
   "name": "Пиво Балтика №0 б/а ж/б 0,45",
@@ -52893,6 +53318,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005740",
   "inventgroup": "ЦБ-00005126",
   "name": "L&M Red Label",
@@ -53067,6 +53493,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003517",
   "inventgroup": "ЦБ-00004704",
   "name": "Шоколад М*Мс соленый арахис 45 гр",
@@ -53193,6 +53620,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003527",
   "inventgroup": "МА000216   ",
   "name": "Минеральная  вода Боржоми пэт 0,75",
@@ -53319,6 +53747,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003545",
   "inventgroup": "ЦБ-00004705",
   "name": "Жевательная резинка Love is 4,2 гр",
@@ -53445,6 +53874,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003629",
   "inventgroup": "ЦБ-00007330",
   "name": "Арахис ж/с в банке со вкусом чили 110 гр Ким",
@@ -53571,6 +54001,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003688",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Лейз из печи Лисички в сметане 85 гр",
@@ -53697,6 +54128,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00000329",
   "inventgroup": "ЦБ-00004705",
   "name": "Жевательная резинка Wrigley^s в ассорт",
@@ -53823,6 +54255,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003689",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Лейз из печи Нежный сыр и зелень 85 гр",
@@ -53949,6 +54382,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003778",
   "inventgroup": "ЦБ-00005125",
   "name": "Philip Moriris compact blue",
@@ -54091,6 +54525,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003808",
   "inventgroup": "ЦБ-00003030",
   "name": "Chesterfield Blue",
@@ -54233,6 +54668,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003827",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Бингре Зяки-Зяки 80 гр",
@@ -54359,6 +54795,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003857",
   "inventgroup": "ЦБ-00004706",
   "name": "Пластиковое яйцо с игрушкой и десертом в ассортименте 20 гр",
@@ -54501,6 +54938,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003876",
   "inventgroup": "ЦБ-00004471",
   "name": "Колбаски Салями Охотничьи с/к",
@@ -54610,6 +55048,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007316",
   "inventgroup": "ЦБ-00002224",
   "name": "Сыр соломка Саганаки жареный ",
@@ -54719,6 +55158,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003877",
   "inventgroup": "ЦБ-00004471",
   "name": "Колбаски Неаполитанские с/к",
@@ -54828,6 +55268,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003892",
   "inventgroup": "ЦБ-00004471",
   "name": "Джерки говядина сыровял.Smachos ",
@@ -54937,6 +55378,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003964",
   "inventgroup": "ЦБ-00005127",
   "name": "Winston XStyle Silver",
@@ -55079,6 +55521,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003988",
   "inventgroup": "ЦБ-00000204",
   "name": "Пиво Крюгер Чешское светлое 1л",
@@ -55205,6 +55648,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006975",
   "inventgroup": "ЦБ-00001489",
   "name": "Сухарики Гаринские телятина на гриле вес",
@@ -55314,6 +55758,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00003999",
   "inventgroup": "ЦБ-00004471",
   "name": "Чипсы птицы сыровяленые Пикантные",
@@ -55423,6 +55868,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008201",
   "inventgroup": "ЦБ-00007331",
   "name": "Креветка Черноморская суш с солью 22 гр",
@@ -55549,6 +55995,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004010",
   "inventgroup": "ЦБ-00005127",
   "name": "Winston XS impulse",
@@ -55691,6 +56138,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004011",
   "inventgroup": "ЦБ-00000204",
   "name": "Пиво Крюгер Харвестер пшеничное н/ф1л",
@@ -55817,6 +56265,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007524",
   "inventgroup": "МА000216   ",
   "name": "Напиток Энергетический  Блэк Монстр  ж/б  0,449",
@@ -55959,6 +56408,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004080",
   "inventgroup": "МА000216   ",
   "name": "Напиток Флэш Ап Энергия пэт 0,5л",
@@ -56085,6 +56535,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004102",
   "inventgroup": "ЦБ-00002222",
   "name": "Сухарики Гаринские тайский перец вес",
@@ -56194,6 +56645,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004280",
   "inventgroup": "ЦБ-00005126",
   "name": "Marlboro",
@@ -56352,6 +56804,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004332",
   "inventgroup": "ЦБ-00006535",
   "name": "Стики Heets Green Zing Label",
@@ -56526,6 +56979,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00000282",
   "inventgroup": "КН000384   ",
   "name": "Пиво Вобла фирменное светлое 1л",
@@ -56652,6 +57106,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004333",
   "inventgroup": "ЦБ-00006535",
   "name": "Стики Heets Bronze Label",
@@ -56826,6 +57281,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004341",
   "inventgroup": "ЦБ-00007372",
   "name": "Минтай палочки подкопченные",
@@ -56935,6 +57391,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004364",
   "inventgroup": "ЦБ-00002556",
   "name": "Кружка для пива керамическая За ВДВ 0,7 л",
@@ -57061,6 +57518,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004387",
   "inventgroup": "ЦБ-00001704",
   "name": "Напиток Лимонад Диво1л ОАО Томское Пиво",
@@ -57187,6 +57645,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004407",
   "inventgroup": "ЦБ-00004707",
   "name": "Коврик войлочный для бани \"Классика\"",
@@ -57313,6 +57772,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004445",
   "inventgroup": "ЦБ-00004471",
   "name": "Колбаски Остренькие куриные с/к",
@@ -57422,6 +57882,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006543",
   "inventgroup": "ЦБ-00005803",
   "name": "Арахис Васаби Премиум",
@@ -57531,6 +57992,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007525",
   "inventgroup": "МА000216   ",
   "name": "Напиток Энергетический  Блэк Монстр Ультра ж/б  0,449",
@@ -57657,6 +58119,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004551",
   "inventgroup": "ЦБ-00002224",
   "name": "Сыр спагетти саргуль со вкусом семги вес",
@@ -57783,6 +58246,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004552",
   "inventgroup": "ЦБ-00002224",
   "name": "Сыр спагетти саргуль со вкусом аджики вес",
@@ -57909,6 +58373,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005933",
   "inventgroup": "ЦБ-00002224",
   "name": "Сыр спагетти нано копч вес",
@@ -58035,6 +58500,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004553",
   "inventgroup": "ЦБ-00002224",
   "name": "Сыр спагетти саргуль со вкусом холопеньо вес",
@@ -58161,6 +58627,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004659",
   "inventgroup": "ЦБ-00001705",
   "name": "Напиток Генезис Фиолетовая Звезда энергетик  ж/б б/а 0,5",
@@ -58287,6 +58754,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004760",
   "inventgroup": "ЦБ-00004708",
   "name": "Зажигалка RENE RN-01 цветная",
@@ -58429,6 +58897,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004822",
   "inventgroup": "ЦБ-00004705",
   "name": "Драже Тик Так ягодный микс 16 гр",
@@ -58555,6 +59024,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004898",
   "inventgroup": "ЦБ-00005127",
   "name": "Kiss Menthol",
@@ -58713,6 +59183,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007821",
   "inventgroup": "ЦБ-00004471",
   "name": "Колбаски Би-Фи Чили",
@@ -58822,6 +59293,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00004991",
   "inventgroup": "ЦБ-00004704",
   "name": "Шоколад Сникерс Криспер 60гр",
@@ -58948,6 +59420,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005008",
   "inventgroup": "ЦБ-00002556",
   "name": "Кружка для пива керамическая Капитан Флинт 0,7 л",
@@ -59074,6 +59547,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007424",
   "inventgroup": "ЦБ-00005803",
   "name": "Арахис ж/с в кожуре XL ",
@@ -59183,6 +59657,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005099",
   "inventgroup": "ЦБ-00005125",
   "name": "Philip Moriris compact premium mix яркий",
@@ -59373,6 +59848,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005147",
   "inventgroup": "ЦБ-00007317",
   "name": "Медовуха Сидр Хаус Вишня 1л",
@@ -59499,6 +59975,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008078",
   "inventgroup": "ЦБ-00002556",
   "name": "Кружка для пива керамическая Делу время, пиво щас! 0,5 л",
@@ -59608,6 +60085,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005199",
   "inventgroup": "ЦБ-00004704",
   "name": "Шоколад М*Мс Молочный 125 гр",
@@ -59734,6 +60212,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005200",
   "inventgroup": "ЦБ-00004704",
   "name": "Шоколад М*Мс Фундук 122 гр",
@@ -59860,6 +60339,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005553",
   "inventgroup": "ЦБ-00004705",
   "name": "Карамель на палочке Ананас 40 гр",
@@ -59986,6 +60466,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005557",
   "inventgroup": "ЦБ-00001705",
   "name": "Лимонад Гринвик 0,5л акция",
@@ -60095,6 +60576,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005824",
   "inventgroup": "ЦБ-00005126",
   "name": "L&M Blue Label",
@@ -60253,6 +60735,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005942",
   "inventgroup": "ЦБ-00007244",
   "name": "Нарезка к пиву ассорти  х/к",
@@ -60362,6 +60845,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00000327",
   "inventgroup": "ЦБ-00005980",
   "name": "Банка стеклянная 2л",
@@ -60488,6 +60972,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005990",
   "inventgroup": "ЦБ-00007329",
   "name": "Семечки Солнечный великан Джинн 100 гр",
@@ -60614,6 +61099,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008203",
   "inventgroup": "ЦБ-00007331",
   "name": "Креветка Черноморская суш с чесноком и укропом 22 гр",
@@ -60740,6 +61226,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00005991",
   "inventgroup": "ЦБ-00007329",
   "name": "Семечки Солнечный великан Джинн с солью 100 гр",
@@ -60866,6 +61353,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006069",
   "inventgroup": "ЦБ-00006535",
   "name": "Стики Heets Creations Yugen цветочные ",
@@ -61008,6 +61496,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006139",
   "inventgroup": "ЦБ-00005127",
   "name": "Kiss Brown Effect",
@@ -61166,6 +61655,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007125",
   "inventgroup": "ЦБ-00002556",
   "name": "Кружка для пива керамическая Танки 0,5 л",
@@ -61275,6 +61765,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006164",
   "inventgroup": "ЦБ-00005127",
   "name": "Winston XStyle Dual",
@@ -61417,6 +61908,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006174",
   "inventgroup": "ЦБ-00004707",
   "name": "Салфетки влажные антибактериальные 15шт/уп",
@@ -61526,6 +62018,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006266",
   "inventgroup": "ЦБ-00005127",
   "name": "Winston SS Blue",
@@ -61684,6 +62177,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006296",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Бингре Крабовые 130 гр",
@@ -61810,6 +62304,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006326",
   "inventgroup": "ЦБ-00005125",
   "name": "Marlboro Summer Fusion",
@@ -61952,6 +62447,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006386",
   "inventgroup": "ЦБ-00004471",
   "name": "Кнуты из мяса птицы с/к",
@@ -62061,6 +62557,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006417",
   "inventgroup": "ЦБ-00001705",
   "name": "Напиток Гринвик Ботаник лимонад 1,5",
@@ -62187,6 +62684,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006437",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Читос Кетчуп 85 гр",
@@ -62313,6 +62811,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007002",
   "inventgroup": "ЦБ-00007373",
   "name": "Опята",
@@ -62422,6 +62921,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006452",
   "inventgroup": "КН000384   ",
   "name": "Пиво Peoples Lager светлое 1л",
@@ -62548,6 +63048,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008286",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Лейз Сметана зелень 81 гр",
@@ -62674,6 +63175,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006502",
   "inventgroup": "ЦБ-00005126",
   "name": "Parlament Reserve Mix",
@@ -62816,6 +63318,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006537",
   "inventgroup": "МА000216   ",
   "name": "Пивной напиток Балтика Грейпфрут №0  б/а ж/б 0,33",
@@ -62942,6 +63445,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006542",
   "inventgroup": "ЦБ-00005803",
   "name": "Арахис Бекон Премиум",
@@ -63051,6 +63555,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006545",
   "inventgroup": "ЦБ-00005803",
   "name": "Арахис Сметана Лук Премиум",
@@ -63160,6 +63665,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006549",
   "inventgroup": "ЦБ-00005803",
   "name": "Арахис Жарено-соленый Премиум",
@@ -63269,6 +63775,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006547",
   "inventgroup": "ЦБ-00005803",
   "name": "Арахис Холодец Хрен Премиум",
@@ -63378,6 +63885,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006561",
   "inventgroup": "ЦБ-00005125",
   "name": "Parlament Tropic Voyage",
@@ -63520,6 +64028,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006571",
   "inventgroup": "МА000216   ",
   "name": "Сок Любимый Апельсиновое Манго 0,95л",
@@ -63646,6 +64155,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008287",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Лейз Рифленые Сметана лук 81 гр",
@@ -63772,6 +64282,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006578",
   "inventgroup": "ЦБ-00005126",
   "name": "Jade Blue SSL",
@@ -63994,6 +64505,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006617",
   "inventgroup": "ЦБ-00005126",
   "name": "Максим красный 100",
@@ -64152,6 +64664,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006626",
   "inventgroup": "ЦБ-00005125",
   "name": "Philip Moriris compact солнечный",
@@ -64294,6 +64807,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006727",
   "inventgroup": "ЦБ-00006535",
   "name": "Стики FIIT Regular",
@@ -64452,6 +64966,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008090",
   "inventgroup": "МА000216   ",
   "name": "Сок Добрый Яблоко 0,2",
@@ -64578,6 +65093,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006728",
   "inventgroup": "ЦБ-00006535",
   "name": "Стики FIIT Viola ",
@@ -64736,6 +65252,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006730",
   "inventgroup": "ЦБ-00005127",
   "name": "LD Autograph Club Compact Cafe",
@@ -64878,6 +65395,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006791",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Лейз Стакс Ароматные ребрышки барбекю 140 гр",
@@ -65020,6 +65538,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006792",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Лейз Стакс Пикантная паприка 140 гр",
@@ -65146,6 +65665,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006793",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Лейз Стакс Нежная сметана и лук 140 гр",
@@ -65272,6 +65792,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006832",
   "inventgroup": "ЦБ-00005127",
   "name": "Camel Compact Ruby",
@@ -65414,6 +65935,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006908",
   "inventgroup": "ЦБ-00007329",
   "name": "Семечки Солнечный великан Джинн с солью 200 гр",
@@ -65540,6 +66062,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ТМ-00000023",
   "inventgroup": "ЦБ-00007372",
   "name": "Минтай филе сушеный широкий с перцем",
@@ -65649,6 +66172,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00000433",
   "inventgroup": "КН001143   ",
   "name": "Морс Брусничный 1л",
@@ -65775,6 +66299,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001573",
   "inventgroup": "ЦБ-00004707",
   "name": "Набор пластиковой посуды Пикник",
@@ -65901,6 +66426,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001220",
   "inventgroup": "МА000216   ",
   "name": "Бон Аква н/газ вода 0,5",
@@ -66027,6 +66553,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008086",
   "inventgroup": "МА000216   ",
   "name": "Нектар Добрый Мультифрукт 0,2",
@@ -66153,6 +66680,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001239",
   "inventgroup": "МА000216   ",
   "name": "Напиток Добрый Палпи апельсин с мякотью пэт 0,45",
@@ -66279,6 +66807,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008198",
   "inventgroup": "МА000216   ",
   "name": "Пиво Балтика Пшеничное №0 б/а ж/б 0,45",
@@ -66421,6 +66950,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001286",
   "inventgroup": "ЦБ-00004744",
   "name": "Попкорн Corin Corn сметана лук 85 гр",
@@ -66547,6 +67077,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001287",
   "inventgroup": "ЦБ-00004744",
   "name": "Попкорн Corin Corn солёный 100 гр",
@@ -66673,6 +67204,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001288",
   "inventgroup": "ЦБ-00004744",
   "name": "Попкорн Corin Corn сырный 85 гр",
@@ -66799,6 +67331,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001289",
   "inventgroup": "ЦБ-00004744",
   "name": "Попкорн Corin Corn сливочный 100 гр",
@@ -66925,6 +67458,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00001612",
   "inventgroup": "ЦБ-00005980",
   "name": "ПЭТ Бочонок 1,5л",
@@ -67051,6 +67585,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008288",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Лейз Бекон 81 гр",
@@ -67177,6 +67712,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00000076",
   "inventgroup": "ЦБ-00007373",
   "name": "Уши свиные По-Кавказски",
@@ -67286,6 +67822,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008220",
   "inventgroup": "ЦБ-00002222",
   "name": "Сухарики Цветной кубик ТОМАТ-в-аккурат вес",
@@ -67395,6 +67932,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00006936",
   "inventgroup": "КН000302   ",
   "name": "Хрустим Багет Королевский Краб 60 гр",
@@ -67521,6 +68059,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007001",
   "inventgroup": "ЦБ-00007373",
   "name": "Скумбрия По-Норвежски",
@@ -67630,6 +68169,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007051",
   "inventgroup": "ЦБ-00004471",
   "name": "Балаганчики из мяса птицы с/к",
@@ -67739,6 +68279,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007219",
   "inventgroup": "ЦБ-00006535",
   "name": "Стики Heets Parlament Teak Selection ",
@@ -67881,6 +68422,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007228",
   "inventgroup": "ЦБ-00001705",
   "name": "Напиток Генезис Зеленая Звезда энергетик  ж/б б/а 0,5",
@@ -68007,6 +68549,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007309",
   "inventgroup": "ЦБ-00000204",
   "name": "Пиво Крюгер Немецкое светлое* 1л",
@@ -68133,6 +68676,7 @@
   "Parent": 0,
   "isParent": "ПТ-00000002"
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007310",
   "inventgroup": "ЦБ-00000204",
   "name": "Пиво Томское фирменное *1л",
@@ -68259,6 +68803,7 @@
   "Parent": 0,
   "isParent": "ЦБ-00003078"
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007339",
   "inventgroup": "ЦБ-00005125",
   "name": "Chesterfield Remix Premium",
@@ -68385,6 +68930,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007434",
   "inventgroup": "КН000301   ",
   "name": "Морская капуста Ачим Оригинал 5 гр",
@@ -68511,6 +69057,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007435",
   "inventgroup": "КН000301   ",
   "name": "Морская капуста Ачим Перец Чили 5 гр",
@@ -68637,6 +69184,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007436",
   "inventgroup": "КН000301   ",
   "name": "Морская капуста Ачим Барбекю 5 гр",
@@ -68763,6 +69311,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007523",
   "inventgroup": "МА000216   ",
   "name": "Напиток Энергетический  Блэк Монстр Манго Локо ж/б  0,449",
@@ -68889,6 +69438,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007537",
   "inventgroup": "МА000216   ",
   "name": "Напиток Швепс Биттер Лимон ж/б 0,33",
@@ -69031,6 +69581,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007582",
   "inventgroup": "ЦБ-00001705",
   "name": "Напиток Ягуар Культ ягодный вкус  ж/б б/а 0,5",
@@ -69157,6 +69708,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007593",
   "inventgroup": "ЦБ-00004705",
   "name": "Драже Скитлс 70 гр",
@@ -69283,6 +69835,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007597",
   "inventgroup": "ЦБ-00006535",
   "name": "Стики FIIT Tropic",
@@ -69425,6 +69978,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007690",
   "inventgroup": "ЮТ-00000001",
   "name": "Щука потр вяленая ",
@@ -69534,6 +70088,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007829",
   "inventgroup": "МА000207   ",
   "name": "Маска одноразовая",
@@ -69660,6 +70215,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007846",
   "inventgroup": "ЦБ-00005125",
   "name": "Marlboro Vista Forest Mist (Bond Street)",
@@ -69786,6 +70342,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007849",
   "inventgroup": "ЦБ-00007317",
   "name": "Медовуха Виноград 1л",
@@ -69912,6 +70469,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007880",
   "inventgroup": "ЦБ-00004707",
   "name": "Масло эфирное ваниль 10 мл",
@@ -70038,6 +70596,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007892",
   "inventgroup": "ЦБ-00004471",
   "name": "Чипсы птицы Три богатыря",
@@ -70147,6 +70706,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00007950",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Бингре Зяки-Зяки 130 гр",
@@ -70273,6 +70833,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008057",
   "inventgroup": "ЦБ-00005125",
   "name": "Marlboro Vista Aroma Zing (Bond Street)",
@@ -70415,6 +70976,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008058",
   "inventgroup": "ЦБ-00005125",
   "name": "Marlboro Vista Garden Zing (Bond Street)",
@@ -70541,6 +71103,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008083",
   "inventgroup": "ЦБ-00004704",
   "name": "Шоколад М*Мс арахис 80 гр",
@@ -70667,6 +71230,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008216",
   "inventgroup": "ЦБ-00002222",
   "name": "Сухарики Цветной кубик Васян-ВАСАБян вес",
@@ -70776,6 +71340,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008253",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Лейз Краб 50 гр",
@@ -70902,6 +71467,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008279",
   "inventgroup": "ЦБ-00004471",
   "name": "Чипсы мясные Хрустящие классические ",
@@ -71011,6 +71577,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008289",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Лейз Сыр 81 гр",
@@ -71137,6 +71704,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00008291",
   "inventgroup": "КН000301   ",
   "name": "Чипсы Лейз Соль 81 гр",
@@ -71263,6 +71831,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00000739",
   "inventgroup": "ЦБ-00005803",
   "name": "Арахис в глазури Васаби",
@@ -71372,6 +71941,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00000458",
   "inventgroup": "КН000384   ",
   "name": "Пиво Пражечка светлое 1л",
@@ -71498,6 +72068,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00000708",
   "inventgroup": "ЦБ-00002222",
   "name": "Сухарики Гаринские сыр вес",
@@ -71607,6 +72178,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00000583",
   "inventgroup": "ЦБ-00004705",
   "name": "Леденцы Орбит Дропс в ассорт",
@@ -71733,6 +72305,7 @@
   "Parent": 0,
   "isParent": ""
 },{
+  "command": "addInventItem",
   "inventcode": "ЦБ-00000907",
   "inventgroup": "ЦБ-00004704",
   "name": "Шоколад Сникерс миндаль 81 гр",
