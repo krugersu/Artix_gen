@@ -270,17 +270,18 @@ class workDb:
                 cinventitemoptions = self._all_db.cursor()       
                 cinventitemoptions.execute(diff_data.qrinventitemoptions,(tCode,))
                 inventitemoptions = cinventitemoptions.fetchall()  
-                allinventitemoptions = []
+                # allinventitemoptions = {}
                 for itm in inventitemoptions:
-                    allinventitemoptions.append((dict(itm)) )
+                    # allinventitemoptions.append((dict(itm)) )
+                    allinventitemoptions = (dict(itm))
 
                 # Add priceoptions Опции цены
                 cpriceoptions = self._all_db.cursor()       
                 cpriceoptions.execute(diff_data.qrpriceoptions,(tCode,))
                 priceoptions = cpriceoptions.fetchall()  
-                allpriceoptions = []
+                # allpriceoptions = []
                 for itm in priceoptions:
-                    allpriceoptions.append((dict(itm)) )
+                    allpriceoptions = (dict(itm)) 
         
 
 
@@ -288,9 +289,9 @@ class workDb:
                 cquantityoptions = self._all_db.cursor()       
                 cquantityoptions.execute(diff_data.qrquantityoptions,(tCode,))
                 quantityoptions = cquantityoptions.fetchall()  
-                allquantityoptions = []
+                #allquantityoptions = []
                 for itm in quantityoptions:
-                    allquantityoptions.append((dict(itm)) )
+                    allquantityoptions = (dict(itm))
 
 
 
@@ -298,9 +299,9 @@ class workDb:
                 cremainsoptions = self._all_db.cursor()       
                 cremainsoptions.execute(diff_data.qrremainsoptions,(tCode,))
                 remainsoptions = cremainsoptions.fetchall()  
-                allremainsoptions = []
+                #allremainsoptions = []
                 for itm in remainsoptions:
-                    allremainsoptions.append((dict(itm)) )
+                    allremainsoptions = (dict(itm))
 
         
 ##########################################################################################
@@ -312,7 +313,7 @@ class workDb:
                 alloptions['inventitemoptions'] = allinventitemoptions
                 alloptions['priceoptions'] = allpriceoptions
                 alloptions['quantityoptions'] = allquantityoptions   
-                alloptions['remainsoptions'] = allremainsoptions             
+              #  alloptions['remainsoptions'] = allremainsoptions   Опции учета остатков, пока ни как не реализованы, оставлены на будущее          
                 
                 ''' for itm in options:
                     alloptions.append((dict(itm)) ) '''
