@@ -209,11 +209,12 @@ class workDb:
         
         #outfile = open('tData.aif', 'w',encoding='utf-8')  
         outfile = open('tData.json', 'w',encoding='utf-8')  
-        outfile.writelines(diff_data.header)
-        outfile.writelines(diff_data.clearInventory)
-        outfile.writelines(diff_data.separator)
-        outfile.writelines(diff_data.clearTmcScale)    
-        outfile.writelines(diff_data.separator)
+        outfile.writelines(diff_data.header+ '\n')
+        outfile.writelines(json.dumps(diff_data.clearInventory)+ '\n')
+        
+        outfile.writelines(diff_data.separator+ '\n')
+        outfile.writelines(json.dumps(diff_data.clearTmcScale)+ '\n')    
+        outfile.writelines(diff_data.separator+ '\n')
         
         dictForArtix = {}
         c = self._all_db.cursor()
@@ -230,7 +231,9 @@ class workDb:
                 tCommand = diff_data.addInventItem      
                 
                 nDict = (dict(invent))
+                nCommand = {}
                 tCommand.update(nDict)
+                
                 tCode = ((tCommand['inventcode']))
 
 
@@ -322,9 +325,10 @@ class workDb:
                 tCommand['sellrestrictperiods'] = allSellrestrictperiods                    
                 tCommand['additionalprices'] = alladditionalpricesid                    
                 tCommand['barcodes'] = allBarcodes
+                nCommand['invent'] = tCommand
+                pprint(nCommand)
                 
-                pprint(tCommand)
-                dictForArtix.update(tCommand)
+                dictForArtix.update(nCommand)
                 
                 #outfile.writelines(str(nDict))
                 #outfile.writelines(diff_data.separator)

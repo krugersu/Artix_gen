@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python3.11
 """Example Python program with Sphinx style comments.
 Description
 -----------
@@ -100,7 +100,7 @@ if __name__ == "__main__":
    if not rc == None:
       main()
    else:
-      logger.info(u'Программа завершила работу')   
+      logger.info(u'Программа завершила работу')                                      
       
    #while True:
    #    schedule.run_pending()
