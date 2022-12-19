@@ -228,13 +228,13 @@ class workDb:
         # Add Barcodes
                 cBar = self._all_db.cursor()
 #                nDict = dict(diff_data.addInventItem) 
-                tCommand = diff_data.addInventItem      
+#                tCommand = diff_data.addInventItem      
                 
                 nDict = (dict(invent))
-                nCommand = {}
-                tCommand.update(nDict)
+ #               nCommand = {}
+  #              tCommand.update(nDict)
                 
-                tCode = ((tCommand['inventcode']))
+                tCode = ((nDict['inventcode']))
 
 
                 cBar.execute(diff_data.qrBarcodes,(tCode,))
@@ -321,20 +321,29 @@ class workDb:
 
 
                     
-                tCommand['options'] = alloptions                        
-                tCommand['sellrestrictperiods'] = allSellrestrictperiods                    
-                tCommand['additionalprices'] = alladditionalpricesid                    
-                tCommand['barcodes'] = allBarcodes
-                nCommand['invent'] = tCommand
-                pprint(nCommand)
+                nDict['options'] = alloptions                        
+                nDict['sellrestrictperiods'] = allSellrestrictperiods                    
+                nDict['additionalprices'] = alladditionalpricesid                    
+                nDict['barcodes'] = allBarcodes
                 
-                dictForArtix.update(nCommand)
+                tCommand = diff_data.addInventItem      
+                comDict = (dict(tCommand))
+                nCommand = {}
+                nCommand['invent'] = nDict
+                comDict.update(nCommand)
+                
+                
+              #
+                pprint(nDict)
+                
+                dictForArtix.update(comDict)
                 
                 #outfile.writelines(str(nDict))
                 #outfile.writelines(diff_data.separator)
                 
                 json.dump(dictForArtix, outfile,  indent=2,  ensure_ascii=False )
-                outfile.write(',')    
+                
+                outfile.write('\n' + diff_data.separator + '\n')    
             else:
                 break    
         outfile.write(diff_data.footer)    
