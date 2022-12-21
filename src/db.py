@@ -1,7 +1,7 @@
 
 import sys
 import json
-# 
+import shutil
 
 from datetime import datetime
 from types import SimpleNamespace
@@ -348,7 +348,10 @@ class workDb:
                 outfile.write('\n' + diff_data.separator + '\n')    
             else:
                 break    
-        outfile.write(diff_data.footer)    
+        outfile.write(diff_data.footer)  
+        src =  pathAif
+        dst = '//192.168.0.239/obmen/dict/'+ curFileName
+        shutil.copyfile(src, dst)
         #перебираем кортеж с кортежами внутри, также печатаем элементы
         #for z in range(len(massive_big)):
         #    print(massive_big[z])        
