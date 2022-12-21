@@ -6,13 +6,13 @@
 
 import time
 
-
+https://github.com/krugersu/Artix_gen/blob/main/src/m_geo.py
 
 import paramiko
 
 host = '192.168.0.239'
 user = 'administrator'
-secret = 'adm@#747911ART'
+secret = '*********'
 port = 22
 
 
