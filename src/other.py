@@ -1,5 +1,30 @@
 
+
 #!/usr/bin/env python3.11
+
+
+import os
+import pathlib
+from pathlib import Path
+
+
+
+mPath = "E:\\unf_teleport\\26\\"
+
+mPath.replace('\\\\', '//')
+
+mPath = pathlib.PureWindowsPath(mPath)
+#print(os.path.basename(mPath))
+print(Path(mPath).parts[-1])
+
+
+
+   #create_aif.saveTestFile()
+   #c_count = request.send_request(c_shop,str(server_ip),str(port))
+   # print(c_shop)
+   
+   #pathDB = Path("data", "myDB.sqlite") 
+   #dbWork = workDB.Database(pathDB)
 
 
   print(rc.get('artix','server_ip'))

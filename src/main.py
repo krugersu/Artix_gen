@@ -64,25 +64,23 @@ def main():
    
    catalog = rc._sections.one_C.cat_skl
    
-   # Анализ в каких магазинах изменения
-   c_shop = file_wr.find_change(catalog, f)
+   
+   #c_shop = file_wr.find_change(catalog, f)
+   #c_shop = []
    # Apoc по магазинам с изменения
    
-   mCount = request.req1C(c_shop,rc)
-   c_count = mCount.exeQuery()
-   create_aif.saveTestFile()
-   #c_count = request.send_request(c_shop,str(server_ip),str(port))
-   # print(c_shop)
-   
-   #pathDB = Path("data", "myDB.sqlite") 
-   #dbWork = workDB.Database(pathDB)
-   
-   if not c_count == None:  
-      #db.saveDataDB(c_count)
-      tData = db.workDb(rc)
-      tData.uploadData(c_count)
-      #dbWork.execute()
-   #logging.info('Finished')
+   mCount = request.req1C(rc)
+   # Анализ в каких магазинах изменения
+   c_shop = mCount.getQueryShop()
+   #print(c_shop)
+   # Обработка данных по магазинам
+   for curShop in c_shop:
+   #   print(curShop)    
+      c_count = mCount.shopForNumber(curShop)
+      if not c_count == None:  
+         tData = db.workDb(rc)
+         tData.uploadData(c_count, curShop)
+
    logger.info(u'End programs')   
 
 

@@ -24,7 +24,7 @@ class m_Config:
     def loadConfig(self):
         
         conf = configparser.ConfigParser(dict_type=AttrDict)
-        conf.sections()
+      #  conf.sections()
         if os.path.exists(self.devpathConfFile):
             conf.read(self.devpathConfFile,encoding="utf-8")
         else:

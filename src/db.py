@@ -119,14 +119,14 @@ class workDb:
     #all_db.close()
     
     
-    def uploadData(self,c_count):
+    def uploadData(self,c_count, shop_Number):
                 
         self.createDB()
         self.recursive_items(c_count)
         self.CalculatingTheAmount()
         self.querySales()
         self.calculateSales()
-        self.testDB()
+        self.testDB(shop_Number)
         
     def recursive_items(self,dictionary):
         
@@ -182,7 +182,7 @@ class workDb:
         logging.info('Sales calcalating')              
         
         
-    def testDB(self):
+    def testDB(self,shop_Number):
         """Maps a number from one range to another.
     :param number:  The input number to map.
     :param in_min:  The minimum value of an input number.
@@ -208,7 +208,9 @@ class workDb:
             self._all_db.row_factory = sqlite3.Row
         
         #outfile = open('tData.aif', 'w',encoding='utf-8')  
-        outfile = open('tData.json', 'w',encoding='utf-8')  
+        curFileName = 'pos' + str(shop_Number) + '.aif'
+        pathAif = Path("upload", curFileName) 
+        outfile = open(pathAif, 'w',encoding='utf-8')  
         outfile.writelines(diff_data.header+ '\n')
         outfile.writelines(json.dumps(diff_data.clearInventory)+ '\n')
         
@@ -334,8 +336,7 @@ class workDb:
                 comDict.update(nCommand)
                 
                 
-              #
-                pprint(nDict)
+                #pprint(nDict)
                 
                 dictForArtix.update(comDict)
                 
