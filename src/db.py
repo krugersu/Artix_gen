@@ -2,7 +2,7 @@
 import sys
 import json
 import shutil
-
+import sendFile
 from datetime import datetime
 from types import SimpleNamespace
 from pathlib import Path  
@@ -233,8 +233,8 @@ class workDb:
 #                tCommand = diff_data.addInventItem      
                 
                 nDict = (dict(invent))
- #               nCommand = {}
-  #              tCommand.update(nDict)
+#               nCommand = {}
+#              tCommand.update(nDict)
                 
                 tCode = ((nDict['inventcode']))
 
@@ -315,7 +315,7 @@ class workDb:
                 alloptions['inventitemoptions'] = allinventitemoptions
                 alloptions['priceoptions'] = allpriceoptions
                 alloptions['quantityoptions'] = allquantityoptions   
-              #  alloptions['remainsoptions'] = allremainsoptions   Опции учета остатков, пока ни как не реализованы, оставлены на будущее          
+                #alloptions['remainsoptions'] = allremainsoptions   Опции учета остатков, пока ни как не реализованы, оставлены на будущее          
                 
                 ''' for itm in options:
                     alloptions.append((dict(itm)) ) '''
@@ -349,9 +349,12 @@ class workDb:
             else:
                 break    
         outfile.write(diff_data.footer)  
-        src =  pathAif
-        dst = '//192.168.0.239/obmen/dict/'+ curFileName
-        shutil.copyfile(src, dst)
+        
+        #pathAif
+        sendFile.sendFile(pathAif,shop_Number)
+        # src =  pathAif
+        # dst = '//192.168.0.239/obmen/dict/'+ curFileName
+        # shutil.copyfile(src, dst)
         #перебираем кортеж с кортежами внутри, также печатаем элементы
         #for z in range(len(massive_big)):
         #    print(massive_big[z])        

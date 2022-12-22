@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.11
+#/usr/bin/env python3.11
 """Example Python program with Sphinx style comments.
 Description
 -----------
