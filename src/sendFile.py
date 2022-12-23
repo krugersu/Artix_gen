@@ -20,5 +20,5 @@ def sendFile(fileName,shopNumber):
     # time.sleep(1)
     # stdout.readlines()
     ftp = ssh.open_sftp()
-    ftp.put(fileName, '/opt/OBMEN/dict/test1.py')
+    ftp.put(fileName, '/opt/OBMEN/dict/'+ shopNumber +'/' + 'pos'+ shopNumber+'.aif')
     ftp.close()
