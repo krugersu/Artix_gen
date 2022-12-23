@@ -8,7 +8,7 @@ port = 22
 
 
 
-def sendFile(fileName,shopNumber):
+def sendFile(fileName,shopNumber,typeFile):
     
     nameFileDest = 'pos'
     ssh = paramiko.SSHClient()
@@ -20,5 +20,8 @@ def sendFile(fileName,shopNumber):
     # time.sleep(1)
     # stdout.readlines()
     ftp = ssh.open_sftp()
-    ftp.put(fileName, '/opt/OBMEN/dict/'+ shopNumber +'/' + 'pos'+ shopNumber+'.aif')
+    if typeFile:
+        ftp.put(fileName, '/opt/OBMEN/dict/'+ shopNumber +'/' + 'pos'+ shopNumber+'.aif')
+    else:    
+        ftp.put(fileName, '/opt/OBMEN/dict/'+ shopNumber +'/' + 'pos'+ shopNumber+'.flz')
     ftp.close()

@@ -209,8 +209,14 @@ class workDb:
         
         #outfile = open('tData.aif', 'w',encoding='utf-8')  
         curFileName = 'pos' + str(shop_Number) + '.aif'
+        curFlagName = 'pos' + str(shop_Number) + '.flz'
+        
         pathAif = Path("upload", curFileName) 
+        pathFlz = Path("upload", curFlagName) 
+        
         outfile = open(pathAif, 'w',encoding='utf-8')  
+        outfileFlz = open(pathFlz, 'w',encoding='utf-8')  
+        outfileFlz.close
         outfile.writelines(diff_data.header+ '\n')
         outfile.writelines(json.dumps(diff_data.clearInventory)+ '\n')
         
@@ -351,7 +357,8 @@ class workDb:
         outfile.write(diff_data.footer)  
         
         #pathAif
-        sendFile.sendFile(pathAif,shop_Number)
+        sendFile.sendFile(pathAif,shop_Number,True)
+        sendFile.sendFile(pathFlz,shop_Number,False)
         #
         # src =  pathAif
         # dst = '//192.168.0.239/obmen/dict/'+ curFileName
