@@ -352,6 +352,7 @@ class workDb:
         
         #pathAif
         sendFile.sendFile(pathAif,shop_Number)
+        #
         # src =  pathAif
         # dst = '//192.168.0.239/obmen/dict/'+ curFileName
         # shutil.copyfile(src, dst)
