@@ -95,14 +95,10 @@ class workDb:
 
         x = []
         rows = self._mycursor.fetchall()
-        #rows = self._mycursor.fetchmany(1)
         
         #showing the rows
         for row in rows:
-        #    print(row)
             x.append(row)
-        #print(x)    
-            #c.executemany('INSERT INTO students VALUES(?,?,?);',records);
         self._cursor.executemany('INSERT INTO goodsitem VALUES(?,?,?)',x)    
         self._all_db.commit() 
         self.mydb.close()
@@ -116,7 +112,7 @@ class workDb:
 
         self.cursor.executescript(sql_script)
         self._all_db.commit()
-    #all_db.close()
+
     
     
     def uploadData(self,c_count, shop_Number):
@@ -133,7 +129,6 @@ class workDb:
         logging.info('Start add DB from 1C')
         count = 0
         for key  in dictionary:
-          #  print(key)
             self.addRecord(dictionary[key],key)
             count = count + len(dictionary[key])
         
@@ -191,14 +186,6 @@ class workDb:
     :param out_max: The maximum value of an output number.
     :return: The mapped number.
     """
-    
-        #self._cursor.execute("select * from invent")
-        #sql - это ваш cursor
-        #massive = self._cursor.fetchone()#этот метод вернет вам один кортеж с только одной строкой из базы
-        #  massive_big = self._cursor.fetchall()#этот метод вернет вам все элементы в одном кортеже. Данные из строк будут представлены как вложенные кортежи
-        #перебираем обычный кортеж, просто печатаем элементы кортежа
-        #for i in range(len(massive)):
-        #    print(massive[i])
         
         if sys.platform.startswith("linux"):  # could be "linux", "linux2", "linux3", ...
                 self._all_db.row_factory = pysqlite3.Row # Позволяет работать с возвращаемым результатам с обращением к столбцам по имени
@@ -355,11 +342,14 @@ class workDb:
             else:
                 break    
         outfile.write(diff_data.footer)  
-        
+        outfile.close
         #pathAif
         sendFile.sendFile(pathAif,shop_Number,True)
         sendFile.sendFile(pathFlz,shop_Number,False)
-        #
+        #! ***************************************************************
+        # BUG Копирует не весь файл
+        # BUG Выгружается не только головная номенклатура, но и аналоги!!! 
+        #! ***************************************************************
         # src =  pathAif
         # dst = '//192.168.0.239/obmen/dict/'+ curFileName
         # shutil.copyfile(src, dst)
