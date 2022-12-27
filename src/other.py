@@ -771,3 +771,12 @@ class workDb:
      
 
  '''
+ 
+ 
+ # src =  pathAif
+        # dst = '//192.168.0.239/obmen/dict/'+ curFileName
+        # shutil.copyfile(src, dst)
+        #перебираем кортеж с кортежами внутри, также печатаем элементы
+        #for z in range(len(massive_big)):
+        #    print(massive_big[z])        
+        #{"command":"addInventItem",

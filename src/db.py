@@ -120,10 +120,11 @@ class workDb:
                 
         self.createDB()
         self.recursive_items(c_count)
-        self.CalculatingTheAmount()
+        self.calculating_the_amount()
+        self.delete_analog()
         self.querySales()
         self.calculateSales()
-        self.testDB(shop_Number)
+        self.test_db(shop_Number)
         
     def recursive_items(self,dictionary):
         
@@ -137,13 +138,22 @@ class workDb:
         logging.info('added - ' + str(count) + ' records')    
 
 
-    def CalculatingTheAmount(self):
+    def calculating_the_amount(self):
         """Запускает SQL скрипт, который переносит количество с аналагов пива на головную номенклатуру"""        
         pathScript = Path("data", "upd.sql") 
         with open(pathScript, 'r') as sql_file:
             sql_script = sql_file.read()
         self._cursor.executescript(sql_script)
         logging.info('Summ analog calcalating')  
+        
+    def delete_analog(self):
+        """Запускает SQL скрипт, который удаляет из базы аналоги после перенесения количества на головную"""        
+        pathScript = Path("data", "del_a.sql") 
+        with open(pathScript, 'r') as sql_file:
+            sql_script = sql_file.read()
+        self._cursor.executescript(sql_script)
+        self._all_db.commit()
+        logging.info('Delete analog')  
 
     def addRecord(self,item_position,key):
 
@@ -178,7 +188,7 @@ class workDb:
         logging.info('Sales calcalating')              
         
         
-    def testDB(self,shop_Number):
+    def test_db(self,shop_Number):
         """Maps a number from one range to another.
     :param number:  The input number to map.
     :param in_min:  The minimum value of an input number.
@@ -351,8 +361,8 @@ class workDb:
         sendFile.sendFile(pathAif,shop_Number,True)
         sendFile.sendFile(pathFlz,shop_Number,False)
         #! ***************************************************************
-        # BUG Копирует не весь файл
-        # BUG Выгружается не только головная номенклатура, но и аналоги!!! 
+        ## NOTE Копирует не весь файл
+        # FIXME Выгружается не только головная номенклатура, но и аналоги!!! 
         #! ***************************************************************
         # src =  pathAif
         # dst = '//192.168.0.239/obmen/dict/'+ curFileName
