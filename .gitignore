@@ -156,3 +156,4 @@ cython_debug/
 postest.aif
 *.aif
 *.flz
+*.aif

@@ -1,4 +1,5 @@
 
+import time
 import sys
 import json
 import shutil
@@ -201,149 +202,152 @@ class workDb:
         pathAif = Path("upload", curFileName) 
         pathFlz = Path("upload", curFlagName) 
         
-        outfile = open(pathAif, 'w',encoding='utf-8')  
         outfileFlz = open(pathFlz, 'w',encoding='utf-8')  
         outfileFlz.close
-        outfile.writelines(diff_data.header+ '\n')
-        outfile.writelines(json.dumps(diff_data.clearInventory)+ '\n')
+        #outfile = open(pathAif, 'w',encoding='utf-8')  
+        with open(pathAif, 'w',encoding='utf-8') as outfile:
         
-        outfile.writelines(diff_data.separator+ '\n')
-        outfile.writelines(json.dumps(diff_data.clearTmcScale)+ '\n')    
-        outfile.writelines(diff_data.separator+ '\n')
+            outfile.writelines(diff_data.header+ '\n')
+            outfile.writelines(json.dumps(diff_data.clearInventory)+ '\n')
         
-        dictForArtix = {}
-        c = self._all_db.cursor()
+            outfile.writelines(diff_data.separator+ '\n')
+            outfile.writelines(json.dumps(diff_data.clearTmcScale)+ '\n')    
+            outfile.writelines(diff_data.separator+ '\n')
         
-        c.execute('SELECT * FROM invent')                          
+            dictForArtix = {}
+            c = self._all_db.cursor()
         
-        while True:
-            invent=c.fetchone()
-            if invent:
+            c.execute('SELECT * FROM invent')                          
+            
+            while True:
+                invent=c.fetchone()
+                if invent:
 
-        # Add Barcodes
-                cBar = self._all_db.cursor()
-#                nDict = dict(diff_data.addInventItem) 
-#                tCommand = diff_data.addInventItem      
-                
-                nDict = (dict(invent))
-#               nCommand = {}
-#              tCommand.update(nDict)
-                
-                tCode = ((nDict['inventcode']))
-
-
-                cBar.execute(diff_data.qrBarcodes,(tCode,))
-                                        
-                tBarcodes = dict(invent)
-                barcodes = cBar.fetchall()  
-                allBarcodes = []
-                for itm in barcodes:
-                    allBarcodes.append((dict(itm)) )
-                
-                #nDict['barcodes'] = allBarcodes
-                
-                # Add sellrestrictperiods Массив ограничений продаж по времени, пока не заполняем, нам без надобности
-                cSellPeriod = self._all_db.cursor()       
-                cSellPeriod.execute(diff_data.qrsellrestrictperiods,(tCode,))
-                sellrestrictperiods = cSellPeriod.fetchall()  
-                allSellrestrictperiods = []
-                for itm in sellrestrictperiods:
-                    allSellrestrictperiods.append((dict(itm)) )
-
-
-                # Add Additionalprices  Массив дополнительных цен
-                cAdditionalprices = self._all_db.cursor()       
-                cAdditionalprices.execute(diff_data.qrAdditionalprices,(tCode,))
-                additionalpricesid = cAdditionalprices.fetchall()  
-                alladditionalpricesid = []
-                for itm in additionalpricesid:
-                    alladditionalpricesid.append((dict(itm)) )
-
-
-
-                # Add inventitemoptions Опции товара
-                cinventitemoptions = self._all_db.cursor()       
-                cinventitemoptions.execute(diff_data.qrinventitemoptions,(tCode,))
-                inventitemoptions = cinventitemoptions.fetchall()  
-                # allinventitemoptions = {}
-                for itm in inventitemoptions:
-                    # allinventitemoptions.append((dict(itm)) )
-                    allinventitemoptions = (dict(itm))
-
-                # Add priceoptions Опции цены
-                cpriceoptions = self._all_db.cursor()       
-                cpriceoptions.execute(diff_data.qrpriceoptions,(tCode,))
-                priceoptions = cpriceoptions.fetchall()  
-                # allpriceoptions = []
-                for itm in priceoptions:
-                    allpriceoptions = (dict(itm)) 
-        
-
-
-                # Add quantityoptions Опции количества
-                cquantityoptions = self._all_db.cursor()       
-                cquantityoptions.execute(diff_data.qrquantityoptions,(tCode,))
-                quantityoptions = cquantityoptions.fetchall()  
-                #allquantityoptions = []
-                for itm in quantityoptions:
-                    allquantityoptions = (dict(itm))
-
-
-
-                # Add quantityoptions Опции количества
-                cremainsoptions = self._all_db.cursor()       
-                cremainsoptions.execute(diff_data.qrremainsoptions,(tCode,))
-                remainsoptions = cremainsoptions.fetchall()  
-                #allremainsoptions = []
-                for itm in remainsoptions:
-                    allremainsoptions = (dict(itm))
-
-        
-##########################################################################################
-                # Add options Опции товара
-                '''   coptions = self._all_db.cursor()       
-                coptions.execute("SELECT * FROM options where optionsidid = ?",(tCode,))
-                options = coptions.fetchall()   '''
-                alloptions = {}
-                alloptions['inventitemoptions'] = allinventitemoptions
-                alloptions['priceoptions'] = allpriceoptions
-                alloptions['quantityoptions'] = allquantityoptions   
-                #alloptions['remainsoptions'] = allremainsoptions   Опции учета остатков, пока ни как не реализованы, оставлены на будущее          
-                
-                ''' for itm in options:
-                    alloptions.append((dict(itm)) ) '''
-###########################################################################################
-
-
-
+            # Add Barcodes
+                    cBar = self._all_db.cursor()
+    #                nDict = dict(diff_data.addInventItem) 
+    #                tCommand = diff_data.addInventItem      
                     
-                nDict['options'] = alloptions                        
-                nDict['sellrestrictperiods'] = allSellrestrictperiods                    
-                nDict['additionalprices'] = alladditionalpricesid                    
-                nDict['barcodes'] = allBarcodes
-                
-                tCommand = diff_data.addInventItem      
-                comDict = (dict(tCommand))
-                nCommand = {}
-                nCommand['invent'] = nDict
-                comDict.update(nCommand)
-                
-                
-                #pprint(nDict)
-                
-                dictForArtix.update(comDict)
-                
-                #outfile.writelines(str(nDict))
-                #outfile.writelines(diff_data.separator)
-                
-                json.dump(dictForArtix, outfile,  indent=2,  ensure_ascii=False )
-                
-                outfile.write('\n' + diff_data.separator + '\n')    
-            else:
-                break    
-        outfile.write(diff_data.footer)  
-        outfile.close
+                    nDict = (dict(invent))
+    #               nCommand = {}
+    #              tCommand.update(nDict)
+                    
+                    tCode = ((nDict['inventcode']))
+
+
+                    cBar.execute(diff_data.qrBarcodes,(tCode,))
+                                            
+                    tBarcodes = dict(invent)
+                    barcodes = cBar.fetchall()  
+                    allBarcodes = []
+                    for itm in barcodes:
+                        allBarcodes.append((dict(itm)) )
+                    
+                    #nDict['barcodes'] = allBarcodes
+                    
+                    # Add sellrestrictperiods Массив ограничений продаж по времени, пока не заполняем, нам без надобности
+                    cSellPeriod = self._all_db.cursor()       
+                    cSellPeriod.execute(diff_data.qrsellrestrictperiods,(tCode,))
+                    sellrestrictperiods = cSellPeriod.fetchall()  
+                    allSellrestrictperiods = []
+                    for itm in sellrestrictperiods:
+                        allSellrestrictperiods.append((dict(itm)) )
+
+
+                    # Add Additionalprices  Массив дополнительных цен
+                    cAdditionalprices = self._all_db.cursor()       
+                    cAdditionalprices.execute(diff_data.qrAdditionalprices,(tCode,))
+                    additionalpricesid = cAdditionalprices.fetchall()  
+                    alladditionalpricesid = []
+                    for itm in additionalpricesid:
+                        alladditionalpricesid.append((dict(itm)) )
+
+
+
+                    # Add inventitemoptions Опции товара
+                    cinventitemoptions = self._all_db.cursor()       
+                    cinventitemoptions.execute(diff_data.qrinventitemoptions,(tCode,))
+                    inventitemoptions = cinventitemoptions.fetchall()  
+                    # allinventitemoptions = {}
+                    for itm in inventitemoptions:
+                        # allinventitemoptions.append((dict(itm)) )
+                        allinventitemoptions = (dict(itm))
+
+                    # Add priceoptions Опции цены
+                    cpriceoptions = self._all_db.cursor()       
+                    cpriceoptions.execute(diff_data.qrpriceoptions,(tCode,))
+                    priceoptions = cpriceoptions.fetchall()  
+                    # allpriceoptions = []
+                    for itm in priceoptions:
+                        allpriceoptions = (dict(itm)) 
+            
+
+
+                    # Add quantityoptions Опции количества
+                    cquantityoptions = self._all_db.cursor()       
+                    cquantityoptions.execute(diff_data.qrquantityoptions,(tCode,))
+                    quantityoptions = cquantityoptions.fetchall()  
+                    #allquantityoptions = []
+                    for itm in quantityoptions:
+                        allquantityoptions = (dict(itm))
+
+
+
+                    # Add quantityoptions Опции количества
+                    cremainsoptions = self._all_db.cursor()       
+                    cremainsoptions.execute(diff_data.qrremainsoptions,(tCode,))
+                    remainsoptions = cremainsoptions.fetchall()  
+                    #allremainsoptions = []
+                    for itm in remainsoptions:
+                        allremainsoptions = (dict(itm))
+
+            
+    ##########################################################################################
+                    # Add options Опции товара
+                    '''   coptions = self._all_db.cursor()       
+                    coptions.execute("SELECT * FROM options where optionsidid = ?",(tCode,))
+                    options = coptions.fetchall()   '''
+                    alloptions = {}
+                    alloptions['inventitemoptions'] = allinventitemoptions
+                    alloptions['priceoptions'] = allpriceoptions
+                    alloptions['quantityoptions'] = allquantityoptions   
+                    #alloptions['remainsoptions'] = allremainsoptions   Опции учета остатков, пока ни как не реализованы, оставлены на будущее          
+                    
+                    ''' for itm in options:
+                        alloptions.append((dict(itm)) ) '''
+    ###########################################################################################
+
+
+
+                        
+                    nDict['options'] = alloptions                        
+                    nDict['sellrestrictperiods'] = allSellrestrictperiods                    
+                    nDict['additionalprices'] = alladditionalpricesid                    
+                    nDict['barcodes'] = allBarcodes
+                    
+                    tCommand = diff_data.addInventItem      
+                    comDict = (dict(tCommand))
+                    nCommand = {}
+                    nCommand['invent'] = nDict
+                    comDict.update(nCommand)
+                    
+                    
+                    #pprint(nDict)
+                    
+                    dictForArtix.update(comDict)
+                    
+                    #outfile.writelines(str(nDict))
+                    #outfile.writelines(diff_data.separator)
+                    
+                    json.dump(dictForArtix, outfile,  indent=2,  ensure_ascii=False )
+                    
+                    outfile.write('\n' + diff_data.separator + '\n')    
+                else:
+                    break    
+            outfile.write(diff_data.footer)  
+#        outfile.close
         #pathAif
+       # time.sleep(5)
         sendFile.sendFile(pathAif,shop_Number,True)
         sendFile.sendFile(pathFlz,shop_Number,False)
         #! ***************************************************************
