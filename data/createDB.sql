@@ -40,9 +40,9 @@ DROP TABLE IF EXISTS invent;
 
 CREATE TABLE invent (
     inventcode              TEXT (20),
-    inventgroup             TEXT (100),
+--    inventgroup             TEXT (100),
     name                    TEXT (200),
-    barcode                 TEXT (100),
+--    barcode                 TEXT (100),
     barcodes                TEXT (20),
     price                   REAL (13, 2),
     minprice                REAL (13, 2),

@@ -29,11 +29,18 @@ qrAddquantityoptions = '''INSERT INTO quantityoptions (quantityoptionsid, enable
 
 qrAddadditionalprices = 'INSERT INTO additionalprices (additionalpricesid, pricecode, price, name) VALUES (:additionalpricesid, :pricecode, :price, :name);'
 
+# qrAddBarcodes = '''INSERT INTO barcodes (barcodesid, additionalpricesid, aspectvaluesetcode, barcode, cquant, measurecode,
+#                             minprice, name, packingmeasure, packingprice, price, quantdefault, minretailprice, customsdeclarationnumber, tmctype, ntin)
+#                             VALUES
+#                             (:barcodesid, :additionalprices, :aspectvaluesetcode, :barcode, :cquant, :measurecode,
+#                             :minprice, :name, :packingmeasure, :packingprice, :price, :quantdefault, :minretailprice, :customsdeclarationnumber, :tmctype, :ntin );'''
+
 qrAddBarcodes = '''INSERT INTO barcodes (barcodesid, additionalpricesid, aspectvaluesetcode, barcode, cquant, measurecode,
-                            minprice, name, packingmeasure, packingprice, price, quantdefault, minretailprice, customsdeclarationnumber, tmctype, ntin)
+                                name, packingmeasure, packingprice, quantdefault, minretailprice, customsdeclarationnumber, tmctype, ntin)
                             VALUES
                             (:barcodesid, :additionalprices, :aspectvaluesetcode, :barcode, :cquant, :measurecode,
-                            :minprice, :name, :packingmeasure, :packingprice, :price, :quantdefault, :minretailprice, :customsdeclarationnumber, :tmctype, :ntin );'''
+                                :name, :packingmeasure, :packingprice, :quantdefault, :minretailprice, :customsdeclarationnumber, :tmctype, :ntin );'''
+
 
 
 qrAddSellrestrictperiods = '''INSERT INTO sellrestrictperiods (sellrestrictperiodsid, dateend, datestart, dayend, daystart, timeend,
@@ -49,18 +56,28 @@ qrAddPriceoptions = '''INSERT INTO priceoptions (priceoptionsid, enablepricemanu
 
 
 
-qrAddinvent = '''INSERT INTO invent (inventcode, inventgroup, name, barcode, barcodes, price, minprice, additionalprices, options, 
+# qrAddinvent = '''INSERT INTO invent (inventcode, inventgroup, name, barcode, barcodes, price, minprice, additionalprices, options, 
+#                                 sellrestrictperiods, extendedoptions, discautoscheme, deptcode, taxgroupcode, measurecode, remain, remaindate, articul,
+#                                 defaultquantity, taramode, taracapacity, aspectschemecode, aspectvaluesetcode, aspectusecase, aspectselectionrule, age, 
+#                                 alcoholpercent, cquant, inn, kpp, alctypecode, paymentobject, manufacturercountrycode, opmode, loyaltymode, minretailprice, 
+#                                 isParent, Parent)
+#                                 VALUES
+#                                 (:inventcode,:inventgroup,:name,:barcode,:barcodes,:price,:minprice,:additionalprices,:options,:sellrestrictperiods,
+#                                 :extendedoptions,:discautoscheme,:deptcode,:taxgroupcode,:measurecode,:remain,:remaindate,:articul,:defaultquantity,
+#                                 :taramode,:taracapacity,:aspectschemecode,:aspectvaluesetcode,:aspectusecase,:aspectselectionrule,:age,:alcoholpercent,
+#                                 :cquant,:inn,:kpp,:alctypecode,:paymentobject,:manufacturercountrycode,:opmode,:loyaltymode,:minretailprice,:isParent,:Parent);'''
+
+
+qrAddinvent = '''INSERT INTO invent (inventcode,  name,  barcodes, price, minprice, additionalprices, options, 
                                 sellrestrictperiods, extendedoptions, discautoscheme, deptcode, taxgroupcode, measurecode, remain, remaindate, articul,
-                                defaultquantity, taramode, taracapacity, aspectschemecode, aspectvaluesetcode, aspectusecase, aspectselectionrule, age, 
+                                defaultquantity, taramode, taracapacity,  aspectusecase, aspectselectionrule, age, 
                                 alcoholpercent, cquant, inn, kpp, alctypecode, paymentobject, manufacturercountrycode, opmode, loyaltymode, minretailprice, 
                                 isParent, Parent)
                                 VALUES
-                                (:inventcode,:inventgroup,:name,:barcode,:barcodes,:price,:minprice,:additionalprices,:options,:sellrestrictperiods,
+                                (:inventcode,:name,:barcodes,:price,:minprice,:additionalprices,:options,:sellrestrictperiods,
                                 :extendedoptions,:discautoscheme,:deptcode,:taxgroupcode,:measurecode,:remain,:remaindate,:articul,:defaultquantity,
-                                :taramode,:taracapacity,:aspectschemecode,:aspectvaluesetcode,:aspectusecase,:aspectselectionrule,:age,:alcoholpercent,
+                                :taramode,:taracapacity,:aspectusecase,:aspectselectionrule,:age,:alcoholpercent,
                                 :cquant,:inn,:kpp,:alctypecode,:paymentobject,:manufacturercountrycode,:opmode,:loyaltymode,:minretailprice,:isParent,:Parent);'''
-
-
 
 
 qrSelectSales = 'SELECT goodsitemid, documentid, ttime, opcode,  cquant, code From goodsitem'
@@ -87,6 +104,7 @@ separator = "---"
 clearInventory = {"command":"clearInventory"} # Команда clearInventory очищает справочник товаров со всеми зависимыми записями. 
 clearTmcScale = {"command":"clearTmcScale"}  # Команда clearTmcScale очищает справочник товаров для прогрузки на весы
 addInventItem = {"command":"addInventItem"}  # Команда addInventItem добавляет товар в справочник товаров. Атрибуты товара задаются обязательным параметром invent.  
+clearAspectValueSet  = {"command": "clearAspectValueSet"} #Команда clearAspectValueSet очищает справочник значений разрезов
 
 
 

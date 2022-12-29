@@ -122,6 +122,7 @@ class workDb:
         self.recursive_items(c_count)
         self.calculating_the_amount()
         self.delete_analog()
+        self.delete_null_parent()
         self.querySales()
         self.calculateSales()
         self.test_db(shop_Number)
@@ -154,6 +155,16 @@ class workDb:
         self._cursor.executescript(sql_script)
         self._all_db.commit()
         logging.info('Delete analog')  
+        
+    def delete_null_parent(self):
+        """Запускает SQL скрипт, который удаляет из базы головную номенклатуру с нулевым количеством, т.е. которая пришла из 1С, но
+            на неё не было распределения"""        
+        pathScript = Path("data", "del_null_count_parent.sql") 
+        with open(pathScript, 'r') as sql_file:
+            sql_script = sql_file.read()
+        self._cursor.executescript(sql_script)
+        self._all_db.commit()
+        logging.info('Delete 0 parent count')      
 
     def addRecord(self,item_position,key):
 
@@ -345,29 +356,21 @@ class workDb:
                     #pprint(nDict)
                     
                     dictForArtix.update(comDict)
-                    
-                    #outfile.writelines(str(nDict))
-                    #outfile.writelines(diff_data.separator)
-                    
+
                     json.dump(dictForArtix, outfile,  indent=2,  ensure_ascii=False )
                     
                     outfile.write('\n' + diff_data.separator + '\n')    
                 else:
                     break    
+                
+            
+            outfile.writelines(diff_data.separator+ '\n')
+            outfile.writelines(json.dumps(diff_data.clearAspectValueSet)+ '\n')    
+            outfile.writelines(diff_data.separator+ '\n')
+            
+            
             outfile.write(diff_data.footer)  
 #        outfile.close
-        #pathAif
-       # time.sleep(5)
         sendFile.sendFile(pathAif,shop_Number,True)
         sendFile.sendFile(pathFlz,shop_Number,False)
-        #! ***************************************************************
-        ## NOTE Копирует не весь файл
-        # FIXME Выгружается не только головная номенклатура, но и аналоги!!! 
-        #! ***************************************************************
-        # src =  pathAif
-        # dst = '//192.168.0.239/obmen/dict/'+ curFileName
-        # shutil.copyfile(src, dst)
-        #перебираем кортеж с кортежами внутри, также печатаем элементы
-        #for z in range(len(massive_big)):
-        #    print(massive_big[z])        
-        #{"command":"addInventItem",
+        
