@@ -167,7 +167,7 @@ class workDb:
         logging.info('Delete 0 parent count')      
 
     def addRecord(self,item_position,key):
-
+        # TODO Переписать эту процедуру с библиотекой tortolle это позволит не вызвать в цикле проверку на ключ
         self._cursor.execute('PRAGMA synchronous = OFF')
 
         if key == 'invent':
