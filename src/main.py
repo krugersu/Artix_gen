@@ -62,11 +62,11 @@ def main():
    f = '*flg'
    #tlgrm.send_telegram("Start programs")
    
-   catalog = rc._sections.one_C.cat_skl
+   #catalog = rc._sections.one_C.cat_skl
    
    
    #c_shop = file_wr.find_change(catalog, f)
-   #c_shop = []
+   c_shop = []
    # Apoc по магазинам с изменения
    
    mCount = request.req1C(rc)

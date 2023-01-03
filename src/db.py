@@ -131,9 +131,25 @@ class workDb:
         
         logging.info('Start add DB from 1C')
         count = 0
-        for key  in dictionary:
-            self.addRecord(dictionary[key],key)
-            count = count + len(dictionary[key])
+        #for item in dictionary.invent:
+        #    pprint(item)
+        self._cursor.executemany(diff_data.qrAddinvent, dictionary.invent,)
+        count = count + len(dictionary.invent)
+      #  pprint(dictionary.additionalprices)
+        self._cursor.executemany(diff_data.qrAddadditionalprices, dictionary.additionalprices,)    
+        count = count + len(dictionary.additionalprices)
+        self._cursor.executemany(diff_data.qrAddBarcodes, dictionary.barcodes,)
+        count = count + len(dictionary.barcodes)
+        self._cursor.executemany(diff_data.qrAddinventitemoptions, dictionary.inventitemoptions,)        
+        count = count + len(dictionary.inventitemoptions)
+        self._cursor.executemany(diff_data.qrAddPriceoptions, dictionary.priceoptions,)                    
+        count = count + len(dictionary.priceoptions)
+        self._cursor.executemany(diff_data.qrAddquantityoptions, dictionary.quantityoptions,)                    
+        count = count + len(dictionary.quantityoptions)
+        self._cursor.executemany(diff_data.qrAddSellrestrictperiods, dictionary.sellrestrictperiods,) 
+        count = count + len(dictionary.sellrestrictperiods)
+        self._cursor.execute(diff_data.qrAddOptions)
+        self._all_db.commit()                                
         
         logging.info('End add DB from 1C')    
         logging.info('added - ' + str(count) + ' records')    
@@ -374,3 +390,17 @@ class workDb:
         sendFile.sendFile(pathAif,shop_Number,True)
         sendFile.sendFile(pathFlz,shop_Number,False)
         
+        
+        
+        
+        
+        # def recursive_items(self,dictionary):
+            
+        # logging.info('Start add DB from 1C')
+        # count = 0
+        # for key  in dictionary:
+        #     self.addRecord(dictionary[key],key)
+        #     count = count + len(dictionary[key])
+        
+        # logging.info('End add DB from 1C')    
+        # logging.info('added - ' + str(count) + ' records')    

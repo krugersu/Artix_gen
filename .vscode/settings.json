@@ -96,7 +96,8 @@
     "[ ]",
     "[x]"
 ],
-"todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS).*(\\n\\s*//\\s{2,}.*)*"
+"todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS).*(\\n\\s*//\\s{2,}.*)*",
+"python.analysis.typeCheckingMode": "basic"
 
 
 }

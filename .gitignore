@@ -157,3 +157,6 @@ postest.aif
 *.aif
 *.flz
 *.aif
+data/myDB.sqlite
+upload/pos31.aif
+upload/pos31.flz
