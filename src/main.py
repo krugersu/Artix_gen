@@ -95,6 +95,7 @@ if __name__ == "__main__":
    # schedule.every(1).minutes.do(main)
    m_conf = m_config.m_Config()   
    rc =  m_conf.loadConfig()
+   #exec(open("test2.py").read())
    if not rc == None:
       main()
    else:

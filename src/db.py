@@ -182,29 +182,6 @@ class workDb:
         self._all_db.commit()
         logging.info('Delete 0 parent count')      
 
-    def addRecord(self,item_position,key):
-        # TODO Переписать эту процедуру с библиотекой tortolle это позволит не вызвать в цикле проверку на ключ
-        self._cursor.execute('PRAGMA synchronous = OFF')
-
-        if key == 'invent':
-            self._cursor.executemany(diff_data.qrAddinvent, item_position,)
-        elif key == 'additionalprices':
-            self._cursor.executemany(diff_data.qrAddadditionalprices, item_position,)   
-        elif key == 'barcodes':
-            self._cursor.executemany(diff_data.qrAddBarcodes, item_position,)   
-        elif key == 'inventitemoptions':
-            self._cursor.executemany(diff_data.qrAddinventitemoptions, item_position,)       
-        elif key == 'priceoptions':
-            self._cursor.executemany(diff_data.qrAddPriceoptions, item_position,)                   
-        elif key == 'quantityoptions':
-            self._cursor.executemany(diff_data.qrAddquantityoptions, item_position,)                               
-        elif key == 'sellrestrictperiods':
-            self._cursor.executemany(diff_data.qrAddSellrestrictperiods, item_position,)                                           
-
-        self._cursor.execute(diff_data.qrAddOptions)
-        
-        self._all_db.commit() 
-        
         
     def calculateSales(self):
         """Запускает SQL скрипт, который отнимает проданное от пришедшего товара"""        

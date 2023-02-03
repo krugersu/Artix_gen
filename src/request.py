@@ -26,7 +26,6 @@ class req1C:
                                    + self.mConfig._sections.one_C.lquery)
 # ?  r = requests.get('http://192.168.252.250:8082/UNF_test/hs/test_s/V1/test')
                r.encoding = 'utf-8' 
-               print(r.status_code)
                c_count = r.json()
                return c_count
           except Exception as e:
@@ -43,12 +42,11 @@ class req1C:
                                    + self.mConfig._sections.one_C.port 
                                    + self.mConfig._sections.one_C.shopquery)
                     
-               print(r.url)     
+            #   print(r.url)     
                r.encoding = 'utf-8' 
-               print(r.status_code)
+            #   print(r.status_code)
                c_count = r.json()
                listShop = self._getDirM(c_count)
-            #   print(listShop)
                return listShop  # c_count
           except Exception as e:
                logging.exception(e, exc_info=False)
@@ -69,12 +67,10 @@ class req1C:
                c_count = n_shop.test_s.get('V1/test_1?number=' +str(c_shop))
                
                
-              # pprint(c_count)     
+
 # ?  r = requests.get('http://192.168.252.250:8082/UNF_test/hs/test_s/V1/test_1')
                # r.encoding = 'utf-8' 
-               # print(r.status_code)
               # c_count = r.json()
-            #   print(c_count)
                return c_count
           except Exception as e:
                logging.exception(e, exc_info=False)
