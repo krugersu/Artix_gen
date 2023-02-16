@@ -81,7 +81,48 @@ qrAddinvent = '''INSERT INTO invent (inventcode,  name,  barcodes, price, minpri
 
 
 qrSelectSales = 'SELECT goodsitemid, documentid, ttime, opcode,  cquant, code From goodsitem'
-qrSimpleSelectSale =  'SELECT code, opcode,  CAST(cquant AS CHAR) AS cquant  From goodsitem'
+#qrSimpleSelectSale =  'SELECT code, opcode,  CAST(cquant AS CHAR) AS cquant  From goodsitem'
+# qrSimpleSelectSale =  '''select
+# 	code,
+# 	opcode,
+# 	cast(cquant as char) as cquant
+# from
+# 	goodsitem
+# where
+# 	documentid in (
+# 	select
+# 		documentid
+# 	from
+# 		document
+# 	where
+# 		cashcode = %s
+# 		and workshiftid > %s)'''
+
+qrSimpleSelectSale =  '''select
+	code,
+	opcode,
+	cast(cquant as char) as cquant
+from
+	goodsitem
+where
+	documentid in (
+	select
+		documentid
+	from
+		document
+	where
+		cashcode = %s
+		and workshiftid > (
+		SELECT
+			workshiftid
+		from
+			workshift
+		where
+			shiftnum = %s
+			AND time_beg > '2023-01-21 15:47:15') )'''
+
+qrGetNumWorkshift = 'SELECT workshiftid  from workshift where shiftnum = %s AND time_beg > "2023-01-21 15:47:15"'
+  
 qrSelectBarcodes = 'SELECT * FROM barcodes where barcodesid = ?'
 
 

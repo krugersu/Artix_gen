@@ -23,6 +23,8 @@ Copyright (c) 2020 Woolsey Workshop.  All rights reserved.
 Members
 -------
 """
+""
+# Test
 # Imports
 import os
 import sys
@@ -58,7 +60,9 @@ def main():
    
    path = Path("config", "config.ini") 
    
+   logger.info(u'                                                      ')   
    logger.info("Start programs")
+   
    f = '*flg'
    #tlgrm.send_telegram("Start programs")
    
@@ -80,9 +84,9 @@ def main():
       if not c_count == None:  
          tData = db.workDb(rc)
          tData.uploadData(c_count, curShop)
-
+   
    logger.info(u'End programs')   
-
+   logger.info(u'*****************************************************************')   
 
 
 

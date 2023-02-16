@@ -41,7 +41,8 @@ class workDb:
             sqlite3.paramstyle = 'named'
             self._all_db = sqlite3.connect(self.pathDB)
         
-
+        self.sale_dict = []
+        
         self.pathScript = Path("data", "createDB.sql") 
         self._cursor = self._all_db.cursor()
         self.baseTableName = 'invent'
@@ -90,20 +91,31 @@ class workDb:
         return self.fetchall()
 
     def querySales(self):
-
+        # Запрос в БД Артикс по текущим продажам
         #executing the query
-        self._mycursor.execute(diff_data.qrSimpleSelectSale)
+       # self._mycursor.execute(diff_data.qrSimpleSelectSale)
+        for  value in self.sale_dict:    # 
+            #for k, v in value.items():
+                print(value['cashcode'])
+                print(value['shiftnum'])
+                logging.info('cashcode - ' + str(value['cashcode']))    
+                logging.info('shiftnum - ' + str(value['shiftnum']))    
+                # self._mycursor.execute(diff_data.qrGetNumWorkshift,(value['shiftnum']),)
+                # num_workshift = self._mycursor.fetchone() 
+                #print('num_workshift '+ str(num_workshift))
+                
+                self._mycursor.execute(diff_data.qrSimpleSelectSale,(value['cashcode'],(value['shiftnum'])),)
 
-        x = []
-        rows = self._mycursor.fetchall()
-        
+                x = []
+                rows = self._mycursor.fetchall()
+                logging.info('rows - ' + str(rows))    
         #showing the rows
-        for row in rows:
-            x.append(row)
-        self._cursor.executemany('INSERT INTO goodsitem VALUES(?,?,?)',x)    
-        self._all_db.commit() 
+                for row in rows:
+                    x.append(row)
+                self._cursor.executemany('INSERT INTO goodsitem VALUES(?,?,?)',x)    
+                self._all_db.commit() 
         self.mydb.close()
- 
+
         
     def createDB(self):
         """AI is creating summary for createDB
@@ -128,7 +140,7 @@ class workDb:
         self.test_db(shop_Number)
         
     def recursive_items(self,dictionary):
-        
+        # Берем данные из УНФ т записываем в соответствующие таблицы БД для последующей обработки
         logging.info('Start add DB from 1C')
         count = 0
         #for item in dictionary.invent:
@@ -151,6 +163,13 @@ class workDb:
         self._cursor.execute(diff_data.qrAddOptions)
         self._all_db.commit()                                
         
+        # Текущие закрытые кассовые смены по данному обрабатываемому магазину 
+        self.sale_dict = dictionary.wsunf
+       # pprint(dictionary.wsunf)
+        pprint(self.sale_dict)
+        
+        
+        logging.info('workshift - ' + str(dictionary.wsunf))    
         logging.info('End add DB from 1C')    
         logging.info('added - ' + str(count) + ' records')    
 
